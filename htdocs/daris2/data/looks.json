@@ -1,0 +1,242 @@
+[
+    {
+        "slug": "matin-frais",
+        "title": "Matin frais",
+        "occasion": "Tous les jours",
+        "duration": "5 minutes",
+        "level": "Débutante",
+        "excerpt": "Le look « je n'ai rien fait »  : références rouge-allure-velvet et submariner-date-41 chez Azurine.",
+        "intro": "Cinq minutes devant le miroir, quatre produits, et un visage qui a l'air reposé même quand il ne l'est pas. C'est le look que l'on recommande pour commencer : il ne demande aucune technique et pardonne tout.",
+        "steps": [
+            {
+                "title": "Hydrater et protéger",
+                "text": "Après la crème de jour, une noisette de Voile de soie au doigt, du centre du visage vers l'extérieur. Pas besoin de couvrir partout : seulement là où la peau en a besoin."
+            },
+            {
+                "title": "Réveiller les joues",
+                "text": "Une touche de blush crème Joues roses (Rose poudré) tapotée sur le haut des pommettes, en remontant vers les tempes."
+            },
+            {
+                "title": "Ouvrir le regard",
+                "text": "Un passage de mascara Ciel ouvert sur les cils du haut, en zigzaguant de la racine aux pointes."
+            },
+            {
+                "title": "Finir par les lèvres",
+                "text": "Le baume teinté Rosée, directement au stick. Il protège, il colore légèrement, il se remet sans miroir."
+            }
+        ],
+        "products": [
+            "rouge-allure-velvet",
+            "les-beiges-foundation",
+            "rouge-dior-satin",
+            "submariner-date-41"
+        ],
+        "palette": [
+            "#f4dcd0",
+            "#f1b4c4",
+            "#223a63",
+            "#bcdcf5"
+        ],
+        "art": "blush"
+    },
+    {
+        "slug": "cours-et-bibliotheque",
+        "title": "Cours & bibliothèque",
+        "occasion": "École, études, bureau",
+        "duration": "8 minutes",
+        "level": "Débutante",
+        "excerpt": "Discret mais soigné  : références les-beiges-foundation et nautilus-5711 chez Azurine.",
+        "intro": "Un maquillage qui tient de 8 h à 18 h, qui ne bouge pas sous les lunettes et qui reste sobre : les cernes sont corrigés, les sourcils peignés, les cils relevés. Rien ne brille, tout est net.",
+        "steps": [
+            {
+                "title": "Corriger les cernes",
+                "text": "Trois petits points de correcteur Éclat sous chaque œil, tapotés à l'annulaire jusqu'à disparition."
+            },
+            {
+                "title": "Structurer les sourcils",
+                "text": "Trait fin par petits traits dans le sens du poil, puis un coup de goupillon vers le haut pour estomper."
+            },
+            {
+                "title": "Un trait au ras des cils",
+                "text": "Plume en trait très fin, collé à la racine des cils du haut, sans aile. Il épaissit la frange de cils sans se voir."
+            },
+            {
+                "title": "Fixer",
+                "text": "Deux pulvérisations de Matin frais à 20 cm. Le maquillage ne bougera pas jusqu'au soir."
+            }
+        ],
+        "products": [
+            "les-beiges-foundation",
+            "rouge-dior-satin",
+            "forever-skin-glow",
+            "nautilus-5711"
+        ],
+        "palette": [
+            "#e5c2a6",
+            "#7a5a44",
+            "#15181f",
+            "#e6ebf1"
+        ],
+        "art": "eyeliner"
+    },
+    {
+        "slug": "soiree-nacree",
+        "title": "Soirée nacrée",
+        "occasion": "Sortie, anniversaire, concert",
+        "duration": "15 minutes",
+        "level": "Intermédiaire",
+        "excerpt": "Paupières rose doré et bleu brume, pommettes lumineuses, lèvres framboise. La montre Céleste attrape la lumière avec vous. : références rouge-dior-satin et royal-oak-15500 chez Azurine.",
+        "intro": "Le look pour une soirée où l'on veut être remarquée sans en faire trop. La palette Aube fait tout le travail sur les yeux ; l'enlumineur et le rouge Framboise donnent le reste. Comptez un quart d'heure la première fois, moins ensuite.",
+        "steps": [
+            {
+                "title": "Préparer la paupière",
+                "text": "Le mat clair de la palette Aube sur toute la paupière, au pinceau plat, pour unifier."
+            },
+            {
+                "title": "Creuser le pli",
+                "text": "Le rose mat au pinceau estompe dans le pli de la paupière, en petits cercles. Insister sur le coin externe."
+            },
+            {
+                "title": "Illuminer",
+                "text": "Le nacré rose doré au doigt sur la paupière mobile, et une touche de bleu brume au coin externe. Un trait de Plume et deux couches de mascara."
+            },
+            {
+                "title": "Pommettes et lèvres",
+                "text": "Lueur de lune (Champagne) au pinceau éventail sur le haut des pommettes. Pétale en Framboise, dessiné directement au raisin."
+            }
+        ],
+        "products": [
+            "rouge-dior-satin",
+            "forever-skin-glow",
+            "l-absolu-rouge",
+            "royal-oak-15500"
+        ],
+        "palette": [
+            "#f2b9cc",
+            "#bcdcf5",
+            "#f0d8b6",
+            "#c94a74"
+        ],
+        "art": "palette"
+    },
+    {
+        "slug": "ete-au-bord-du-lac",
+        "title": "Été au bord du lac",
+        "occasion": "Vacances, piscine, pique-nique",
+        "duration": "4 minutes",
+        "level": "Débutante",
+        "excerpt": "Presque rien, mais qui tient à l'eau  : références forever-skin-glow et santos-de-cartier chez Azurine.",
+        "intro": "L'été, on veut de la couleur sans matière. Ce look mise sur le vernis et le gloss, et sur une montre qui ne craint ni l'eau ni le soleil.",
+        "steps": [
+            {
+                "title": "Les ongles la veille",
+                "text": "Deux couches de Pastel Bleu ciel sur une base, puis un top coat. Sept jours de tranquillité."
+            },
+            {
+                "title": "Protéger",
+                "text": "Voile de soie SPF 20 seulement si l'on veut unifier ; sinon une crème solaire suffit."
+            },
+            {
+                "title": "Un regard rapide",
+                "text": "Mascara Ciel ouvert en une couche. Il tient à la baignade et s'enlève à l'eau tiède le soir."
+            },
+            {
+                "title": "Des lèvres fraîches",
+                "text": "Gloss Nuage en Pêche, à remettre après chaque glace."
+            }
+        ],
+        "products": [
+            "forever-skin-glow",
+            "l-absolu-rouge",
+            "luminous-silk-foundation",
+            "santos-de-cartier"
+        ],
+        "palette": [
+            "#bcdcf5",
+            "#f4c2a8",
+            "#5b86c7",
+            "#f6efe4"
+        ],
+        "art": "nailpolish"
+    },
+    {
+        "slug": "ceremonie-douce",
+        "title": "Cérémonie douce",
+        "occasion": "Mariage, baptême, remise de diplôme",
+        "duration": "20 minutes",
+        "level": "Intermédiaire",
+        "excerpt": "Un teint parfait mais naturel, des tons rosés, une bouche bois de rose et la montre Perle au poignet. Tient toute la journée, photos comprises. : références l-absolu-rouge et speedmaster-moonwatch chez Azurine.",
+        "intro": "Un look qui doit tenir du matin au soir et bien passer en photo : couvrance modulable, pas de nacres trop visibles, des couleurs qui s'accordent à presque toutes les tenues.",
+        "steps": [
+            {
+                "title": "Un teint qui dure",
+                "text": "Voile de soie à l'éponge humide, puis correcteur Éclat là où il faut. Fixer avec Matin frais avant de passer aux yeux."
+            },
+            {
+                "title": "Des yeux doux",
+                "text": "Les trois teintes pêche et rose de la palette Aube, estompées ensemble. Mascara en deux couches."
+            },
+            {
+                "title": "Joues et lumière",
+                "text": "Blush Pêche douce, puis une touche très légère de Lueur de lune (Rosé)."
+            },
+            {
+                "title": "La bouche",
+                "text": "Pétale en Bois de rose, tamponné une fois au mouchoir puis réappliqué : il tiendra jusqu'au gâteau."
+            }
+        ],
+        "products": [
+            "l-absolu-rouge",
+            "luminous-silk-foundation",
+            "rouge-pur-couture",
+            "speedmaster-moonwatch"
+        ],
+        "palette": [
+            "#f4dcd0",
+            "#f2b79d",
+            "#f4c6cf",
+            "#c98a8f"
+        ],
+        "art": "lipstick"
+    },
+    {
+        "slug": "cadeau-premiere-montre",
+        "title": "Première montre",
+        "occasion": "Idée cadeau",
+        "duration": "Pour offrir",
+        "level": "Toutes",
+        "excerpt": "Offrir une première « vraie » montre  : références luminous-silk-foundation et black-bay-58 chez Azurine.",
+        "intro": "Une première montre marque une étape : entrée au gymnase, premier salaire, majorité. On veut quelque chose de beau, de solide, et qui se porte vraiment. Voici comment nous conseillons de choisir.",
+        "steps": [
+            {
+                "title": "La taille du boîtier",
+                "text": "Pour un poignet fin (14 à 16 cm), 26 à 32 mm. Lune (32 mm) et Brume (26 mm) sont les valeurs sûres. Notre guide explique comment mesurer."
+            },
+            {
+                "title": "Le bracelet",
+                "text": "Le milanais réglable évite tout ajustement. Un coffret avec bracelets interchangeables, comme Étoile, laisse le choix du style."
+            },
+            {
+                "title": "Le niveau de prix",
+                "text": "Entre CHF 150 et 250, une montre à quartz fiable et garantie deux ans. Au-delà de CHF 400, une Swiss Made avec verre saphir comme Minuit, qui se garde toute la vie."
+            },
+            {
+                "title": "L'emballage",
+                "text": "Toutes nos montres arrivent dans un écrin. Ajoutez le papier cadeau et un message à la commande."
+            }
+        ],
+        "products": [
+            "luminous-silk-foundation",
+            "rouge-pur-couture",
+            "lip-power",
+            "black-bay-58"
+        ],
+        "palette": [
+            "#bcdcf5",
+            "#e6ebf1",
+            "#223a63",
+            "#f6dfe6"
+        ],
+        "art": "watch-round"
+    }
+]

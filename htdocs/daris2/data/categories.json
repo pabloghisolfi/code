@@ -1,0 +1,29 @@
+[
+    {
+        "slug": "maquillage",
+        "name": "Maquillage",
+        "title": "Grandes maisons de beauté, sélection Azurine",
+        "intro": "Chanel, Dior, Yves Saint Laurent, Lancôme, Armani Beauty et d'autres références de la haute beauté — prix suisses transparents, conseils de teintes sur place.",
+        "icon": "lipstick",
+        "accent": "pink",
+        "subcategories": [
+            {"slug": "teint", "name": "Teint"},
+            {"slug": "yeux", "name": "Yeux"},
+            {"slug": "levres", "name": "Lèvres"},
+            {"slug": "coffrets", "name": "Coffrets & éditions"}
+        ]
+    },
+    {
+        "slug": "montres",
+        "name": "Montres",
+        "title": "Horlogerie d'exception, sélection Azurine",
+        "intro": "Rolex, Patek Philippe, Audemars Piguet, Hublot, Omega, Cartier et maisons du même calibre — modèles choisis, prix en CHF, service suisse.",
+        "icon": "watch",
+        "accent": "blue",
+        "subcategories": [
+            {"slug": "classiques", "name": "Classiques"},
+            {"slug": "sport-chic", "name": "Sport chic"},
+            {"slug": "bijoux", "name": "Joaillerie & bijoux"}
+        ]
+    }
+]

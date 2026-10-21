@@ -34,7 +34,10 @@ await page.goto(`${BASE}/panier`, { waitUntil: 'networkidle2' });
 await page.screenshot({ path: `${OUT}/cart.png`, fullPage: true });
 
 await page.goto(`${BASE}/boutique`, { waitUntil: 'networkidle2' });
-await page.selectOption('#locale-select', 'de');
+await page.$eval('#locale-select', (el, value) => {
+  el.value = value;
+  el.form?.requestSubmit();
+}, 'de');
 await page.waitForNavigation({ waitUntil: 'networkidle2' });
 await page.screenshot({ path: `${OUT}/language-switcher.png`, fullPage: false });
 

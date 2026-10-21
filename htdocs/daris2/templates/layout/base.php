@@ -84,5 +84,6 @@ $noindex = (bool) ($meta['noindex'] ?? false);
 <?= $v->partial('layout/footer') ?>
 <?= $v->partial('partials/assistant-widget') ?>
 <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+<?= $v->partial('partials/photo-lightbox') ?>
 </body>
 </html>

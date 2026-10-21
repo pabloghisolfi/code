@@ -35,7 +35,7 @@ final class ProductController extends AbstractController
             'name' => $product->name(),
             'description' => $product->short(),
             'sku' => 'DA-' . str_pad((string) $product->id(), 4, '0', STR_PAD_LEFT),
-            'brand' => ['@type' => 'Brand', 'name' => 'Azurine'],
+            'brand' => ['@type' => 'Brand', 'name' => $product->brand()],
             'category' => $category?->name(),
             'offers' => [
                 '@type' => 'Offer',

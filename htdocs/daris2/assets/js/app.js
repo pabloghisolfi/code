@@ -378,6 +378,93 @@
     });
   });
 
+  /* Product photo lightbox (fichier local Azurine, pas de boutique marque) */
+  const lightboxRoot = qs('[data-photo-lightbox-root]');
+  const lightboxImg = qs('[data-photo-lightbox-img]', lightboxRoot || document);
+  const lightboxSvg = qs('[data-photo-lightbox-svg]', lightboxRoot || document);
+  let lightboxLastFocus = null;
+
+  function closePhotoLightbox() {
+    if (!lightboxRoot) return;
+    lightboxRoot.hidden = true;
+    document.documentElement.classList.remove('lightbox-open');
+    if (lightboxImg) {
+      lightboxImg.hidden = true;
+      lightboxImg.removeAttribute('src');
+    }
+    if (lightboxSvg) {
+      lightboxSvg.hidden = true;
+      lightboxSvg.innerHTML = '';
+    }
+    lightboxLastFocus?.focus?.();
+    lightboxLastFocus = null;
+  }
+
+  function openPhotoLightbox(trigger) {
+    if (!lightboxRoot) return;
+    const src = trigger.dataset.photoSrc || '';
+    const alt = trigger.dataset.photoAlt || '';
+    const svgKey = trigger.dataset.photoSvg || '';
+    lightboxLastFocus = trigger;
+
+    if (src) {
+      if (lightboxSvg) {
+        lightboxSvg.hidden = true;
+        lightboxSvg.innerHTML = '';
+      }
+      if (lightboxImg) {
+        lightboxImg.alt = alt;
+        lightboxImg.src = src;
+        lightboxImg.hidden = false;
+      }
+    } else if (svgKey === 'product-stage') {
+      const stage = qs('.product__stage');
+      const art = stage ? qs('.product__art, .product__stage svg', stage) : null;
+      if (lightboxImg) {
+        lightboxImg.hidden = true;
+        lightboxImg.removeAttribute('src');
+      }
+      if (lightboxSvg && art) {
+        lightboxSvg.innerHTML = '';
+        const clone = art.cloneNode(true);
+        clone.removeAttribute('id');
+        clone.classList.add('lightbox__art-clone');
+        lightboxSvg.appendChild(clone);
+        lightboxSvg.hidden = false;
+      }
+    }
+
+    lightboxRoot.hidden = false;
+    document.documentElement.classList.add('lightbox-open');
+    qs('[data-photo-lightbox-close]', lightboxRoot)?.focus();
+  }
+
+  qsa('[data-photo-lightbox]').forEach((el) => {
+    el.addEventListener('click', (e) => {
+      if (el.tagName === 'BUTTON' || el.classList.contains('product__stage--zoom')) {
+        e.preventDefault();
+        openPhotoLightbox(el);
+      }
+    });
+    if (el.classList.contains('product__stage--zoom')) {
+      el.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openPhotoLightbox(el);
+        }
+      });
+    }
+  });
+
+  qsa('[data-photo-lightbox-close]', lightboxRoot || document).forEach((el) => {
+    el.addEventListener('click', () => closePhotoLightbox());
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && lightboxRoot && !lightboxRoot.hidden) {
+      closePhotoLightbox();
+    }
+  });
+
   /* Panneau conseillère (toutes les pages) */
   const assistantPanel = qs('[data-assistant-panel]');
   qsa('[data-assistant-toggle]').forEach((btn) => {

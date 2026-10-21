@@ -797,6 +797,23 @@ svg use { pointer-events: none; }
   justify-content: center;
   overflow: hidden;
 }
+.product__stage--zoom {
+  cursor: zoom-in;
+}
+.product__stage--zoom:focus-visible {
+  outline: 2px solid var(--pink-500);
+  outline-offset: 3px;
+}
+.product__photo-actions {
+  margin: 0.65rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.product__view-photo svg {
+  width: 1rem;
+  height: 1rem;
+}
 .product__art { width: 85%; height: 85%; }
 .product__stage-variant {
   position: absolute;
@@ -1431,6 +1448,83 @@ details.promo summary { cursor: pointer; font-weight: 600; color: var(--blue-800
   line-height: 1.45;
 }
 .photo-credit a { font-weight: 600; }
+
+html.lightbox-open { overflow: hidden; }
+.lightbox[hidden] { display: none !important; }
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+}
+.lightbox__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(12, 28, 48, 0.72);
+  backdrop-filter: blur(4px);
+}
+.lightbox__dialog {
+  position: relative;
+  z-index: 1;
+  width: min(92vw, 56rem);
+  max-height: min(88vh, 56rem);
+  background: var(--surface);
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  padding: 1rem 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+.lightbox__close {
+  position: absolute;
+  top: 0.65rem;
+  right: 0.65rem;
+  z-index: 2;
+  border: 0;
+  background: var(--blue-50);
+  color: var(--blue-800);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.lightbox__close svg { width: 1.1rem; height: 1.1rem; }
+.lightbox__figure {
+  margin: 0;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0.5rem 0.25rem;
+}
+.lightbox__img {
+  max-width: 100%;
+  max-height: min(78vh, 48rem);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+  background: var(--blue-50);
+}
+.lightbox__svg {
+  width: min(100%, 28rem);
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lightbox__svg .lightbox__art-clone {
+  width: 100%;
+  height: 100%;
+}
 
 .product__disclaimer {
   font-size: 0.82rem; color: var(--ink-muted); padding: 0.65rem 0.85rem;

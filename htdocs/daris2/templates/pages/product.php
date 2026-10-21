@@ -14,6 +14,8 @@ use Daris\View\ProductArt;
 $variants = $product->variants();
 $first = $variants[0] ?? null;
 $subName = $category?->subcategoryName($product->subcategory()) ?? '';
+$photoAlt = $product->brand() . ' — ' . $product->name();
+$photoSrc = $product->hasPhoto() ? $v->asset((string) $product->photo()['file']) : '';
 ?>
 <section class="product">
     <div class="wrap">
@@ -29,7 +31,15 @@ $subName = $category?->subcategoryName($product->subcategory()) ?? '';
 
         <div class="product__layout">
             <div class="product__gallery" data-gallery>
-                <div class="product__stage">
+                <div
+                    class="product__stage product__stage--zoom"
+                    data-photo-lightbox
+                    data-photo-alt="<?= $v->e($photoAlt) ?>"
+                    <?php if ($photoSrc !== '') : ?>data-photo-src="<?= $photoSrc ?>"<?php else : ?>data-photo-svg="product-stage"<?php endif; ?>
+                    role="button"
+                    tabindex="0"
+                    aria-label="Voir la photo en grand"
+                >
                     <?= $v->partial('partials/product-media', ['product' => $product, 'class' => 'product__art']) ?>
                     <?php if ($product->badge() !== null) : ?>
                     <span class="badge badge--<?= $v->e((string) $product->badge()) ?>"><?= $v->e($product->badgeLabel()) ?><?= $product->discountPercent() > 0 ? ' −' . $product->discountPercent() . ' %' : '' ?></span>
@@ -38,6 +48,18 @@ $subName = $category?->subcategoryName($product->subcategory()) ?? '';
                     <span class="product__stage-variant" data-variant-name><?= $v->e($first->name()) ?></span>
                     <?php endif; ?>
                 </div>
+                <p class="product__photo-actions">
+                    <button
+                        type="button"
+                        class="btn btn--soft btn--sm product__view-photo"
+                        data-photo-lightbox
+                        data-photo-alt="<?= $v->e($photoAlt) ?>"
+                        <?php if ($photoSrc !== '') : ?>data-photo-src="<?= $photoSrc ?>"<?php else : ?>data-photo-svg="product-stage"<?php endif; ?>
+                    >
+                        <svg aria-hidden="true"><use href="#i-zoom"/></svg>
+                        Voir la photo
+                    </button>
+                </p>
                 <ul class="product__highlights">
                     <?php foreach (array_slice($product->tags(), 0, 3) as $tag) : ?>
                     <li><svg aria-hidden="true"><use href="#i-check"/></svg><?= $v->e($tag) ?></li>

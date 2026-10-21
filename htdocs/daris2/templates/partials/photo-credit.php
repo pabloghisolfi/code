@@ -14,5 +14,5 @@ $photo = $product->photo();
     Photo : <?= $v->e((string) $photo['author']) ?> —
     <a href="<?= $v->e((string) $photo['source']) ?>" rel="noopener noreferrer" target="_blank">Wikimedia Commons</a> —
     <?= $v->e((string) $photo['license']) ?>.
-    Visuel illustratif ; le modèle Azurine peut différer.
+    Visuel illustratif ; le modèle Azurine peut différer. Utilisez « Voir la photo » pour agrandir l’image hébergée ici — pas de redirection vers une boutique de marque.
 </p>

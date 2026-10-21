@@ -1,5 +1,3 @@
-.env
-vendor/
-var/*
-!var/.gitkeep
-!var/.htaccess
+/node_modules/
+/package-lock.json
+/.env

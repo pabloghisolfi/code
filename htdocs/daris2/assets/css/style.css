@@ -44,6 +44,7 @@ a { color: var(--blue-600); text-decoration-thickness: 1px; text-underline-offse
 a:hover { color: var(--blue-800); }
 :focus-visible { outline: 2px solid var(--blue-400); outline-offset: 3px; }
 [hidden] { display: none !important; }
+html.drawer-open { overflow: hidden; }
 
 .sr-only {
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
@@ -289,11 +290,28 @@ a:hover { color: var(--blue-800); }
 
 /* Look card */
 .look-card {
-  display: block; text-decoration: none; color: inherit; border-radius: var(--radius);
+  display: flex; flex-direction: column; text-decoration: none; color: inherit; border-radius: var(--radius);
   overflow: hidden; background: var(--surface); border: 1px solid var(--line);
-  transition: transform 0.25s var(--ease), box-shadow 0.25s;
+  transition: transform 0.25s var(--ease), box-shadow 0.25s; height: 100%;
 }
 .look-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-sm); }
+.look-card__media {
+  position: relative; aspect-ratio: 4/3;
+  background: linear-gradient(145deg, var(--pink-50), var(--blue-50));
+}
+.look-card__art { width: 100%; height: 100%; }
+.look-card__palette {
+  position: absolute; bottom: 0.65rem; right: 0.65rem; display: flex; gap: 0.2rem;
+  background: rgba(255,255,255,0.9); padding: 0.3rem 0.45rem; border-radius: 999px;
+}
+.look-card__palette svg { width: 0.65rem; height: 0.65rem; }
+.look-card__body { padding: 1rem 1.1rem 1.25rem; flex: 1; display: flex; flex-direction: column; }
+.look-card__body h3 { font-family: var(--font-display); margin: 0 0 0.35rem; color: var(--blue-800); }
+.look-card__body p { font-size: 0.9rem; color: var(--ink-muted); margin: 0 0 0.75rem; flex: 1; }
+
+/* Inline SVG icons (sprite) */
+svg use { pointer-events: none; }
+.header svg, .footer svg, .btn svg, .search__btn svg { fill: currentColor; }
 
 /* Page head */
 .page-head {
@@ -546,6 +564,10 @@ a:hover { color: var(--blue-800); }
 /* Error page */
 .error-page { text-align: center; padding: 4rem 1rem; }
 .error-page .h1 { font-size: 4rem; margin-bottom: 0.5rem; }
+.error-code { font-family: var(--font-display); font-size: 4rem; color: var(--blue-300); margin: 0 0 0.5rem; line-height: 1; }
+.wrap.narrow { max-width: 36rem; }
+.wrap.center { text-align: center; }
+.debug { margin-top: 1.5rem; padding: 1rem; background: var(--blue-50); border-radius: var(--radius-sm); font-size: 0.75rem; overflow-x: auto; text-align: left; }
 
 /* Responsive */
 @media (max-width: 1024px) {

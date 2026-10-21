@@ -24,8 +24,8 @@ final class Schema
             totals_json TEXT NOT NULL,
             payment_method TEXT NOT NULL,
             payment_reference TEXT,
-            status TEXT NOT NULL DEFAULT "confirmee",
-            created_at TEXT NOT NULL DEFAULT (datetime("now"))
+            status TEXT NOT NULL DEFAULT \'confirmee\',
+            created_at TEXT NOT NULL DEFAULT (datetime(\'now\'))
         )',
         'CREATE INDEX IF NOT EXISTS idx_orders_email ON orders (email)',
         'CREATE TABLE IF NOT EXISTS contact_messages (
@@ -36,12 +36,12 @@ final class Schema
             order_reference TEXT,
             message TEXT NOT NULL,
             ip_hash TEXT NOT NULL,
-            created_at TEXT NOT NULL DEFAULT (datetime("now"))
+            created_at TEXT NOT NULL DEFAULT (datetime(\'now\'))
         )',
         'CREATE TABLE IF NOT EXISTS newsletter (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             email TEXT NOT NULL UNIQUE,
-            created_at TEXT NOT NULL DEFAULT (datetime("now"))
+            created_at TEXT NOT NULL DEFAULT (datetime(\'now\'))
         )',
     ];
 

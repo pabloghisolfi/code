@@ -1,0 +1,33 @@
+[
+    {
+        "slug": "maquillage",
+        "name": "Maquillage",
+        "title": "Maquillage doux, teintes pastel et formules soignées",
+        "intro": "Teint lumineux, regard délicat, lèvres satinées : des formules confortables, testées dermatologiquement, dans des teintes pensées pour la vie de tous les jours comme pour les soirées.",
+        "icon": "lipstick",
+        "accent": "pink",
+        "subcategories": [
+            {"slug": "teint", "name": "Teint"},
+            {"slug": "yeux", "name": "Yeux"},
+            {"slug": "levres", "name": "Lèvres"},
+            {"slug": "ongles", "name": "Ongles"},
+            {"slug": "accessoires", "name": "Pinceaux & trousses"},
+            {"slug": "coffrets", "name": "Coffrets"}
+        ]
+    },
+    {
+        "slug": "montres",
+        "name": "Montres",
+        "title": "Montres fines et élégantes, du quotidien aux grandes occasions",
+        "intro": "Boîtiers fins, cadrans nacrés ou bleu ciel, bracelets interchangeables : des montres à quartz fiables, garanties deux ans, livrées dans leur écrin.",
+        "icon": "watch",
+        "accent": "blue",
+        "subcategories": [
+            {"slug": "classiques", "name": "Classiques"},
+            {"slug": "bijoux", "name": "Bijoux"},
+            {"slug": "sport-chic", "name": "Sport chic"},
+            {"slug": "coffrets", "name": "Coffrets"},
+            {"slug": "accessoires", "name": "Bracelets & écrins"}
+        ]
+    }
+]

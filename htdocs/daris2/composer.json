@@ -1,0 +1,26 @@
+{
+    "name": "daris/boutique",
+    "description": "Daris – boutique en ligne de maquillage et de montres (PHP 8.1+, sans framework).",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.1",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-pdo": "*",
+        "ext-pdo_sqlite": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Daris\\": "src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "scripts": {
+        "lint": "find src config templates index.php router.php -name '*.php' -print0 | xargs -0 -n1 php -l",
+        "serve": "php -S localhost:8080 -t .. router.php"
+    }
+}

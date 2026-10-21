@@ -1,0 +1,82 @@
+{
+    "greeting": "Bonjour ! Je suis Léa, la conseillère de Daris. Posez-moi une question sur une teinte, une taille de montre, la livraison ou un cadeau : je réponds tout de suite.",
+    "fallback": "Je n'ai pas encore la réponse à cette question. Essayez avec d'autres mots (teinte, taille, livraison, retour, cadeau), ou écrivez-nous depuis la page Contact : une vraie personne vous répond sous 24 heures ouvrées.",
+    "suggestions": ["Quelle teinte de fond de teint ?", "Quelle taille de montre pour un poignet fin ?", "Délais de livraison", "Idée cadeau à moins de CHF 100", "Comment retourner un article ?"],
+    "intents": [
+        {
+            "keywords": ["bonjour", "salut", "hello", "coucou", "bonsoir"],
+            "answer": "Bonjour ! Dites-moi ce que vous cherchez : un produit précis, un conseil de teinte, une taille de montre ou une idée cadeau.",
+            "links": []
+        },
+        {
+            "keywords": ["fond de teint", "teinte", "carnation", "sous-ton", "sous ton", "rose ou dore", "couleur de peau"],
+            "answer": "Pour trouver votre teinte de fond de teint Voile de soie : 1) regardez les veines de votre poignet, bleutées = sous-ton rosé (teintes R), verdâtres = sous-ton doré (teintes D) ; 2) choisissez la clarté, de 1 (très claire) à 8 (profonde). En cas d'hésitation, prenez la plus claire des deux : l'échange de teinte est gratuit, même flacon ouvert.",
+            "links": [{"label": "Voir le fond de teint Voile de soie", "path": "/produit/fond-de-teint-voile-de-soie"}, {"label": "Le test du sous-ton dans le guide", "path": "/guide#sous-ton"}]
+        },
+        {
+            "keywords": ["taille", "poignet", "mm", "diametre", "boitier", "trop grande", "trop grosse", "fin"],
+            "answer": "Pour un poignet fin (14 à 16 cm), un boîtier de 24 à 32 mm est le plus harmonieux : Pétale mini (24 mm), Brume (26 mm), Aurore (28 mm) ou Lune (32 mm). De 16 à 18 cm, 32 à 38 mm : Lune, Céleste (34 mm), Minuit et Solaire (36 mm), Horizon (38 mm). Le guide contient un calculateur à partir de votre tour de poignet.",
+            "links": [{"label": "Calculateur de taille", "path": "/guide#taille-montre"}, {"label": "Toutes les montres", "path": "/boutique/montres"}]
+        },
+        {
+            "keywords": ["livraison", "delai", "expedition", "colis", "recevoir", "combien de temps", "poste"],
+            "answer": "Nous expédions depuis Lausanne le jour même pour toute commande passée avant 14 h. PostPac Economy (CHF 7.00) arrive en 2 à 3 jours ouvrés, PostPac Priority (CHF 9.00) le lendemain ouvré. La livraison Economy est offerte dès CHF 80.00. Suisse et Liechtenstein uniquement pour l'instant.",
+            "links": [{"label": "Prix et livraison", "path": "/tarifs#livraison"}]
+        },
+        {
+            "keywords": ["retour", "rembours", "echange", "changer d'avis", "renvoyer"],
+            "answer": "Vous avez 30 jours pour retourner un article : maquillage non ouvert, montre non portée dans son écrin. L'étiquette de retour est gratuite et le remboursement part sous 5 jours. Cas particulier : l'échange de teinte de fond de teint est gratuit même ouvert, une fois par commande.",
+            "links": [{"label": "Retours et garantie", "path": "/tarifs#retours"}, {"label": "Suivre ma commande", "path": "/commande/suivi"}]
+        },
+        {
+            "keywords": ["cadeau", "offrir", "anniversaire", "noel", "coffret", "surprise"],
+            "answer": "Nos idées cadeau les plus appréciées : à moins de CHF 50, le rouge Pétale (CHF 29.00) ou le vernis Pastel en trio ; à moins de CHF 100, le coffret Premiers pas (CHF 69.00) ; pour une montre, Lune (CHF 189.00) ou le coffret Étoile avec trois bracelets (CHF 279.00). Toutes les commandes peuvent être emballées avec un message (CHF 4.90).",
+            "links": [{"label": "Coffret Premiers pas", "path": "/produit/coffret-premiers-pas"}, {"label": "Coffret Étoile", "path": "/produit/coffret-etoile"}, {"label": "Nos inspirations cadeau", "path": "/inspirations/cadeau-premiere-montre"}]
+        },
+        {
+            "keywords": ["moins de", "budget", "pas cher", "prix", "combien coute", "tarif"],
+            "answer": "Le maquillage va de CHF 14.00 (vernis Pastel) à CHF 69.00 (coffret). Les montres commencent à CHF 149.00 (Perle) et montent jusqu'à CHF 449.00 (Minuit Swiss Made). Tout est TVA incluse, sans frais cachés. La page Prix récapitule tout, livraison comprise.",
+            "links": [{"label": "Voir tous les prix", "path": "/tarifs"}]
+        },
+        {
+            "keywords": ["mascara", "cils", "paquets", "coule", "lentilles"],
+            "answer": "Le mascara Ciel ouvert (CHF 26.00) sépare et recourbe sans paquets, tient toute la journée et s'enlève à l'eau tiède : il est testé ophtalmologiquement et convient aux lentilles. Une couche pour la journée, deux pour le soir.",
+            "links": [{"label": "Mascara Ciel ouvert", "path": "/produit/mascara-ciel-ouvert"}]
+        },
+        {
+            "keywords": ["rouge a levres", "levres", "gloss", "baume", "bouche"],
+            "answer": "Trois options selon l'effet voulu : le baume teinté Rosée (CHF 16.00) pour un effet mordu et du soin, le gloss Nuage (CHF 22.00) pour la brillance, le rouge Pétale (CHF 29.00) pour une vraie couleur satinée qui tient 6 heures. Rose thé est la teinte la plus universelle.",
+            "links": [{"label": "Tout pour les lèvres", "path": "/boutique/maquillage?sous=levres"}]
+        },
+        {
+            "keywords": ["etanche", "eau", "douche", "piscine", "atm", "nager"],
+            "answer": "3 ATM (Aurore, Brume, Céleste, Pétale mini) : éclaboussures et pluie, mais pas la douche. 5 ATM (Lune, Minuit) : douche et baignade sans plongeon. 10 ATM (Solaire, Horizon) : natation. La Perle n'est pas étanche. Ne manipulez jamais la couronne sous l'eau.",
+            "links": [{"label": "Entretenir sa montre", "path": "/guide#entretien"}]
+        },
+        {
+            "keywords": ["pile", "arretee", "ne marche plus", "garantie", "reparation", "bracelet casse"],
+            "answer": "Toutes les montres sont garanties 2 ans (3 ans pour Minuit). Si votre montre s'arrête, c'est en général la pile : changement gratuit sous garantie, CHF 20.00 ensuite, test d'étanchéité compris. Les bracelets se remplacent facilement : nous en vendons de rechange dès CHF 39.00.",
+            "links": [{"label": "Services atelier", "path": "/tarifs#services"}]
+        },
+        {
+            "keywords": ["vegan", "animaux", "cruelty", "ingredients", "naturel", "allergie", "sensible"],
+            "answer": "Aucun produit ni ingrédient Daris n'est testé sur les animaux. La plupart des références sont vegan (c'est indiqué sur la fiche). Les formules sont sans paraben et sans huile minérale ; pour les yeux sensibles, le mascara Ciel ouvert et l'eyeliner Plume sont testés ophtalmologiquement.",
+            "links": [{"label": "Notre démarche", "path": "/a-propos"}]
+        },
+        {
+            "keywords": ["paiement", "payer", "twint", "carte", "facture", "securise"],
+            "answer": "Vous pouvez payer par facture à 30 jours (QR-facture), TWINT ou carte de crédit. Les paiements sont chiffrés et nous ne stockons jamais vos données de carte.",
+            "links": [{"label": "Questions fréquentes", "path": "/conseillere#faq"}]
+        },
+        {
+            "keywords": ["contact", "telephone", "humain", "personne", "parler", "email", "e-mail"],
+            "answer": "Pour parler à une personne de l'équipe : la page Contact (réponse sous 24 heures ouvrées) ou par téléphone du lundi au vendredi de 9 h à 17 h.",
+            "links": [{"label": "Nous écrire", "path": "/contact"}]
+        },
+        {
+            "keywords": ["merci", "super", "parfait", "top", "genial"],
+            "answer": "Avec plaisir ! N'hésitez pas si vous avez une autre question. Belle journée !",
+            "links": []
+        }
+    ]
+}

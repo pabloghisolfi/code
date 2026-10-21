@@ -37,18 +37,36 @@ final class CartController extends AbstractController
     {
         $this->assertCsrf();
         $request = $this->services->request();
-        $product = $this->services->catalog()->byId($request->inputInt('product_id', 0, 0, 100000));
+        $json = $request->json();
+        $productId = $request->inputInt('product_id', 0, 0, 100000);
+        if ($productId <= 0 && is_numeric($json['product_id'] ?? null)) {
+            $productId = (int) $json['product_id'];
+        }
+        $product = $this->services->catalog()->byId($productId);
 
         if ($product === null || !$product->isInStock()) {
             return $this->respond(false, 'Ce produit n\'est pas disponible.', '/boutique');
         }
 
         $variantId = $request->input('variant', '', 60);
+        if ($variantId === '' && is_string($json['variant'] ?? null)) {
+            $variantId = $json['variant'];
+        }
+        if ($product->hasVariants() && $variantId === '') {
+            $variantId = $product->variants()[0]->id();
+        }
         if ($product->hasVariants() && $product->variant($variantId) === null) {
             return $this->respond(false, 'Choisissez une ' . mb_strtolower($product->variantLabel()) . ' avant d\'ajouter au panier.', '/produit/' . $product->slug());
         }
 
-        $quantity = $request->inputInt('quantity', 1, 1, CartItem::MAX_QUANTITY);
+        $quantity = $request->inputInt('quantity', 0, 0, CartItem::MAX_QUANTITY);
+        if ($quantity < 1 && is_numeric($json['quantity'] ?? null)) {
+            $quantity = (int) $json['quantity'];
+        }
+        if ($quantity < 1) {
+            $quantity = 1;
+        }
+        $quantity = min(CartItem::MAX_QUANTITY, $quantity);
         $item = $this->services->cart()->add($product, $product->hasVariants() ? $variantId : null, $quantity);
 
         return $this->respond(true, $item->label() . ' a rejoint votre panier.', '/panier');

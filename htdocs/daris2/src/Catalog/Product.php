@@ -24,6 +24,7 @@ final class Product
     public function __construct(
         private readonly int $id,
         private readonly string $slug,
+        private readonly string $brand,
         private readonly string $name,
         private readonly string $category,
         private readonly string $subcategory,
@@ -73,6 +74,7 @@ final class Product
         return new self(
             (int) ($data['id'] ?? 0),
             (string) ($data['slug'] ?? ''),
+            (string) ($data['brand'] ?? 'Azurine'),
             (string) ($data['name'] ?? ''),
             (string) ($data['category'] ?? ''),
             (string) ($data['subcategory'] ?? ''),
@@ -105,6 +107,11 @@ final class Product
     public function slug(): string
     {
         return $this->slug;
+    }
+
+    public function brand(): string
+    {
+        return $this->brand;
     }
 
     public function name(): string

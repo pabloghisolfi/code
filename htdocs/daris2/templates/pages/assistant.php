@@ -11,7 +11,7 @@
 <section class="section section--flush">
     <div class="wrap assistant">
         <div class="chat" data-chat>
-            <div class="chat__log" id="chat-log" aria-live="polite" aria-relevant="additions">
+            <div class="chat__log" data-chat-log aria-live="polite" aria-relevant="additions">
                 <div class="chat__msg chat__msg--bot">
                     <p><?= $v->e($greeting) ?></p>
                 </div>

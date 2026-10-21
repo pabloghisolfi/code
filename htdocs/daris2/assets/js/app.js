@@ -323,13 +323,8 @@
     }
   });
 
-  /* Style advisor chat */
-  const chat = qs('[data-chat]');
-  const chatLog = qs('#chat-log');
-  const chatForm = qs('[data-chat-form]');
-  const chatInput = qs('#chat-q', chatForm || document);
-
-  function appendMsg(text, who) {
+  /* Style advisor chat (page + panneau global) */
+  function appendMsg(chatLog, text, who) {
     if (!chatLog) return;
     const div = document.createElement('div');
     div.className = 'chat__msg chat__msg--' + who;
@@ -340,36 +335,62 @@
 
   qsa('[data-chat-suggest]').forEach((btn) => {
     btn.addEventListener('click', () => {
-      if (chatInput) {
-        chatInput.value = btn.textContent.trim();
-        chatForm?.requestSubmit();
+      const host = btn.closest('[data-assistant]') || btn.closest('[data-chat]');
+      const form = host ? qs('[data-chat-form]', host) : qs('[data-chat-form]');
+      const input = form ? qs('input[name="question"]', form) : null;
+      if (input && form) {
+        input.value = btn.textContent.trim();
+        form.requestSubmit();
       }
     });
   });
 
-  chatForm?.addEventListener('submit', async (e) => {
-    if (!window.fetch) return;
-    e.preventDefault();
-    const question = (chatInput?.value || '').trim();
-    if (!question) return;
-    appendMsg(question, 'user');
-    if (chatInput) chatInput.value = '';
-    try {
-      const json = await postJson(chatForm.action, { question });
-      if (json.ok) {
-        appendMsg(json.answer, 'bot');
-        if (json.links?.length) {
-          const links = json.links.map((l) => '<a href="' + l.url + '">' + l.label + '</a>').join(' · ');
-          const div = document.createElement('div');
-          div.className = 'chat__msg chat__msg--bot';
-          div.innerHTML = links;
-          chatLog?.appendChild(div);
+  qsa('[data-chat-form]').forEach((chatForm) => {
+    const host = chatForm.closest('[data-assistant]') || chatForm.closest('[data-chat]');
+    const chatLog = host ? qs('[data-chat-log]', host) : qs('[data-chat-log]');
+    const chatInput = qs('input[name="question"]', chatForm);
+
+    chatForm.addEventListener('submit', async (e) => {
+      if (!window.fetch) return;
+      e.preventDefault();
+      const question = (chatInput?.value || '').trim();
+      if (!question) return;
+      appendMsg(chatLog, question, 'user');
+      if (chatInput) chatInput.value = '';
+      try {
+        const json = await postJson(chatForm.action, { question });
+        if (json.ok) {
+          appendMsg(chatLog, json.answer, 'bot');
+          if (json.links?.length) {
+            const links = json.links.map((l) => '<a href="' + l.url + '">' + l.label + '</a>').join(' · ');
+            const div = document.createElement('div');
+            div.className = 'chat__msg chat__msg--bot';
+            div.innerHTML = links;
+            chatLog?.appendChild(div);
+            if (chatLog) chatLog.scrollTop = chatLog.scrollHeight;
+          }
+        } else {
+          appendMsg(chatLog, json.error || 'Une erreur est survenue.', 'bot');
         }
-      } else {
-        appendMsg(json.error || 'Une erreur est survenue.', 'bot');
+      } catch {
+        appendMsg(chatLog, 'Connexion impossible. Réessayez dans un instant.', 'bot');
       }
-    } catch {
-      appendMsg('Connexion impossible. Réessayez dans un instant.', 'bot');
-    }
+    });
+  });
+
+  /* Panneau conseillère (toutes les pages) */
+  const assistantPanel = qs('[data-assistant-panel]');
+  qsa('[data-assistant-toggle]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      if (!assistantPanel) return;
+      const open = assistantPanel.hidden;
+      assistantPanel.hidden = !open;
+      assistantPanel.classList.toggle('is-open', open);
+      qsa('[data-assistant-toggle]').forEach((b) => b.setAttribute('aria-expanded', open ? 'true' : 'false'));
+      if (open) {
+        const input = qs('[data-assistant-panel] input[name="question"]');
+        input?.focus();
+      }
+    });
   });
 })();

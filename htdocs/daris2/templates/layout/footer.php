@@ -22,7 +22,7 @@ require __DIR__ . '/../partials/app-fallback.php';
         <div class="footer__grid">
             <div class="footer__brand">
                 <?= $v->partial('partials/logo', ['variant' => 'footer']) ?>
-                <p>Du maquillage doux et des montres élégantes, choisis pour les filles et les jeunes femmes qui aiment les jolies choses bien faites. Prix justes en francs suisses, tout compris.</p>
+                <p>Sélection multimarque de haute beauté et d'horlogerie d'exception, vendue par Azurine en francs suisses. Boutique indépendante — les marques citées appartiennent à leurs propriétaires.</p>
                 <ul class="footer__contact">
                     <li><svg aria-hidden="true"><use href="#i-pin"/></svg><?= $v->e((string) $app['address']) ?></li>
                     <li><svg aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:<?= $v->e((string) $app['email']) ?>"><?= $v->e((string) $app['email']) ?></a></li>

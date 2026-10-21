@@ -1301,8 +1301,131 @@ details.promo summary { cursor: pointer; font-weight: 600; color: var(--blue-800
 /* Toast placeholder */
 .toast { display: none; }
 
+/* —— Multimarque luxe & conseillère —— */
+.btn--rose {
+  background: linear-gradient(135deg, var(--pink-400), var(--pink-500));
+  color: #fff;
+  border-color: transparent;
+  box-shadow: var(--shadow-sm);
+}
+.btn--rose:hover { color: #fff; transform: translateY(-1px); }
+
+.maison-hero {
+  padding: 3.5rem 0 2.5rem;
+  background: linear-gradient(125deg, var(--blue-100) 0%, var(--surface) 45%, var(--pink-100) 100%);
+  border-bottom: 1px solid var(--line);
+}
+.maison-hero__grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+.maison-hero__title { font-size: clamp(3rem, 6vw, 4.75rem); margin-bottom: 1rem; }
+.maison-hero__stats {
+  display: flex; flex-wrap: wrap; gap: 1.25rem; list-style: none; padding: 0; margin: 1.5rem 0 0;
+  font-size: 0.92rem; color: var(--ink-muted);
+}
+.maison-hero__stats strong { display: block; font-size: 1.35rem; color: var(--blue-800); font-family: var(--font-display); }
+.maison-hero__nav {
+  display: flex; flex-wrap: wrap; gap: 0.65rem 1rem; margin-top: 1.25rem; font-size: 0.88rem;
+}
+.maison-hero__nav a { text-decoration: none; font-weight: 600; color: var(--blue-600); }
+.maison-hero__showcase {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
+}
+.maison-tile {
+  position: relative; display: block; border-radius: var(--radius);
+  overflow: hidden; text-decoration: none; color: inherit;
+  background: var(--surface); box-shadow: var(--shadow);
+  border: 1px solid rgba(30, 77, 120, 0.12);
+  transition: transform 0.25s var(--ease);
+}
+.maison-tile:hover { transform: translateY(-4px); }
+.maison-tile--watch { grid-row: span 2; }
+.maison-tile__art { aspect-ratio: 1; }
+.maison-tile__meta {
+  display: flex; flex-direction: column; gap: 0.15rem; padding: 0.85rem 1rem 1rem;
+  background: linear-gradient(180deg, transparent, rgba(255,255,255,.95));
+}
+.maison-tile__brand { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--pink-500); font-weight: 700; }
+.maison-tile__name { font-weight: 600; color: var(--ink); font-size: 0.95rem; }
+.maison-tile__price { font-family: var(--font-display); font-size: 1.5rem; color: var(--blue-800); }
+
+.brand-rail {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1.25rem;
+  padding: 1rem 1.25rem; border-radius: var(--radius); margin-bottom: 1rem;
+  border: 1px solid var(--line);
+}
+.brand-rail--blue { background: var(--blue-50); }
+.brand-rail--pink { background: var(--pink-50); }
+.brand-rail__label {
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--blue-800); margin: 0;
+}
+.brand-rail__list {
+  display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; list-style: none; padding: 0; margin: 0;
+}
+.brand-rail__list a {
+  text-decoration: none; font-weight: 600; font-size: 0.92rem; color: var(--ink);
+  border-bottom: 1px solid transparent;
+}
+.brand-rail__list a:hover { border-color: var(--pink-400); color: var(--blue-800); }
+
+.home-cats--lux .home-cat { border: 1px solid rgba(30, 77, 120, 0.14); box-shadow: var(--shadow-sm); }
+.grid--lux .card { border: 1px solid rgba(30, 77, 120, 0.1); }
+.card__brand { letter-spacing: 0.08em; text-transform: uppercase; font-size: 0.72rem; font-weight: 700; color: var(--pink-500); }
+.product__brand { font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+.product__disclaimer {
+  font-size: 0.82rem; color: var(--ink-muted); padding: 0.65rem 0.85rem;
+  background: var(--pink-50); border-left: 3px solid var(--pink-400); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin: 0 0 1rem;
+}
+.cta-band--lux { background: linear-gradient(120deg, var(--blue-800), #2d6fa8 55%, var(--pink-500)); }
+
+/* Conseillère rose clair (toutes les pages) */
+.az-assistant { position: fixed; right: 1rem; bottom: 1rem; z-index: 400; }
+.az-assistant__fab {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.65rem 1rem 0.65rem 0.85rem; border-radius: 999px; border: none; cursor: pointer;
+  background: linear-gradient(135deg, #fce8f0, #f5d0e0);
+  color: var(--pink-500); font-weight: 700; box-shadow: 0 12px 36px rgba(196, 86, 133, 0.35);
+}
+.az-assistant__fab-label { font-size: 0.88rem; }
+.az-assistant__panel {
+  position: absolute; right: 0; bottom: calc(100% + 0.65rem); width: min(22rem, calc(100vw - 2rem));
+  max-height: min(28rem, 70vh); display: flex; flex-direction: column;
+  background: linear-gradient(180deg, #fff5f9, #fce8f0);
+  border: 1px solid var(--pink-200); border-radius: var(--radius);
+  box-shadow: 0 20px 50px rgba(196, 86, 133, 0.25);
+  padding: 1rem;
+}
+.az-assistant__panel.is-open { animation: az-slide 0.25s var(--ease); }
+@keyframes az-slide { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+.az-assistant__head { display: flex; justify-content: space-between; align-items: flex-start; gap: 0.5rem; }
+.az-assistant__kicker { margin: 0; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--pink-500); font-weight: 700; }
+.az-assistant__title { margin: 0; font-family: var(--font-display); font-size: 1.85rem; color: var(--blue-800); line-height: 1.1; }
+.az-assistant__close {
+  border: none; background: var(--surface); border-radius: 50%; width: 2rem; height: 2rem; cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center; color: var(--ink-muted);
+}
+.az-assistant__intro { font-size: 0.82rem; color: var(--ink-muted); margin: 0.5rem 0; }
+.az-assistant__log {
+  flex: 1; overflow-y: auto; min-height: 6rem; max-height: 11rem;
+  padding: 0.5rem; background: rgba(255,255,255,.65); border-radius: var(--radius-sm);
+  border: 1px solid var(--pink-200); margin-bottom: 0.5rem;
+}
+.az-assistant__suggest { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.5rem; }
+.az-assistant__form { display: flex; gap: 0.35rem; }
+.az-assistant__form input {
+  flex: 1; min-width: 0; padding: 0.5rem 0.65rem; border-radius: 999px; border: 1px solid var(--pink-200);
+  font: inherit;
+}
+.az-assistant__note { font-size: 0.72rem; color: var(--ink-muted); margin: 0.5rem 0 0; }
+
 /* Responsive */
 @media (max-width: 1024px) {
+  .maison-hero__grid,
   .home-hero__grid,
   .hero__inner,
   .product__layout,

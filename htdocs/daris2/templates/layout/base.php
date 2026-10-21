@@ -60,7 +60,7 @@ $noindex = (bool) ($meta['noindex'] ?? false);
     '@context' => 'https://schema.org',
     '@type' => 'OnlineStore',
     'name' => $app['name'],
-    'description' => 'Boutique en ligne suisse de maquillage et de montres.',
+    'description' => 'Boutique multimarque suisse : grandes maisons de maquillage et horlogerie d\'exception, prix en CHF.',
     'url' => $v->absoluteUrl('/'),
     'logo' => $v->absoluteUrl('/assets/img/logo-mark.svg'),
     'email' => $app['email'],
@@ -82,6 +82,7 @@ $noindex = (bool) ($meta['noindex'] ?? false);
 <?= $content ?>
 </main>
 <?= $v->partial('layout/footer') ?>
+<?= $v->partial('partials/assistant-widget') ?>
 <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 </body>
 </html>

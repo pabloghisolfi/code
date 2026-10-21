@@ -17,7 +17,7 @@ Env::load($root . '/.env');
 return [
     'app' => [
         'name' => 'Azurine',
-        'tagline' => 'Maquillage & montres',
+        'tagline' => 'Haute beauté & horlogerie',
         'env' => Env::get('APP_ENV', 'production'),
         'debug' => Env::bool('APP_DEBUG', false),
         'base_path' => rtrim(Env::get('APP_BASE_PATH', '/daris2'), '/'),

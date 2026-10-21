@@ -47,10 +47,11 @@ $subName = $category?->subcategoryName($product->subcategory()) ?? '';
             </div>
 
             <div class="product__info">
-                <p class="kicker"><?= $v->e($category?->name() ?? '') ?><?= $subName !== '' ? ' · ' . $v->e($subName) : '' ?></p>
+                <p class="kicker"><span class="product__brand"><?= $v->e($product->brand()) ?></span><?= $subName !== '' ? ' · ' . $v->e($subName) : '' ?></p>
                 <h1 class="product__title"><?= $v->e($product->name()) ?></h1>
                 <p class="product__rating"><span class="stars" aria-hidden="true"><?= str_repeat('★', (int) round($product->rating())) . str_repeat('☆', 5 - (int) round($product->rating())) ?></span> <span><?= $v->e(number_format($product->rating(), 1)) ?> · <?= $product->reviews() ?> avis</span></p>
                 <p class="product__short"><?= $v->e($product->short()) ?></p>
+                <p class="product__disclaimer">Prix Azurine en CHF. <?= $v->e($product->brand()) ?> est une marque de ses propriétaires ; Azurine est une boutique indépendante, sans lien avec la manufacture.</p>
 
                 <p class="price price--lg">
                     <span class="price__now"><?= $v->money($product->price()) ?></span>

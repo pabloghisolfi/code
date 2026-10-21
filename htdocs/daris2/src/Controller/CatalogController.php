@@ -69,9 +69,10 @@ final class CatalogController extends AbstractController
             'title' => $title,
             'sorts' => ProductFilter::SORTS,
             'priceRanges' => ProductFilter::PRICE_RANGES,
+            'brands' => $catalog->brands($categorySlug),
         ], [
-            'title' => ($category !== null ? $category->name() : 'Boutique') . ' – Azurine, maquillage & montres',
-            'description' => $category !== null ? $category->intro() : 'Tout le catalogue Azurine : maquillage pastel et montres élégantes, prix en CHF, livraison en Suisse.',
+            'title' => ($category !== null ? $category->name() : 'Boutique') . ' – Azurine, multimarque CHF',
+            'description' => $category !== null ? $category->intro() : 'Catalogue multimarque Azurine : grandes maisons de maquillage et montres d\'exception, prix suisses en CHF.',
             'noindex' => $filter->isActive() || $pageNumber > 1,
             'canonical' => $this->services->url()->absolute($basePath),
             'bodyClass' => 'page-catalog',

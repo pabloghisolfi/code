@@ -14,6 +14,7 @@
  * @var string $title
  * @var array<string, string> $sorts
  * @var array<string, string> $priceRanges
+ * @var list<string> $brands
  */
 $query = $filter->toQuery();
 $crumbs = [[$category !== null ? $v->url('/boutique') : '', 'Boutique']];
@@ -59,6 +60,16 @@ if ($category !== null) {
                     <label class="radio"><input type="radio" name="sous" value="" <?= $filter->subcategory() === null ? 'checked' : '' ?>><span>Tous les rayons</span></label>
                     <?php foreach ($category->subcategories() as $sub) : ?>
                     <label class="radio"><input type="radio" name="sous" value="<?= $v->e($sub['slug']) ?>" <?= $filter->subcategory() === $sub['slug'] ? 'checked' : '' ?>><span><?= $v->e($sub['name']) ?></span></label>
+                    <?php endforeach; ?>
+                </fieldset>
+                <?php endif; ?>
+
+                <?php if ($brands !== []) : ?>
+                <fieldset class="filters__group">
+                    <legend class="filters__title">Maison</legend>
+                    <label class="radio"><input type="radio" name="marque" value="" <?= $filter->brand() === null ? 'checked' : '' ?>><span>Toutes les maisons</span></label>
+                    <?php foreach ($brands as $brand) : ?>
+                    <label class="radio"><input type="radio" name="marque" value="<?= $v->e($brand) ?>" <?= $filter->brand() === $brand ? 'checked' : '' ?>><span><?= $v->e($brand) ?></span></label>
                     <?php endforeach; ?>
                 </fieldset>
                 <?php endif; ?>

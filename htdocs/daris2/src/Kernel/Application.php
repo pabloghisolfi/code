@@ -109,6 +109,9 @@ final class Application
         $view->share('navCategories', $services->catalog()->categories());
         $view->share('cartCount', $services->cart()->count());
         $view->share('flash', $services->request()->isPost() ? null : $services->session()->pullFlash());
+        $advisor = $services->advisor();
+        $view->share('assistantGreeting', $advisor->greeting());
+        $view->share('assistantSuggestions', $advisor->suggestions());
     }
 
     private function routes(Services $s): Router

@@ -23,9 +23,9 @@ $navItems = [
 ?>
 <div class="promo-bar" data-ribbon>
     <div class="wrap promo-bar__inner">
-        <p class="promo-bar__item is-visible">Livraison offerte dès CHF 80 · Retours gratuits 30 jours</p>
-        <p class="promo-bar__item">Code <strong>BIENVENUE10</strong> : −10 % sur votre première commande</p>
-        <p class="promo-bar__item">Expédition depuis Lausanne, le jour même avant 14 h</p>
+        <p class="promo-bar__item is-visible">Multimarque · Grandes maisons maquillage &amp; montres · Prix CHF</p>
+        <p class="promo-bar__item">Montres expédiées assurées · Maquillage protégé</p>
+        <p class="promo-bar__item">Conseillère Léa disponible sur chaque page</p>
     </div>
 </div>
 

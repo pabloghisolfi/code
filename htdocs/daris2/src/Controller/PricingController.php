@@ -23,12 +23,12 @@ final class PricingController extends AbstractController
     ];
 
     private const MARKET = [
-        ['item' => 'Rouge à lèvres satiné', 'market' => 'CHF 25 à 48', 'azurine' => 2900],
-        ['item' => 'Mascara volume', 'market' => 'CHF 22 à 42', 'azurine' => 2600],
-        ['item' => 'Palette 9 fards', 'market' => 'CHF 45 à 85', 'azurine' => 4900],
-        ['item' => 'Fond de teint 30 ml avec SPF', 'market' => 'CHF 39 à 72', 'azurine' => 4200],
-        ['item' => 'Montre quartz acier, 32 mm', 'market' => 'CHF 179 à 350', 'azurine' => 18900],
-        ['item' => 'Montre Swiss Made, saphir', 'market' => 'CHF 420 à 900', 'azurine' => 44900],
+        ['item' => 'Rouge à lèvres grande maison', 'market' => 'CHF 45 à 58', 'azurine' => 5200],
+        ['item' => 'Fond de teint prestige 30 ml', 'market' => 'CHF 65 à 98', 'azurine' => 7800],
+        ['item' => 'Montre sport acier 40 mm', 'market' => 'CHF 6 500 à 14 000', 'azurine' => 785000],
+        ['item' => 'Montre iconique acier', 'market' => 'CHF 9 000 à 18 000', 'azurine' => 1285000],
+        ['item' => 'Horlogerie haute gamme', 'market' => 'CHF 35 000 à 120 000', 'azurine' => 8950000],
+        ['item' => 'Royal Oak / Nautilus (marché)', 'market' => 'CHF 28 000 à 95 000', 'azurine' => 4280000],
     ];
 
     public function index(): Response
@@ -55,7 +55,7 @@ final class PricingController extends AbstractController
             'faq' => $this->services->faq()->topics(),
         ], [
             'title' => 'Prix, livraison et services – Azurine',
-            'description' => 'Tous les prix Azurine en francs suisses, TVA incluse : maquillage dès CHF 14, montres dès CHF 149, livraison offerte dès CHF 80, retours gratuits 30 jours.',
+            'description' => 'Grille Azurine en CHF, TVA incluse : maquillage des grandes maisons dès CHF 45, montres d\'exception dès CHF 3 850, livraison assurée, retours 30 jours.',
             'bodyClass' => 'page-pricing',
         ]);
     }

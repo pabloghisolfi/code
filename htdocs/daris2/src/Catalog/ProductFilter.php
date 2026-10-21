@@ -22,10 +22,11 @@ final class ProductFilter
 
     public const PRICE_RANGES = [
         '' => 'Tous les prix',
-        '0-2500' => 'Moins de CHF 25',
-        '2500-5000' => 'CHF 25 à 50',
-        '5000-20000' => 'CHF 50 à 200',
-        '20000-' => 'Plus de CHF 200',
+        '0-10000' => 'Moins de CHF 100',
+        '10000-50000' => 'CHF 100 à 500',
+        '50000-500000' => 'CHF 500 à 5 000',
+        '500000-2000000' => 'CHF 5 000 à 20 000',
+        '2000000-' => 'Plus de CHF 20 000',
     ];
 
     public function __construct(
@@ -35,7 +36,8 @@ final class ProductFilter
         private readonly ?int $minPrice = null,
         private readonly ?int $maxPrice = null,
         private readonly string $sort = 'pertinence',
-        private readonly ?string $badge = null
+        private readonly ?string $badge = null,
+        private readonly ?string $brand = null
     ) {
     }
 
@@ -46,6 +48,7 @@ final class ProductFilter
         [$min, $max] = self::parseRange($range);
         $sort = $request->query('tri', 'pertinence', 20);
         $badge = $request->query('badge', '', 20);
+        $brand = trim($request->query('marque', '', 60));
 
         return new self(
             $category !== null && Str::isSlug($category) ? $category : null,
@@ -54,7 +57,8 @@ final class ProductFilter
             $min,
             $max,
             isset(self::SORTS[$sort]) ? $sort : 'pertinence',
-            isset(Product::BADGE_LABELS[$badge]) ? $badge : null
+            isset(Product::BADGE_LABELS[$badge]) ? $badge : null,
+            $brand !== '' ? $brand : null
         );
     }
 
@@ -82,6 +86,9 @@ final class ProductFilter
                 return false;
             }
             if ($this->badge !== null && $product->badge() !== $this->badge) {
+                return false;
+            }
+            if ($this->brand !== null && strcasecmp($product->brand(), $this->brand) !== 0) {
                 return false;
             }
             if ($terms === []) {
@@ -152,7 +159,12 @@ final class ProductFilter
     public function isActive(): bool
     {
         return $this->subcategory !== null || $this->query !== '' || $this->minPrice !== null
-            || $this->maxPrice !== null || $this->badge !== null || $this->sort !== 'pertinence';
+            || $this->maxPrice !== null || $this->badge !== null || $this->brand !== null || $this->sort !== 'pertinence';
+    }
+
+    public function brand(): ?string
+    {
+        return $this->brand;
     }
 
     /**
@@ -178,6 +190,9 @@ final class ProductFilter
         if ($this->badge !== null) {
             $query['badge'] = $this->badge;
         }
+        if ($this->brand !== null) {
+            $query['marque'] = $this->brand;
+        }
 
         return $query;
     }
@@ -188,7 +203,7 @@ final class ProductFilter
     private function score(Product $product, array $terms): int
     {
         $name = Str::searchable($product->name());
-        $haystack = $name . ' ' . Str::searchable($product->short() . ' ' . $product->category() . ' ' . $product->subcategory()
+        $haystack = $name . ' ' . Str::searchable($product->brand() . ' ' . $product->short() . ' ' . $product->category() . ' ' . $product->subcategory()
             . ' ' . implode(' ', $product->tags()) . ' ' . $product->description());
 
         $score = 0;

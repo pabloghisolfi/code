@@ -144,20 +144,41 @@ final class CatalogRepository
      */
     public function related(Product $product, int $limit = 4): array
     {
+        $sameBrand = [];
         $same = [];
         $others = [];
         foreach ($this->all() as $candidate) {
             if ($candidate->id() === $product->id() || $candidate->category() !== $product->category()) {
                 continue;
             }
-            if ($candidate->subcategory() === $product->subcategory()) {
+            if (strcasecmp($candidate->brand(), $product->brand()) === 0) {
+                $sameBrand[] = $candidate;
+            } elseif ($candidate->subcategory() === $product->subcategory()) {
                 $same[] = $candidate;
             } else {
                 $others[] = $candidate;
             }
         }
 
-        return array_slice(array_merge($same, $others), 0, $limit);
+        return array_slice(array_merge($sameBrand, $same, $others), 0, $limit);
+    }
+
+    /**
+     * @return list<string>
+     */
+    public function brands(?string $category = null): array
+    {
+        $brands = [];
+        foreach ($this->all() as $product) {
+            if ($category !== null && $product->category() !== $category) {
+                continue;
+            }
+            $brands[$product->brand()] = true;
+        }
+        $list = array_keys($brands);
+        natcasesort($list);
+
+        return array_values($list);
     }
 
     /**

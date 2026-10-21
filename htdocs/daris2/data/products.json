@@ -1,656 +1,2228 @@
 [
     {
         "id": 1,
-        "slug": "rouge-a-levres-petale",
-        "name": "Rouge à lèvres Pétale",
-        "category": "maquillage",
-        "subcategory": "levres",
-        "price": 2900,
+        "slug": "submariner-date-41",
+        "brand": "Rolex",
+        "name": "Submariner Date 41",
+        "category": "montres",
+        "subcategory": "classiques",
+        "price": 1285000,
         "old_price": null,
-        "badge": "best-seller",
+        "badge": null,
         "featured": true,
-        "short": "Fini satiné, confort toute la journée, six teintes qui vont à toutes les carnations.",
-        "description": "Pétale glisse en un seul passage et laisse une couleur satinée, ni brillante ni mate, qui tient environ six heures sans dessécher. La formule au beurre de karité et à l'huile de jojoba garde les lèvres souples, même en hiver.\n\nLes six teintes ont été choisies pour fonctionner seules ou l'une sur l'autre : Rose thé pour tous les jours, Framboise pour une soirée, Nude pêche sous un gloss. L'étui aimanté se referme d'un clic et se glisse dans la plus petite des poches.",
-        "details": ["Contenance : 3.5 g", "Fini satiné, tenue 6 h", "Beurre de karité, huile de jojoba, vitamine E", "Sans parfum, testé dermatologiquement", "Étui rechargeable (recharge CHF 19.00)", "Formulé en Suisse"],
-        "variants": {"label": "Teinte", "options": [
-            {"id": "rose-the", "name": "Rose thé", "color": "#e7a2b2"},
-            {"id": "bois-de-rose", "name": "Bois de rose", "color": "#c98a8f"},
-            {"id": "corail-doux", "name": "Corail doux", "color": "#f08a7a"},
-            {"id": "framboise", "name": "Framboise", "color": "#c94a74"},
-            {"id": "nude-peche", "name": "Nude pêche", "color": "#e5b39b"},
-            {"id": "prune-voilee", "name": "Prune voilée", "color": "#8e4a6b"}
-        ]},
-        "art": {"kind": "lipstick", "color": "#e7a2b2", "bg": "pink"},
-        "stock": 42,
-        "rating": 4.8,
-        "reviews": 126,
-        "tags": ["vegan", "rechargeable", "sans parfum"]
+        "short": "Cadran noir, lunette Cerachrom, calibre 3235.",
+        "description": "Submariner Date 41 sélectionné par Azurine chez Rolex. Cadran noir, lunette Cerachrom, calibre 3235. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Rolex",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#0d3d56"
+                }
+            ]
+        },
+        "art": {
+            "kind": "watch-round",
+            "color": "#0d3d56",
+            "bg": "blue"
+        },
+        "stock": 3,
+        "rating": 4.7,
+        "reviews": 13,
+        "tags": [
+            "rolex",
+            "montres"
+        ]
     },
     {
         "id": 2,
-        "slug": "gloss-nuage",
-        "name": "Gloss repulpant Nuage",
-        "category": "maquillage",
-        "subcategory": "levres",
-        "price": 2200,
+        "slug": "datejust-36",
+        "brand": "Rolex",
+        "name": "Datejust 36",
+        "category": "montres",
+        "subcategory": "classiques",
+        "price": 985000,
         "old_price": null,
-        "badge": null,
-        "featured": false,
-        "short": "Brillance miroir sans effet collant, léger picotement frais qui lisse les lèvres.",
-        "description": "Nuage dépose un voile brillant et léger qui ne colle pas aux cheveux et ne file pas dans les ridules. Le menthol doux crée une sensation de fraîcheur de quelques minutes et donne un aspect repulpé naturel.\n\nSeul sur des lèvres nues, il fait un effet « rien du tout » très soigné. Sur un rouge à lèvres Pétale, il transforme un fini satiné en bouche glossy de soirée.",
-        "details": ["Contenance : 6 ml", "Applicateur mousse en forme de goutte", "Huile de ricin, acide hyaluronique, menthol doux", "Sans paraben, sans huile minérale", "Formulé en Suisse"],
-        "variants": {"label": "Teinte", "options": [
-            {"id": "transparent", "name": "Transparent", "color": "#f6dfe6"},
-            {"id": "rose-givre", "name": "Rose givré", "color": "#f1b6c8"},
-            {"id": "peche", "name": "Pêche", "color": "#f4c2a8"},
-            {"id": "cerise", "name": "Cerise", "color": "#d9607f"}
-        ]},
-        "art": {"kind": "gloss", "color": "#f1b6c8", "bg": "pink"},
-        "stock": 60,
-        "rating": 4.5,
-        "reviews": 54,
-        "tags": ["vegan"]
+        "badge": "best-seller",
+        "featured": true,
+        "short": "Fluted bezel, index diamants, bracelet Jubilee.",
+        "description": "Datejust 36 sélectionné par Azurine chez Rolex. Fluted bezel, index diamants, bracelet Jubilee. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Rolex",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#1a4a6e"
+                }
+            ]
+        },
+        "art": {
+            "kind": "watch-jewel",
+            "color": "#1a4a6e",
+            "bg": "blue"
+        },
+        "stock": 3,
+        "rating": 4.7,
+        "reviews": 14,
+        "tags": [
+            "rolex",
+            "montres"
+        ]
     },
     {
         "id": 3,
-        "slug": "mascara-ciel-ouvert",
-        "name": "Mascara volume Ciel ouvert",
-        "category": "maquillage",
-        "subcategory": "yeux",
-        "price": 2600,
+        "slug": "day-date-40",
+        "brand": "Rolex",
+        "name": "Day-Date 40",
+        "category": "montres",
+        "subcategory": "classiques",
+        "price": 3850000,
         "old_price": null,
-        "badge": "best-seller",
-        "featured": true,
-        "short": "Cils séparés, allongés et recourbés, sans paquets ni traces à la fin de la journée.",
-        "description": "La brosse incurvée de Ciel ouvert attrape chaque cil dès la racine et les relève sans les coller. La formule aux cires végétales s'enlève à l'eau tiède, sans frotter : idéal pour les yeux sensibles et les porteuses de lentilles.\n\nUn passage suffit pour un regard net de la journée ; deux couches pour une soirée. Le tube est opaque et hermétique pour que la texture reste souple pendant six mois.",
-        "details": ["Contenance : 9 ml", "Brosse incurvée en fibres souples", "Cires de candelilla et de carnauba", "Testé ophtalmologiquement, adapté aux lentilles", "Démaquillage à l'eau tiède"],
-        "variants": {"label": "Couleur", "options": [
-            {"id": "noir-intense", "name": "Noir intense", "color": "#1a1d26"},
-            {"id": "brun-doux", "name": "Brun doux", "color": "#5a3f36"},
-            {"id": "bleu-nuit", "name": "Bleu nuit", "color": "#223a63"}
-        ]},
-        "art": {"kind": "mascara", "color": "#223a63", "bg": "blue"},
-        "stock": 75,
+        "badge": null,
+        "featured": false,
+        "short": "Or jaune, jour en français, bracelet President.",
+        "description": "Day-Date 40 sélectionné par Azurine chez Rolex. Or jaune, jour en français, bracelet President. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Rolex",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#2a1810"
+                }
+            ]
+        },
+        "art": {
+            "kind": "watch-round",
+            "color": "#2a1810",
+            "bg": "blue"
+        },
+        "stock": 3,
         "rating": 4.7,
-        "reviews": 211,
-        "tags": ["vegan", "yeux sensibles"]
+        "reviews": 15,
+        "tags": [
+            "rolex",
+            "montres"
+        ]
     },
     {
         "id": 4,
-        "slug": "palette-aube",
-        "name": "Palette yeux Aube",
-        "category": "maquillage",
-        "subcategory": "yeux",
-        "price": 4900,
+        "slug": "gmt-master-ii",
+        "brand": "Rolex",
+        "name": "GMT-Master II",
+        "category": "montres",
+        "subcategory": "sport-chic",
+        "price": 1125000,
         "old_price": null,
-        "badge": "nouveau",
-        "featured": true,
-        "short": "Neuf fards mats et nacrés, du rose poudré au bleu brume, pour tous les jours comme pour sortir.",
-        "description": "Aube rassemble neuf teintes qui s'accordent entre elles sans réfléchir : trois mats clairs pour la base, trois roses et pêches pour le pli de la paupière, trois nacrés (champagne, rose doré, bleu brume) pour illuminer. Les poudres sont fines et peu volatiles : elles se posent au pinceau ou au doigt sans tomber sous l'œil.\n\nLe boîtier en carton rigide recouvert de tissu bleu ciel tient dans un sac et comprend un grand miroir. Le guide illustré glissé à l'intérieur propose trois looks, du plus discret au plus affirmé.",
-        "details": ["9 fards x 1.4 g", "Finis : 5 mats, 4 nacrés", "Pigments minéraux, sans talc", "Grand miroir intégré", "Guide de trois looks inclus"],
-        "variants": null,
-        "art": {"kind": "palette", "color": "#f2b9cc", "bg": "blue"},
-        "stock": 28,
-        "rating": 4.9,
-        "reviews": 37,
-        "tags": ["vegan", "sans talc"]
+        "badge": null,
+        "featured": false,
+        "short": "Bi-color Pepsi, deux fuseaux horaires.",
+        "description": "GMT-Master II sélectionné par Azurine chez Rolex. Bi-color Pepsi, deux fuseaux horaires. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Rolex",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#1e3a5f"
+                }
+            ]
+        },
+        "art": {
+            "kind": "watch-chrono",
+            "color": "#1e3a5f",
+            "bg": "blue"
+        },
+        "stock": 3,
+        "rating": 4.7,
+        "reviews": 16,
+        "tags": [
+            "rolex",
+            "montres"
+        ]
     },
     {
         "id": 5,
-        "slug": "eyeliner-plume",
-        "name": "Eyeliner feutre Plume",
-        "category": "maquillage",
-        "subcategory": "yeux",
-        "price": 2100,
+        "slug": "nautilus-5711",
+        "brand": "Patek Philippe",
+        "name": "Nautilus 5711/1A",
+        "category": "montres",
+        "subcategory": "sport-chic",
+        "price": 8950000,
         "old_price": null,
-        "badge": null,
-        "featured": false,
-        "short": "Pointe feutre ultra-fine pour un trait net du premier coup, résistant à l'eau.",
-        "description": "La pointe flexible de Plume dessine aussi bien un trait fin au ras des cils qu'une aile de chat plus marquée. L'encre noire est intense dès le premier passage et ne transfère pas sur la paupière une fois sèche.\n\nRésistante à l'eau et à la chaleur, elle tient toute la journée et se retire avec un démaquillant biphasé. Le capuchon se clipse fermement pour éviter que la pointe ne sèche.",
-        "details": ["Contenance : 1 ml", "Pointe feutre 0.1 mm", "Résiste à l'eau 12 h", "Testé ophtalmologiquement", "Sans alcool"],
-        "variants": {"label": "Couleur", "options": [
-            {"id": "noir", "name": "Noir", "color": "#15181f"},
-            {"id": "bleu-nuit", "name": "Bleu nuit", "color": "#223a63"},
-            {"id": "brun", "name": "Brun", "color": "#5a3f36"}
-        ]},
-        "art": {"kind": "eyeliner", "color": "#15181f", "bg": "blue"},
-        "stock": 51,
-        "rating": 4.6,
-        "reviews": 89,
-        "tags": ["waterproof"]
+        "badge": "nouveau",
+        "featured": true,
+        "short": "Acier, cadran bleu soleil, bracelet intégré.",
+        "description": "Nautilus 5711/1A sélectionné par Azurine chez Patek Philippe. Acier, cadran bleu soleil, bracelet intégré. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Patek Philippe",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#4a5568"
+                }
+            ]
+        },
+        "art": {
+            "kind": "watch-round",
+            "color": "#4a5568",
+            "bg": "blue"
+        },
+        "stock": 3,
+        "rating": 4.7,
+        "reviews": 17,
+        "tags": [
+            "patek-philippe",
+            "montres"
+        ]
     },
     {
         "id": 6,
-        "slug": "crayon-sourcils-trait-fin",
-        "name": "Crayon sourcils Trait fin",
-        "category": "maquillage",
-        "subcategory": "yeux",
-        "price": 1900,
+        "slug": "calatrava-5227",
+        "brand": "Patek Philippe",
+        "name": "Calatrava 5227G",
+        "category": "montres",
+        "subcategory": "classiques",
+        "price": 3250000,
         "old_price": null,
-        "badge": null,
-        "featured": false,
-        "short": "Mine rétractable très fine et goupillon pour des sourcils structurés, jamais dessinés.",
-        "description": "Trait fin comble les trous poil par poil grâce à sa mine de 1.5 mm : on obtient des sourcils plus denses, mais toujours naturels. La texture est légèrement cireuse et tient en place sans gel.\n\nLe goupillon à l'autre extrémité peigne et estompe. Trois nuances neutres couvrent la plupart des couleurs de cheveux ; en cas de doute, choisissez la teinte la plus claire.",
-        "details": ["Mine rétractable 1.5 mm", "Goupillon intégré", "Cire de carnauba, pigments minéraux", "Tenue 12 h", "Sans taille-crayon"],
-        "variants": {"label": "Nuance", "options": [
-            {"id": "blond-cendre", "name": "Blond cendré", "color": "#b89b7a"},
-            {"id": "chatain", "name": "Châtain", "color": "#7a5a44"},
-            {"id": "brun-fonce", "name": "Brun foncé", "color": "#4a3328"}
-        ]},
-        "art": {"kind": "brow", "color": "#7a5a44", "bg": "pink"},
-        "stock": 33,
-        "rating": 4.4,
-        "reviews": 41,
-        "tags": []
+        "badge": "best-seller",
+        "featured": true,
+        "short": "Or gris, guilloché, fond transparent.",
+        "description": "Calatrava 5227G sélectionné par Azurine chez Patek Philippe. Or gris, guilloché, fond transparent. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Patek Philippe",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#e8e4dc"
+                }
+            ]
+        },
+        "art": {
+            "kind": "watch-jewel",
+            "color": "#e8e4dc",
+            "bg": "blue"
+        },
+        "stock": 3,
+        "rating": 4.7,
+        "reviews": 18,
+        "tags": [
+            "patek-philippe",
+            "montres"
+        ]
     },
     {
         "id": 7,
-        "slug": "fond-de-teint-voile-de-soie",
-        "name": "Fond de teint Voile de soie SPF 20",
-        "category": "maquillage",
-        "subcategory": "teint",
-        "price": 4200,
+        "slug": "aquanaut-5167",
+        "brand": "Patek Philippe",
+        "name": "Aquanaut 5167A",
+        "category": "montres",
+        "subcategory": "sport-chic",
+        "price": 4850000,
         "old_price": null,
         "badge": null,
-        "featured": true,
-        "short": "Couvrance légère à moyenne, fini peau nue, hydratation et protection solaire.",
-        "description": "Voile de soie unifie sans masquer : les taches de rousseur restent visibles, les rougeurs s'estompent. La texture fluide s'étale au doigt, à l'éponge ou au pinceau et se fond en quelques secondes. Elle hydrate pendant 24 h grâce à l'acide hyaluronique et protège des UV (SPF 20).\n\nDouze teintes, des plus claires aux plus profondes, chacune en sous-ton rosé ou doré. Vous hésitez entre deux ? Notre conseillère en ligne vous aide à choisir, et l'échange est gratuit.",
-        "details": ["Contenance : 30 ml, flacon pompe en verre", "Couvrance légère à moyenne, modulable", "SPF 20, acide hyaluronique, niacinamide", "Non comédogène, sans parfum", "12 teintes (échange gratuit)"],
-        "variants": {"label": "Teinte", "options": [
-            {"id": "porcelaine-rose", "name": "1R Porcelaine rosé", "color": "#f4dcd0"},
-            {"id": "ivoire-dore", "name": "2D Ivoire doré", "color": "#efd2b8"},
-            {"id": "sable-rose", "name": "3R Sable rosé", "color": "#e8c3ad"},
-            {"id": "beige-dore", "name": "4D Beige doré", "color": "#dbb08f"},
-            {"id": "miel", "name": "5D Miel", "color": "#c99a72"},
-            {"id": "caramel", "name": "6R Caramel", "color": "#b07d5c"},
-            {"id": "noisette", "name": "7D Noisette", "color": "#966247"},
-            {"id": "cacao", "name": "8R Cacao", "color": "#6d4532"}
-        ]},
-        "art": {"kind": "foundation", "color": "#e8c3ad", "bg": "pink"},
-        "stock": 44,
-        "rating": 4.6,
-        "reviews": 73,
-        "tags": ["SPF 20", "non comédogène"]
+        "featured": false,
+        "short": "Caoutchouc tropical, cadran embossé.",
+        "description": "Aquanaut 5167A sélectionné par Azurine chez Patek Philippe. Caoutchouc tropical, cadran embossé. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Patek Philippe",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#2d3748"
+                }
+            ]
+        },
+        "art": {
+            "kind": "watch-round",
+            "color": "#2d3748",
+            "bg": "blue"
+        },
+        "stock": 3,
+        "rating": 4.7,
+        "reviews": 19,
+        "tags": [
+            "patek-philippe",
+            "montres"
+        ]
     },
     {
         "id": 8,
-        "slug": "blush-creme-joues-roses",
-        "name": "Blush crème Joues roses",
-        "category": "maquillage",
-        "subcategory": "teint",
-        "price": 2800,
+        "slug": "complications-5205",
+        "brand": "Patek Philippe",
+        "name": "Complications 5205R",
+        "category": "montres",
+        "subcategory": "classiques",
+        "price": 5680000,
         "old_price": null,
-        "badge": "best-seller",
-        "featured": true,
-        "short": "Une touche au doigt, un effet bonne mine qui fond dans la peau et tient toute la journée.",
-        "description": "Joues roses se tapote directement au doigt sur le haut des pommettes. La texture crème se transforme en poudre fine au contact de la peau : pas de brillance, pas de démarcation, juste un voile de couleur qui semble venir de l'intérieur.\n\nLe pot en verre dépoli bleu ciel contient de quoi tenir plus d'un an d'usage quotidien. Les quatre teintes fonctionnent aussi en touche sur les lèvres.",
-        "details": ["Contenance : 8 g, pot en verre", "Texture crème-poudre", "Huile d'amande douce, pigments minéraux", "Multi-usage joues et lèvres", "Formulé en Suisse"],
-        "variants": {"label": "Teinte", "options": [
-            {"id": "rose-poudre", "name": "Rose poudré", "color": "#f1b4c4"},
-            {"id": "peche-douce", "name": "Pêche douce", "color": "#f2b79d"},
-            {"id": "baie", "name": "Baie", "color": "#c96b8a"},
-            {"id": "terracotta", "name": "Terracotta", "color": "#d1836a"}
-        ]},
-        "art": {"kind": "blush", "color": "#f1b4c4", "bg": "blue"},
-        "stock": 58,
-        "rating": 4.8,
-        "reviews": 164,
-        "tags": ["vegan", "multi-usage"]
+        "badge": null,
+        "featured": false,
+        "short": "Phase de lune, calendrier annuel.",
+        "description": "Complications 5205R sélectionné par Azurine chez Patek Philippe. Phase de lune, calendrier annuel. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Patek Philippe",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#3d2914"
+                }
+            ]
+        },
+        "art": {
+            "kind": "watch-round",
+            "color": "#3d2914",
+            "bg": "blue"
+        },
+        "stock": 3,
+        "rating": 4.7,
+        "reviews": 20,
+        "tags": [
+            "patek-philippe",
+            "montres"
+        ]
     },
     {
         "id": 9,
-        "slug": "enlumineur-lueur-de-lune",
-        "name": "Enlumineur Lueur de lune",
-        "category": "maquillage",
-        "subcategory": "teint",
-        "price": 3200,
+        "slug": "royal-oak-15500",
+        "brand": "Audemars Piguet",
+        "name": "Royal Oak 15500ST",
+        "category": "montres",
+        "subcategory": "sport-chic",
+        "price": 4280000,
         "old_price": null,
-        "badge": "nouveau",
-        "featured": false,
-        "short": "Poudre pressée ultra-fine, reflets humides sans paillettes visibles.",
-        "description": "Lueur de lune attrape la lumière sans marquer le grain de peau. Les nacres sont si fines qu'on les devine plus qu'on ne les voit : les pommettes semblent simplement reposées. Posez-la au pinceau éventail sur le haut des pommettes, l'arcade sourcilière et l'arc de Cupidon.\n\nTrois reflets : Champagne pour les peaux claires à moyennes, Rosé pour un effet frais, Perle bleutée pour un éclat lunaire très tendance sous la lumière du soir.",
-        "details": ["Poids : 7 g", "Poudre pressée, nacres micronisées", "Boîtier aimanté avec miroir", "Sans talc", "Peut s'appliquer sur le corps"],
-        "variants": {"label": "Reflet", "options": [
-            {"id": "champagne", "name": "Champagne", "color": "#f0d8b6"},
-            {"id": "rose", "name": "Rosé", "color": "#f4c6cf"},
-            {"id": "perle-bleutee", "name": "Perle bleutée", "color": "#d6e6f6"}
-        ]},
-        "art": {"kind": "highlighter", "color": "#f0d8b6", "bg": "blue"},
-        "stock": 36,
+        "badge": null,
+        "featured": true,
+        "short": "Tapisserie bleue, bracelet acier.",
+        "description": "Royal Oak 15500ST sélectionné par Azurine chez Audemars Piguet. Tapisserie bleue, bracelet acier. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Audemars Piguet",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#708090"
+                }
+            ]
+        },
+        "art": {
+            "kind": "watch-round",
+            "color": "#708090",
+            "bg": "blue"
+        },
+        "stock": 3,
         "rating": 4.7,
-        "reviews": 22,
-        "tags": ["sans talc"]
+        "reviews": 21,
+        "tags": [
+            "audemars-piguet",
+            "montres"
+        ]
     },
     {
         "id": 10,
-        "slug": "brume-fixatrice-matin-frais",
-        "name": "Brume fixatrice Matin frais",
-        "category": "maquillage",
-        "subcategory": "teint",
-        "price": 2700,
-        "old_price": null,
-        "badge": null,
-        "featured": false,
-        "short": "Fixe le maquillage jusqu'à 12 heures et rafraîchit la peau à tout moment de la journée.",
-        "description": "Quelques pulvérisations à 20 cm du visage, et le maquillage tient toute la journée sans effet poudré. Matin frais contient de l'eau de bleuet et de la glycérine : elle réhydrate la peau et rend le teint moins figé.\n\nLe diffuseur en brume fine ne fait pas de gouttes. On peut l'utiliser seule, le matin, comme une lotion fraîche avant la crème de jour.",
-        "details": ["Contenance : 100 ml", "Diffuseur brume ultra-fine", "Eau de bleuet, glycérine, extrait de camomille", "Sans alcool", "Flacon recyclable"],
-        "variants": null,
-        "art": {"kind": "spray", "color": "#bcdcf5", "bg": "pink"},
-        "stock": 47,
-        "rating": 4.5,
-        "reviews": 48,
-        "tags": ["sans alcool"]
-    },
-    {
-        "id": 11,
-        "slug": "vernis-pastel",
-        "name": "Vernis à ongles Pastel",
-        "category": "maquillage",
-        "subcategory": "ongles",
-        "price": 1400,
-        "old_price": null,
-        "badge": null,
-        "featured": true,
-        "short": "Six pastels couvrants en deux couches, séchage rapide, pinceau large et plat.",
-        "description": "Les pastels sont souvent capricieux à poser. Pastel a été reformulé pour couvrir en deux couches fines sans traces de pinceau. Le pinceau large épouse l'ongle d'un seul geste et le flacon à bouchon long reste stable dans la main.\n\nLa formule « 10-free » exclut les solvants les plus agressifs. Avec la base et le top coat, la manucure tient en moyenne sept jours.",
-        "details": ["Contenance : 10 ml", "Formule 10-free", "Pinceau large et plat", "Séchage au toucher en 60 secondes", "Base et top coat vendus séparément (CHF 12.00)"],
-        "variants": {"label": "Teinte", "options": [
-            {"id": "bleu-ciel", "name": "Bleu ciel", "color": "#bcdcf5"},
-            {"id": "rose-poudre", "name": "Rose poudré", "color": "#f6c8d6"},
-            {"id": "lilas", "name": "Lilas", "color": "#d7c6ef"},
-            {"id": "menthe", "name": "Menthe", "color": "#c4ecdf"},
-            {"id": "creme", "name": "Crème", "color": "#f6efe4"},
-            {"id": "bleu-nuit", "name": "Bleu nuit", "color": "#223a63"}
-        ]},
-        "art": {"kind": "nailpolish", "color": "#bcdcf5", "bg": "pink"},
-        "stock": 90,
-        "rating": 4.6,
-        "reviews": 97,
-        "tags": ["vegan", "10-free"]
-    },
-    {
-        "id": 12,
-        "slug": "set-pinceaux-douceur",
-        "name": "Set de 7 pinceaux Douceur",
-        "category": "maquillage",
-        "subcategory": "accessoires",
-        "price": 5900,
-        "old_price": 6900,
-        "badge": "promo",
-        "featured": false,
-        "short": "Sept pinceaux en fibres synthétiques très douces, manches bleu ciel, étui en lin.",
-        "description": "Tout ce qu'il faut pour commencer ou compléter sa trousse : un pinceau teint, un pinceau blush biseauté, un éventail pour l'enlumineur, trois pinceaux yeux (estompe, précision, plat) et un goupillon. Les fibres synthétiques ne retiennent pas le produit et se lavent à l'eau et au savon doux.\n\nLes manches en bois laqué bleu ciel sont légers et équilibrés. L'étui en lin se roule et se ferme par un lien, pour le tiroir comme pour le voyage.",
-        "details": ["7 pinceaux + étui en lin", "Fibres synthétiques, sans poils animaux", "Manches en hêtre laqué", "Viroles en aluminium brossé", "Garantie 2 ans contre la perte de fibres"],
-        "variants": null,
-        "art": {"kind": "brushes", "color": "#bcdcf5", "bg": "pink"},
-        "stock": 21,
-        "rating": 4.8,
-        "reviews": 65,
-        "tags": ["vegan"]
-    },
-    {
-        "id": 13,
-        "slug": "correcteur-eclat",
-        "name": "Correcteur Éclat",
-        "category": "maquillage",
-        "subcategory": "teint",
-        "price": 2400,
-        "old_price": null,
-        "badge": null,
-        "featured": false,
-        "short": "Camoufle les cernes et les petites rougeurs sans marquer, avec un fini lumineux.",
-        "description": "Éclat se pose en petites touches sous les yeux et sur les imperfections, puis se tapote du bout du doigt. La texture crémeuse mais fine ne file pas dans les ridules et garde un léger éclat qui réveille le regard.\n\nSix teintes correspondent aux fonds de teint Voile de soie ; prenez une demi-teinte plus claire que votre fond de teint pour les cernes.",
-        "details": ["Contenance : 6 ml, applicateur doux", "Couvrance moyenne modulable", "Caféine, vitamine C, acide hyaluronique", "Non comédogène", "Tenue 12 h"],
-        "variants": {"label": "Teinte", "options": [
-            {"id": "porcelaine", "name": "1 Porcelaine", "color": "#f5e0d4"},
-            {"id": "ivoire", "name": "2 Ivoire", "color": "#efd5bd"},
-            {"id": "sable", "name": "3 Sable", "color": "#e5c2a6"},
-            {"id": "beige", "name": "4 Beige", "color": "#d6ab8b"},
-            {"id": "miel", "name": "5 Miel", "color": "#c3946d"},
-            {"id": "noisette", "name": "6 Noisette", "color": "#9a6a4d"}
-        ]},
-        "art": {"kind": "concealer", "color": "#e5c2a6", "bg": "blue"},
-        "stock": 39,
-        "rating": 4.5,
-        "reviews": 52,
-        "tags": ["non comédogène"]
-    },
-    {
-        "id": 14,
-        "slug": "baume-levres-teinte-rosee",
-        "name": "Baume à lèvres teinté Rosée",
-        "category": "maquillage",
-        "subcategory": "levres",
-        "price": 1600,
-        "old_price": null,
-        "badge": null,
-        "featured": false,
-        "short": "Soin et touche de couleur en un geste, l'allié des journées pressées.",
-        "description": "Rosée est le produit qu'on garde dans la poche du manteau : un baume riche en cire d'abeille et en huile d'abricot, légèrement teinté, qui répare les lèvres gercées tout en donnant un effet mordu très naturel.\n\nLa couleur s'adapte au pH des lèvres et reste discrète. Le stick large s'applique sans miroir.",
-        "details": ["Poids : 4.5 g", "Cire d'abeille, huile d'abricot, vitamine E", "Teinte modulable", "SPF 15", "Sans paraben"],
-        "variants": {"label": "Teinte", "options": [
-            {"id": "rose-the", "name": "Rose thé", "color": "#eaa9b8"},
-            {"id": "coquelicot", "name": "Coquelicot", "color": "#e8737a"},
-            {"id": "mure", "name": "Mûre", "color": "#a85a7d"}
-        ]},
-        "art": {"kind": "balm", "color": "#eaa9b8", "bg": "blue"},
-        "stock": 80,
-        "rating": 4.6,
-        "reviews": 118,
-        "tags": ["SPF 15"]
-    },
-    {
-        "id": 15,
-        "slug": "trousse-ciel",
-        "name": "Trousse de maquillage Ciel",
-        "category": "maquillage",
-        "subcategory": "accessoires",
-        "price": 3400,
-        "old_price": null,
-        "badge": null,
-        "featured": false,
-        "short": "Coton matelassé bleu ciel, doublure rose lavable, ouverture large à plat.",
-        "description": "Ciel s'ouvre complètement à plat : on voit tout, on attrape tout. L'extérieur en coton matelassé est doux et résistant ; la doublure en nylon rose s'essuie d'un coup d'éponge quand un vernis fuit.\n\nDeux poches élastiques tiennent les pinceaux debout et une pochette zippée accueille les petits objets. Format pensé pour tenir dans un sac à main comme dans une valise cabine.",
-        "details": ["Dimensions : 22 x 14 x 8 cm", "Coton matelassé, doublure nylon lavable", "Fermeture zip double curseur", "Fabriquée au Portugal", "Lavable à 30 °C"],
-        "variants": {"label": "Couleur", "options": [
-            {"id": "bleu-ciel", "name": "Bleu ciel", "color": "#bcdcf5"},
-            {"id": "rose-poudre", "name": "Rose poudré", "color": "#f6c8d6"}
-        ]},
-        "art": {"kind": "pouch", "color": "#bcdcf5", "bg": "pink"},
-        "stock": 25,
-        "rating": 4.7,
-        "reviews": 31,
-        "tags": []
-    },
-    {
-        "id": 16,
-        "slug": "coffret-premiers-pas",
-        "name": "Coffret découverte Premiers pas",
-        "category": "maquillage",
-        "subcategory": "coffrets",
-        "price": 6900,
-        "old_price": 8300,
-        "badge": "promo",
-        "featured": true,
-        "short": "Mascara, baume teinté, blush crème et vernis : l'essentiel pour débuter, dans une boîte cadeau.",
-        "description": "Premiers pas rassemble quatre produits qui suffisent à un joli maquillage de tous les jours : le mascara Ciel ouvert, le baume teinté Rosée, le blush crème Joues roses (teinte Rose poudré) et un vernis Pastel au choix. Un petit guide explique l'ordre d'application en cinq minutes.\n\nLe tout est présenté dans une boîte rigide bleu ciel fermée par un ruban rose : un cadeau prêt à offrir, pour un anniversaire ou une réussite d'examen.",
-        "details": ["4 produits en taille réelle", "Valeur séparée : CHF 83.00", "Guide d'application illustré", "Boîte cadeau avec ruban", "Message personnalisé possible à la commande"],
-        "variants": {"label": "Vernis inclus", "options": [
-            {"id": "bleu-ciel", "name": "Bleu ciel", "color": "#bcdcf5"},
-            {"id": "rose-poudre", "name": "Rose poudré", "color": "#f6c8d6"},
-            {"id": "lilas", "name": "Lilas", "color": "#d7c6ef"}
-        ]},
-        "art": {"kind": "giftbox", "color": "#f2b9cc", "bg": "blue"},
-        "stock": 18,
-        "rating": 4.9,
-        "reviews": 44,
-        "tags": ["cadeau"]
-    },
-    {
-        "id": 17,
-        "slug": "montre-lune",
-        "name": "Montre Lune",
+        "slug": "royal-oak-offshore",
+        "brand": "Audemars Piguet",
+        "name": "Royal Oak Offshore 42",
         "category": "montres",
-        "subcategory": "classiques",
-        "price": 18900,
+        "subcategory": "sport-chic",
+        "price": 5120000,
         "old_price": null,
         "badge": "best-seller",
         "featured": true,
-        "short": "Boîtier acier 32 mm, cadran bleu ciel soleillé, bracelet milanais ajustable sans outil.",
-        "description": "Lune est la montre que l'on porte tous les jours sans y penser. Son boîtier en acier poli de 32 mm reste fin (7 mm) et discret sous une manche ; le cadran bleu ciel soleillé change de nuance avec la lumière. Les index appliqués et les aiguilles sont recouverts d'un léger luminescent.\n\nLe bracelet à maille milanaise se règle au millimètre grâce à son fermoir coulissant, sans passer chez l'horloger. Mouvement à quartz japonais précis, étanche à 5 ATM : pluie, vaisselle et douche ne lui font pas peur.",
-        "details": ["Boîtier acier 316L, 32 mm, épaisseur 7 mm", "Verre minéral bombé traité anti-rayures", "Mouvement quartz Miyota 2035", "Étanchéité 5 ATM", "Bracelet milanais, largeur 14 mm, réglable", "Garantie 2 ans, écrin inclus"],
-        "variants": {"label": "Finition", "options": [
-            {"id": "argente", "name": "Acier argenté", "color": "#d7dde6"},
-            {"id": "dore-rose", "name": "Doré rose", "color": "#e3b7a5"}
-        ]},
-        "art": {"kind": "watch-round", "color": "#bcdcf5", "bg": "pink"},
-        "stock": 14,
-        "rating": 4.8,
-        "reviews": 92,
-        "tags": ["5 ATM", "garantie 2 ans"]
+        "short": "Chronographe, couronne protégée.",
+        "description": "Royal Oak Offshore 42 sélectionné par Azurine chez Audemars Piguet. Chronographe, couronne protégée. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Audemars Piguet",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#1a202c"
+                }
+            ]
+        },
+        "art": {
+            "kind": "watch-chrono",
+            "color": "#1a202c",
+            "bg": "blue"
+        },
+        "stock": 3,
+        "rating": 4.7,
+        "reviews": 22,
+        "tags": [
+            "audemars-piguet",
+            "montres"
+        ]
+    },
+    {
+        "id": 11,
+        "slug": "code-11-59",
+        "brand": "Audemars Piguet",
+        "name": "Code 11.59 Selfwinding",
+        "category": "montres",
+        "subcategory": "classiques",
+        "price": 3890000,
+        "old_price": null,
+        "badge": null,
+        "featured": false,
+        "short": "Boîtier biconvexe, cadran laqué.",
+        "description": "Code 11.59 Selfwinding sélectionné par Azurine chez Audemars Piguet. Boîtier biconvexe, cadran laqué. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Audemars Piguet",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#f5f0e8"
+                }
+            ]
+        },
+        "art": {
+            "kind": "watch-jewel",
+            "color": "#f5f0e8",
+            "bg": "blue"
+        },
+        "stock": 3,
+        "rating": 4.7,
+        "reviews": 23,
+        "tags": [
+            "audemars-piguet",
+            "montres"
+        ]
+    },
+    {
+        "id": 12,
+        "slug": "big-bang-unico",
+        "brand": "Hublot",
+        "name": "Big Bang Unico 42",
+        "category": "montres",
+        "subcategory": "sport-chic",
+        "price": 1890000,
+        "old_price": null,
+        "badge": null,
+        "featured": true,
+        "short": "Carbone & titane, mouvement manufacture.",
+        "description": "Big Bang Unico 42 sélectionné par Azurine chez Hublot. Carbone & titane, mouvement manufacture. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Hublot",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#111827"
+                }
+            ]
+        },
+        "art": {
+            "kind": "watch-chrono",
+            "color": "#111827",
+            "bg": "blue"
+        },
+        "stock": 3,
+        "rating": 4.7,
+        "reviews": 24,
+        "tags": [
+            "hublot",
+            "montres"
+        ]
+    },
+    {
+        "id": 13,
+        "slug": "classic-fusion-titanium",
+        "brand": "Hublot",
+        "name": "Classic Fusion Titanium 45",
+        "category": "montres",
+        "subcategory": "classiques",
+        "price": 985000,
+        "old_price": null,
+        "badge": "best-seller",
+        "featured": true,
+        "short": "Titane satiné, cadran vertical satin.",
+        "description": "Classic Fusion Titanium 45 sélectionné par Azurine chez Hublot. Titane satiné, cadran vertical satin. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Hublot",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#64748b"
+                }
+            ]
+        },
+        "art": {
+            "kind": "watch-round",
+            "color": "#64748b",
+            "bg": "blue"
+        },
+        "stock": 3,
+        "rating": 4.7,
+        "reviews": 25,
+        "tags": [
+            "hublot",
+            "montres"
+        ]
+    },
+    {
+        "id": 14,
+        "slug": "spirit-of-big-bang",
+        "brand": "Hublot",
+        "name": "Spirit of Big Bang 42",
+        "category": "montres",
+        "subcategory": "sport-chic",
+        "price": 2450000,
+        "old_price": null,
+        "badge": null,
+        "featured": false,
+        "short": "Tonneau, céramique, chronographe.",
+        "description": "Spirit of Big Bang 42 sélectionné par Azurine chez Hublot. Tonneau, céramique, chronographe. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Hublot",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#7c2d12"
+                }
+            ]
+        },
+        "art": {
+            "kind": "watch-chrono",
+            "color": "#7c2d12",
+            "bg": "blue"
+        },
+        "stock": 3,
+        "rating": 4.7,
+        "reviews": 26,
+        "tags": [
+            "hublot",
+            "montres"
+        ]
+    },
+    {
+        "id": 15,
+        "slug": "speedmaster-moonwatch",
+        "brand": "Omega",
+        "name": "Speedmaster Moonwatch",
+        "category": "montres",
+        "subcategory": "sport-chic",
+        "price": 785000,
+        "old_price": null,
+        "badge": "nouveau",
+        "featured": true,
+        "short": "Calibre 3861, verre saphir, héritage lunaire.",
+        "description": "Speedmaster Moonwatch sélectionné par Azurine chez Omega. Calibre 3861, verre saphir, héritage lunaire. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Omega",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#1f2937"
+                }
+            ]
+        },
+        "art": {
+            "kind": "watch-chrono",
+            "color": "#1f2937",
+            "bg": "blue"
+        },
+        "stock": 3,
+        "rating": 4.7,
+        "reviews": 27,
+        "tags": [
+            "omega",
+            "montres"
+        ]
+    },
+    {
+        "id": 16,
+        "slug": "seamaster-diver-300",
+        "brand": "Omega",
+        "name": "Seamaster Diver 300M",
+        "category": "montres",
+        "subcategory": "sport-chic",
+        "price": 625000,
+        "old_price": null,
+        "badge": "best-seller",
+        "featured": true,
+        "short": "Cadran vague, valve hélium, co-axial.",
+        "description": "Seamaster Diver 300M sélectionné par Azurine chez Omega. Cadran vague, valve hélium, co-axial. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Omega",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#0e7490"
+                }
+            ]
+        },
+        "art": {
+            "kind": "watch-round",
+            "color": "#0e7490",
+            "bg": "blue"
+        },
+        "stock": 3,
+        "rating": 4.7,
+        "reviews": 28,
+        "tags": [
+            "omega",
+            "montres"
+        ]
+    },
+    {
+        "id": 17,
+        "slug": "constellation-41",
+        "brand": "Omega",
+        "name": "Constellation 41",
+        "category": "montres",
+        "subcategory": "classiques",
+        "price": 545000,
+        "old_price": null,
+        "badge": null,
+        "featured": false,
+        "short": "Griffes, cadran aventurine, acier & or.",
+        "description": "Constellation 41 sélectionné par Azurine chez Omega. Griffes, cadran aventurine, acier & or. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Omega",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#334155"
+                }
+            ]
+        },
+        "art": {
+            "kind": "watch-jewel",
+            "color": "#334155",
+            "bg": "blue"
+        },
+        "stock": 3,
+        "rating": 4.7,
+        "reviews": 29,
+        "tags": [
+            "omega",
+            "montres"
+        ]
     },
     {
         "id": 18,
-        "slug": "montre-aurore",
-        "name": "Montre Aurore",
+        "slug": "de-ville-prestige",
+        "brand": "Omega",
+        "name": "De Ville Prestige 39",
         "category": "montres",
         "subcategory": "classiques",
-        "price": 22900,
+        "price": 385000,
         "old_price": null,
         "badge": null,
-        "featured": true,
-        "short": "Cadran en nacre rose véritable, boîtier 28 mm, bracelet cuir italien grainé.",
-        "description": "Chaque cadran d'Aurore est taillé dans de la nacre naturelle : aucune montre n'a exactement les mêmes reflets. Le boîtier de 28 mm, aux cornes courtes, convient parfaitement aux poignets fins. Les chiffres romains et les aiguilles feuilles sont dorés rose.\n\nLe bracelet en cuir de veau grainé est doublé de cuir souple et se change en quelques secondes grâce à ses pompes rapides. Deux couleurs livrées en standard : blush ou bleu brume.",
-        "details": ["Boîtier acier doré rose, 28 mm, épaisseur 6.8 mm", "Cadran nacre naturelle", "Verre saphir plat", "Mouvement quartz Ronda 762", "Étanchéité 3 ATM", "Bracelet cuir de veau 12 mm, pompes rapides", "Garantie 2 ans, écrin inclus"],
-        "variants": {"label": "Bracelet", "options": [
-            {"id": "cuir-blush", "name": "Cuir blush", "color": "#f1c6cf"},
-            {"id": "cuir-bleu-brume", "name": "Cuir bleu brume", "color": "#a9c6e4"}
-        ]},
-        "art": {"kind": "watch-round", "color": "#f6dfe6", "bg": "blue"},
-        "stock": 9,
-        "rating": 4.9,
-        "reviews": 47,
-        "tags": ["nacre", "saphir"]
+        "featured": false,
+        "short": "Quartz Master Chronometer, cadran argenté.",
+        "description": "De Ville Prestige 39 sélectionné par Azurine chez Omega. Quartz Master Chronometer, cadran argenté. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Omega",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#475569"
+                }
+            ]
+        },
+        "art": {
+            "kind": "watch-round",
+            "color": "#475569",
+            "bg": "blue"
+        },
+        "stock": 3,
+        "rating": 4.7,
+        "reviews": 30,
+        "tags": [
+            "omega",
+            "montres"
+        ]
     },
     {
         "id": 19,
-        "slug": "montre-celeste",
-        "name": "Montre Céleste",
+        "slug": "santos-de-cartier",
+        "brand": "Cartier",
+        "name": "Santos de Cartier",
         "category": "montres",
-        "subcategory": "bijoux",
-        "price": 25900,
+        "subcategory": "classiques",
+        "price": 785000,
         "old_price": null,
         "badge": null,
-        "featured": false,
-        "short": "Lunette sertie de cristaux, cadran blanc laqué, bracelet acier doré rose à maillons fins.",
-        "description": "Céleste est pensée pour le soir et les grandes occasions, mais reste assez fine pour la journée. La lunette est sertie de 48 cristaux taillés à la main ; le cadran laqué blanc porte douze index en forme d'étoile.\n\nLe bracelet à maillons en acier doré rose se ferme par une boucle déployante à double sécurité. Les maillons se retirent facilement pour ajuster la longueur (service gratuit à la commande : indiquez votre tour de poignet).",
-        "details": ["Boîtier acier doré rose PVD, 34 mm", "Lunette sertie de 48 cristaux", "Verre minéral traité", "Mouvement quartz Miyota 2025", "Étanchéité 3 ATM", "Bracelet acier à maillons, boucle déployante", "Garantie 2 ans, écrin inclus"],
-        "variants": null,
-        "art": {"kind": "watch-jewel", "color": "#fbf1f4", "bg": "pink"},
-        "stock": 7,
+        "featured": true,
+        "short": "Boîtier carré, bracelet QuickSwitch.",
+        "description": "Santos de Cartier sélectionné par Azurine chez Cartier. Boîtier carré, bracelet QuickSwitch. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Cartier",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#b45309"
+                }
+            ]
+        },
+        "art": {
+            "kind": "watch-square",
+            "color": "#b45309",
+            "bg": "blue"
+        },
+        "stock": 3,
         "rating": 4.7,
-        "reviews": 29,
-        "tags": ["soirée"]
+        "reviews": 31,
+        "tags": [
+            "cartier",
+            "montres"
+        ]
     },
     {
         "id": 20,
-        "slug": "montre-minuit-swiss-made",
-        "name": "Montre Minuit Swiss Made",
+        "slug": "tank-louis",
+        "brand": "Cartier",
+        "name": "Tank Louis Cartier",
         "category": "montres",
         "subcategory": "classiques",
-        "price": 44900,
+        "price": 925000,
         "old_price": null,
-        "badge": "nouveau",
+        "badge": "best-seller",
         "featured": true,
-        "short": "Mouvement suisse, verre saphir, cadran bleu nuit guilloché : la pièce qui se garde longtemps.",
-        "description": "Minuit est assemblée en Suisse, dans le Jura, autour d'un mouvement à quartz Ronda de haute précision. Le cadran bleu nuit guilloché soleil, les index appliqués et la trotteuse fine en font une montre que l'on offre pour un diplôme ou un premier emploi, et que l'on garde ensuite.\n\nLe verre saphir résiste aux rayures du quotidien. Le fond vissé assure une étanchéité à 5 ATM. Livrée avec deux bracelets : acier à maillons et cuir bleu nuit, pour passer du bureau à la soirée.",
-        "details": ["Swiss Made, assemblée dans le Jura", "Boîtier acier 316L, 36 mm, épaisseur 7.5 mm", "Verre saphir antireflet", "Mouvement quartz Ronda 715 Swiss Parts", "Étanchéité 5 ATM, fond vissé", "2 bracelets inclus (acier et cuir)", "Garantie 3 ans, écrin bois inclus"],
-        "variants": {"label": "Boîtier", "options": [
-            {"id": "acier", "name": "Acier", "color": "#d7dde6"},
-            {"id": "bicolore", "name": "Bicolore acier et doré rose", "color": "#e3b7a5"}
-        ]},
-        "art": {"kind": "watch-round", "color": "#223a63", "bg": "blue"},
-        "stock": 6,
-        "rating": 5.0,
-        "reviews": 11,
-        "tags": ["Swiss Made", "saphir", "garantie 3 ans"]
+        "short": "Proportions iconiques, cuir alligator.",
+        "description": "Tank Louis Cartier sélectionné par Azurine chez Cartier. Proportions iconiques, cuir alligator. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Cartier",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#1e293b"
+                }
+            ]
+        },
+        "art": {
+            "kind": "watch-square",
+            "color": "#1e293b",
+            "bg": "blue"
+        },
+        "stock": 3,
+        "rating": 4.7,
+        "reviews": 32,
+        "tags": [
+            "cartier",
+            "montres"
+        ]
     },
     {
         "id": 21,
-        "slug": "montre-petale-mini",
-        "name": "Montre Pétale mini",
+        "slug": "ballon-bleu-36",
+        "brand": "Cartier",
+        "name": "Ballon Bleu 36",
         "category": "montres",
         "subcategory": "bijoux",
-        "price": 16900,
+        "price": 695000,
         "old_price": null,
         "badge": null,
         "featured": false,
-        "short": "Boîtier de 24 mm porté comme un jonc, cadran rose poudré, se mélange aux bracelets.",
-        "description": "Pétale mini se porte comme un bijou : son boîtier de 24 mm est fixé sur un jonc ouvert en acier, qui s'enfile sans fermoir et se mélange à vos bracelets. Le cadran rose poudré ne porte que deux aiguilles et quatre index, pour un style épuré.\n\nLe jonc existe en deux tailles ; mesurez votre tour de poignet (notre guide explique comment) pour choisir la bonne.",
-        "details": ["Boîtier acier doré rose, 24 mm", "Jonc ouvert en acier, tailles S (15 cm) et M (17 cm)", "Verre minéral", "Mouvement quartz Miyota 2035", "Étanchéité 3 ATM", "Garantie 2 ans, pochette en velours"],
-        "variants": {"label": "Taille du jonc", "options": [
-            {"id": "s", "name": "S (tour de poignet 14 à 15.5 cm)", "color": "#f6c8d6"},
-            {"id": "m", "name": "M (tour de poignet 15.5 à 17 cm)", "color": "#f1b4c4"}
-        ]},
-        "art": {"kind": "watch-mini", "color": "#f6c8d6", "bg": "blue"},
-        "stock": 12,
-        "rating": 4.6,
-        "reviews": 38,
-        "tags": ["bijou"]
+        "short": "Couronne protégée, cadran guilloché.",
+        "description": "Ballon Bleu 36 sélectionné par Azurine chez Cartier. Couronne protégée, cadran guilloché. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Cartier",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#94a3b8"
+                }
+            ]
+        },
+        "art": {
+            "kind": "watch-round",
+            "color": "#94a3b8",
+            "bg": "blue"
+        },
+        "stock": 3,
+        "rating": 4.7,
+        "reviews": 33,
+        "tags": [
+            "cartier",
+            "montres"
+        ]
     },
     {
         "id": 22,
-        "slug": "montre-brume-carree",
-        "name": "Montre Brume carrée",
+        "slug": "panthere",
+        "brand": "Cartier",
+        "name": "Panthère de Cartier",
         "category": "montres",
-        "subcategory": "classiques",
-        "price": 19900,
+        "subcategory": "bijoux",
+        "price": 2850000,
         "old_price": null,
         "badge": null,
         "featured": false,
-        "short": "Boîtier carré 26 mm aux angles adoucis, cadran argenté brossé, cuir bleu brume.",
-        "description": "Brume reprend le dessin des montres carrées des années 1930, en version douce : angles arrondis, cadran argenté brossé, chiffres arabes fins. Le boîtier de 26 mm paraît plus petit qu'une ronde de même taille, ce qui en fait une montre très élégante sur les poignets fins.\n\nLe bracelet en cuir bleu brume est surpiqué ton sur ton et se change sans outil. Quartz japonais, étanchéité 3 ATM.",
-        "details": ["Boîtier acier, 26 x 26 mm, épaisseur 7 mm", "Verre minéral bombé", "Mouvement quartz Miyota 2035", "Étanchéité 3 ATM", "Bracelet cuir 14 mm, pompes rapides", "Garantie 2 ans, écrin inclus"],
-        "variants": {"label": "Bracelet", "options": [
-            {"id": "cuir-bleu-brume", "name": "Cuir bleu brume", "color": "#a9c6e4"},
-            {"id": "cuir-rose-poudre", "name": "Cuir rose poudré", "color": "#f1c6cf"},
-            {"id": "cuir-noir", "name": "Cuir noir", "color": "#2a2c33"}
-        ]},
-        "art": {"kind": "watch-square", "color": "#e6ebf1", "bg": "pink"},
-        "stock": 10,
+        "short": "Bracelet maille, boîtier fin or.",
+        "description": "Panthère de Cartier sélectionné par Azurine chez Cartier. Bracelet maille, boîtier fin or. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Cartier",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#d4af37"
+                }
+            ]
+        },
+        "art": {
+            "kind": "watch-jewel",
+            "color": "#d4af37",
+            "bg": "blue"
+        },
+        "stock": 3,
         "rating": 4.7,
-        "reviews": 26,
-        "tags": []
+        "reviews": 34,
+        "tags": [
+            "cartier",
+            "montres"
+        ]
     },
     {
         "id": 23,
-        "slug": "coffret-etoile",
-        "name": "Coffret Étoile",
+        "slug": "portugieser-chronograph",
+        "brand": "IWC",
+        "name": "Portugieser Chronographe",
         "category": "montres",
-        "subcategory": "coffrets",
-        "price": 27900,
-        "old_price": 29900,
-        "badge": "promo",
+        "subcategory": "classiques",
+        "price": 985000,
+        "old_price": null,
+        "badge": null,
         "featured": true,
-        "short": "Une montre Lune et trois bracelets interchangeables (milanais, cuir blush, nylon bleu) dans un écrin.",
-        "description": "Étoile réunit la montre Lune (boîtier argenté 32 mm) et trois bracelets pour changer de style en dix secondes : maille milanaise pour tous les jours, cuir blush pour le soir, nylon bleu ciel pour le sport et l'été. Les pompes rapides se manipulent à l'ongle.\n\nL'écrin rigide en tissu bleu ciel possède quatre compartiments et se garde comme boîte à bijoux. Un cadeau complet, prêt à offrir.",
-        "details": ["Montre Lune 32 mm, acier argenté", "3 bracelets : milanais, cuir blush, nylon bleu ciel", "Écrin tissu 4 compartiments", "Valeur séparée : CHF 299.00", "Garantie 2 ans"],
-        "variants": null,
-        "art": {"kind": "giftbox", "color": "#bcdcf5", "bg": "pink"},
-        "stock": 8,
-        "rating": 4.9,
-        "reviews": 19,
-        "tags": ["cadeau"]
+        "short": "Cadran argenté, mouvement manufacture.",
+        "description": "Portugieser Chronographe sélectionné par Azurine chez IWC. Cadran argenté, mouvement manufacture. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : IWC",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#0f172a"
+                }
+            ]
+        },
+        "art": {
+            "kind": "watch-chrono",
+            "color": "#0f172a",
+            "bg": "blue"
+        },
+        "stock": 3,
+        "rating": 4.7,
+        "reviews": 35,
+        "tags": [
+            "iwc",
+            "montres"
+        ]
     },
     {
         "id": 24,
-        "slug": "montre-solaire",
-        "name": "Montre Solaire",
+        "slug": "pilot-mark-xx",
+        "brand": "IWC",
+        "name": "Pilot's Watch Mark XX",
         "category": "montres",
         "subcategory": "sport-chic",
-        "price": 32900,
+        "price": 545000,
         "old_price": null,
-        "badge": "nouveau",
-        "featured": false,
-        "short": "Se recharge à la lumière, jamais de pile à changer, boîtier 36 mm et bracelet acier bleu.",
-        "description": "Solaire capte la lumière du jour comme celle d'une lampe de bureau et stocke l'énergie pour des mois. Fini les changements de pile : une montre plus pratique et plus durable. Le cadran bleu acier dégradé masque les cellules solaires.\n\nBoîtier de 36 mm en acier, bracelet à maillons assorti et étanchéité 10 ATM : elle suit à la piscine comme au bureau.",
-        "details": ["Boîtier acier bleu PVD, 36 mm", "Mouvement quartz solaire, réserve 6 mois", "Verre saphir", "Étanchéité 10 ATM", "Bracelet acier à maillons, boucle déployante", "Garantie 2 ans, écrin inclus"],
-        "variants": null,
-        "art": {"kind": "watch-round", "color": "#5b86c7", "bg": "pink"},
-        "stock": 11,
-        "rating": 4.8,
-        "reviews": 14,
-        "tags": ["solaire", "10 ATM"]
+        "badge": "best-seller",
+        "featured": true,
+        "short": "Instrument de bord, 40 mm.",
+        "description": "Pilot's Watch Mark XX sélectionné par Azurine chez IWC. Instrument de bord, 40 mm. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : IWC",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#14532d"
+                }
+            ]
+        },
+        "art": {
+            "kind": "watch-round",
+            "color": "#14532d",
+            "bg": "blue"
+        },
+        "stock": 3,
+        "rating": 4.7,
+        "reviews": 36,
+        "tags": [
+            "iwc",
+            "montres"
+        ]
     },
     {
         "id": 25,
-        "slug": "montre-perle",
-        "name": "Montre Perle",
+        "slug": "black-bay-58",
+        "brand": "Tudor",
+        "name": "Black Bay 58",
         "category": "montres",
-        "subcategory": "bijoux",
-        "price": 14900,
+        "subcategory": "sport-chic",
+        "price": 385000,
         "old_price": null,
-        "badge": null,
-        "featured": false,
-        "short": "Petit boîtier doré rose sur un bracelet de perles de nacre, fermoir réglable.",
-        "description": "Perle mélange montre et bracelet de perles : le boîtier de 22 mm, doré rose, est monté sur un rang de perles de nacre de culture d'eau douce, légèrement irrégulières comme il se doit. Le fermoir à chaînette se règle sur trois longueurs.\n\nUne montre délicate pour les cérémonies, les mariages ou simplement pour les jours où l'on veut se faire plaisir.",
-        "details": ["Boîtier acier doré rose, 22 mm", "Perles de nacre d'eau douce 6 mm", "Verre minéral", "Mouvement quartz Miyota 2035", "Non étanche : retirer pour se laver les mains", "Garantie 2 ans, pochette en velours"],
-        "variants": null,
-        "art": {"kind": "watch-pearl", "color": "#fdf3f6", "bg": "blue"},
-        "stock": 15,
-        "rating": 4.5,
-        "reviews": 33,
-        "tags": ["cérémonie"]
+        "badge": "nouveau",
+        "featured": true,
+        "short": "Acier, lunette aluminium, 39 mm.",
+        "description": "Black Bay 58 sélectionné par Azurine chez Tudor. Acier, lunette aluminium, 39 mm. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Tudor",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#0c4a6e"
+                }
+            ]
+        },
+        "art": {
+            "kind": "watch-round",
+            "color": "#0c4a6e",
+            "bg": "blue"
+        },
+        "stock": 3,
+        "rating": 4.7,
+        "reviews": 37,
+        "tags": [
+            "tudor",
+            "montres"
+        ]
     },
     {
         "id": 26,
-        "slug": "montre-horizon-chrono",
-        "name": "Montre Horizon chrono",
+        "slug": "pelagos-39",
+        "brand": "Tudor",
+        "name": "Pelagos 39",
         "category": "montres",
         "subcategory": "sport-chic",
-        "price": 38900,
+        "price": 485000,
         "old_price": null,
-        "badge": null,
-        "featured": false,
-        "short": "Chronographe 38 mm, trois compteurs, bracelet silicone rose poudré ou bleu ciel.",
-        "description": "Horizon est le chronographe de la collection : trois compteurs, une lunette fine et un boîtier de 38 mm qui reste léger grâce à son bracelet en silicone doux. Les poussoirs sont fermes et précis ; la trotteuse du chrono est rose.\n\nÉtanche à 10 ATM, lisible la nuit grâce aux aiguilles luminescentes, elle accompagne les entraînements comme les voyages.",
-        "details": ["Boîtier acier, 38 mm, épaisseur 10 mm", "Mouvement quartz chronographe Miyota OS21", "Verre minéral bombé", "Étanchéité 10 ATM", "Bracelet silicone 18 mm, boucle ardillon", "Garantie 2 ans, écrin inclus"],
-        "variants": {"label": "Bracelet", "options": [
-            {"id": "silicone-rose", "name": "Silicone rose poudré", "color": "#f6c8d6"},
-            {"id": "silicone-bleu", "name": "Silicone bleu ciel", "color": "#bcdcf5"},
-            {"id": "silicone-blanc", "name": "Silicone blanc", "color": "#f5f7fa"}
-        ]},
-        "art": {"kind": "watch-chrono", "color": "#f5f7fa", "bg": "blue"},
-        "stock": 9,
-        "rating": 4.6,
-        "reviews": 17,
-        "tags": ["10 ATM", "chronographe"]
+        "badge": "best-seller",
+        "featured": true,
+        "short": "Titane, 200 m, bracelet caoutchouc.",
+        "description": "Pelagos 39 sélectionné par Azurine chez Tudor. Titane, 200 m, bracelet caoutchouc. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Tudor",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#0369a1"
+                }
+            ]
+        },
+        "art": {
+            "kind": "watch-round",
+            "color": "#0369a1",
+            "bg": "blue"
+        },
+        "stock": 3,
+        "rating": 4.7,
+        "reviews": 38,
+        "tags": [
+            "tudor",
+            "montres"
+        ]
     },
     {
         "id": 27,
-        "slug": "bracelet-cuir-interchangeable",
-        "name": "Bracelet cuir interchangeable",
+        "slug": "carrera-chronograph",
+        "brand": "TAG Heuer",
+        "name": "Carrera Chronographe",
         "category": "montres",
-        "subcategory": "accessoires",
-        "price": 3900,
+        "subcategory": "sport-chic",
+        "price": 625000,
         "old_price": null,
         "badge": null,
-        "featured": false,
-        "short": "Cuir de veau italien, pompes rapides, compatible avec les montres Lune, Aurore, Brume et Minuit.",
-        "description": "Changer de bracelet, c'est changer de montre. Ce bracelet en cuir de veau grainé, doublé de cuir souple, s'adapte en quelques secondes à toutes nos montres à pompes rapides. Choisissez la largeur correspondant à votre modèle (indiquée sur chaque fiche).\n\nSix couleurs, de la plus douce à la plus classique.",
-        "details": ["Cuir de veau grainé, doublure cuir", "Pompes rapides intégrées", "Largeurs 12 mm et 14 mm", "Boucle ardillon acier", "Fabriqué en Italie"],
-        "variants": {"label": "Couleur", "options": [
-            {"id": "blush", "name": "Blush", "color": "#f1c6cf"},
-            {"id": "bleu-brume", "name": "Bleu brume", "color": "#a9c6e4"},
-            {"id": "bleu-nuit", "name": "Bleu nuit", "color": "#223a63"},
-            {"id": "lilas", "name": "Lilas", "color": "#d7c6ef"},
-            {"id": "sable", "name": "Sable", "color": "#e3cdb4"},
-            {"id": "noir", "name": "Noir", "color": "#2a2c33"}
-        ]},
-        "art": {"kind": "strap", "color": "#f1c6cf", "bg": "blue"},
-        "stock": 64,
+        "featured": true,
+        "short": "Verre box, index appliqués.",
+        "description": "Carrera Chronographe sélectionné par Azurine chez TAG Heuer. Verre box, index appliqués. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : TAG Heuer",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#18181b"
+                }
+            ]
+        },
+        "art": {
+            "kind": "watch-chrono",
+            "color": "#18181b",
+            "bg": "blue"
+        },
+        "stock": 3,
         "rating": 4.7,
-        "reviews": 58,
-        "tags": []
+        "reviews": 39,
+        "tags": [
+            "tag-heuer",
+            "montres"
+        ]
     },
     {
         "id": 28,
-        "slug": "ecrin-de-voyage",
-        "name": "Écrin de voyage 3 montres",
+        "slug": "monaco",
+        "brand": "TAG Heuer",
+        "name": "Monaco Calibre Heuer 02",
         "category": "montres",
-        "subcategory": "accessoires",
+        "subcategory": "sport-chic",
+        "price": 785000,
+        "old_price": null,
+        "badge": "best-seller",
+        "featured": true,
+        "short": "Carré bleu, chronographe automatique.",
+        "description": "Monaco Calibre Heuer 02 sélectionné par Azurine chez TAG Heuer. Carré bleu, chronographe automatique. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : TAG Heuer",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#1d4ed8"
+                }
+            ]
+        },
+        "art": {
+            "kind": "watch-square",
+            "color": "#1d4ed8",
+            "bg": "blue"
+        },
+        "stock": 3,
+        "rating": 4.7,
+        "reviews": 40,
+        "tags": [
+            "tag-heuer",
+            "montres"
+        ]
+    },
+    {
+        "id": 29,
+        "slug": "rouge-allure-velvet",
+        "brand": "Chanel",
+        "name": "Rouge Allure Velvet",
+        "category": "maquillage",
+        "subcategory": "levres",
+        "price": 5200,
+        "old_price": null,
+        "badge": "best-seller",
+        "featured": true,
+        "short": "Fini velours, teinte iconique 58 Rouge Vie.",
+        "description": "Rouge Allure Velvet sélectionné par Azurine chez Chanel. Fini velours, teinte iconique 58 Rouge Vie. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Chanel",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#9b1c3a"
+                }
+            ]
+        },
+        "art": {
+            "kind": "lipstick",
+            "color": "#9b1c3a",
+            "bg": "pink"
+        },
+        "stock": 18,
+        "rating": 4.6,
+        "reviews": 41,
+        "tags": [
+            "chanel",
+            "maquillage"
+        ]
+    },
+    {
+        "id": 30,
+        "slug": "les-beiges-foundation",
+        "brand": "Chanel",
+        "name": "Les Beiges Eau de Teint",
+        "category": "maquillage",
+        "subcategory": "teint",
+        "price": 7800,
+        "old_price": null,
+        "badge": null,
+        "featured": true,
+        "short": "Fond de teint léger, éclat naturel.",
+        "description": "Les Beiges Eau de Teint sélectionné par Azurine chez Chanel. Fond de teint léger, éclat naturel. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Chanel",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#e8c4a8"
+                }
+            ]
+        },
+        "art": {
+            "kind": "foundation",
+            "color": "#e8c4a8",
+            "bg": "pink"
+        },
+        "stock": 18,
+        "rating": 4.6,
+        "reviews": 42,
+        "tags": [
+            "chanel",
+            "maquillage"
+        ]
+    },
+    {
+        "id": 31,
+        "slug": "inimitable-mascara",
+        "brand": "Chanel",
+        "name": "Inimitable Mascara",
+        "category": "maquillage",
+        "subcategory": "yeux",
         "price": 4900,
         "old_price": null,
         "badge": null,
         "featured": false,
-        "short": "Trois coussins amovibles, extérieur simili-cuir bleu ciel, intérieur velours rose.",
-        "description": "Un écrin pour emporter ou ranger ses montres sans les rayer : trois coussins amovibles, un couvercle à fermeture aimantée et un intérieur en velours rose. L'extérieur en simili-cuir grainé bleu ciel résiste aux frottements du sac de voyage.\n\nIl accueille aussi les bracelets et les bagues dans le compartiment sous les coussins.",
-        "details": ["Dimensions : 18 x 8 x 6 cm", "3 coussins amovibles", "Fermeture aimantée", "Extérieur simili-cuir, intérieur velours", "Poids 180 g"],
-        "variants": null,
-        "art": {"kind": "case", "color": "#bcdcf5", "bg": "pink"},
-        "stock": 22,
+        "short": "Volume et courbe, brosse conique.",
+        "description": "Inimitable Mascara sélectionné par Azurine chez Chanel. Volume et courbe, brosse conique. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Chanel",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#111827"
+                }
+            ]
+        },
+        "art": {
+            "kind": "mascara",
+            "color": "#111827",
+            "bg": "pink"
+        },
+        "stock": 18,
+        "rating": 4.6,
+        "reviews": 43,
+        "tags": [
+            "chanel",
+            "maquillage"
+        ]
+    },
+    {
+        "id": 32,
+        "slug": "ombres-premiere",
+        "brand": "Chanel",
+        "name": "Ombres Première Quadra",
+        "category": "maquillage",
+        "subcategory": "yeux",
+        "price": 8900,
+        "old_price": null,
+        "badge": null,
+        "featured": false,
+        "short": "Quatuor satiné, tenue longue.",
+        "description": "Ombres Première Quadra sélectionné par Azurine chez Chanel. Quatuor satiné, tenue longue. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Chanel",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#c4a484"
+                }
+            ]
+        },
+        "art": {
+            "kind": "palette",
+            "color": "#c4a484",
+            "bg": "pink"
+        },
+        "stock": 18,
+        "rating": 4.6,
+        "reviews": 44,
+        "tags": [
+            "chanel",
+            "maquillage"
+        ]
+    },
+    {
+        "id": 33,
+        "slug": "rouge-dior-satin",
+        "brand": "Dior",
+        "name": "Rouge Dior Satin",
+        "category": "maquillage",
+        "subcategory": "levres",
+        "price": 5400,
+        "old_price": null,
+        "badge": "best-seller",
+        "featured": true,
+        "short": "Soin floral, fini satin lumineux.",
+        "description": "Rouge Dior Satin sélectionné par Azurine chez Dior. Soin floral, fini satin lumineux. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Dior",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#b91c4a"
+                }
+            ]
+        },
+        "art": {
+            "kind": "lipstick",
+            "color": "#b91c4a",
+            "bg": "pink"
+        },
+        "stock": 18,
+        "rating": 4.6,
+        "reviews": 45,
+        "tags": [
+            "dior",
+            "maquillage"
+        ]
+    },
+    {
+        "id": 34,
+        "slug": "forever-skin-glow",
+        "brand": "Dior",
+        "name": "Forever Skin Glow",
+        "category": "maquillage",
+        "subcategory": "teint",
+        "price": 7200,
+        "old_price": null,
+        "badge": null,
+        "featured": true,
+        "short": "SPF 35, fini glow, 24 h de tenue.",
+        "description": "Forever Skin Glow sélectionné par Azurine chez Dior. SPF 35, fini glow, 24 h de tenue. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Dior",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#ddb892"
+                }
+            ]
+        },
+        "art": {
+            "kind": "foundation",
+            "color": "#ddb892",
+            "bg": "pink"
+        },
+        "stock": 18,
+        "rating": 4.6,
+        "reviews": 46,
+        "tags": [
+            "dior",
+            "maquillage"
+        ]
+    },
+    {
+        "id": 35,
+        "slug": "diorshow-iconic",
+        "brand": "Dior",
+        "name": "Diorshow Iconic Overcurl",
+        "category": "maquillage",
+        "subcategory": "yeux",
+        "price": 5100,
+        "old_price": null,
+        "badge": null,
+        "featured": false,
+        "short": "Recourbe et volume extrême.",
+        "description": "Diorshow Iconic Overcurl sélectionné par Azurine chez Dior. Recourbe et volume extrême. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Dior",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#1f2937"
+                }
+            ]
+        },
+        "art": {
+            "kind": "mascara",
+            "color": "#1f2937",
+            "bg": "pink"
+        },
+        "stock": 18,
+        "rating": 4.6,
+        "reviews": 47,
+        "tags": [
+            "dior",
+            "maquillage"
+        ]
+    },
+    {
+        "id": 36,
+        "slug": "backstage-glow-palette",
+        "brand": "Dior",
+        "name": "Backstage Glow Face Palette",
+        "category": "maquillage",
+        "subcategory": "teint",
+        "price": 6500,
+        "old_price": null,
+        "badge": null,
+        "featured": false,
+        "short": "Enlumineur multi-zones.",
+        "description": "Backstage Glow Face Palette sélectionné par Azurine chez Dior. Enlumineur multi-zones. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Dior",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#fbbf24"
+                }
+            ]
+        },
+        "art": {
+            "kind": "palette",
+            "color": "#fbbf24",
+            "bg": "pink"
+        },
+        "stock": 18,
+        "rating": 4.6,
+        "reviews": 48,
+        "tags": [
+            "dior",
+            "maquillage"
+        ]
+    },
+    {
+        "id": 37,
+        "slug": "rouge-pur-couture",
+        "brand": "Yves Saint Laurent",
+        "name": "Rouge Pur Couture",
+        "category": "maquillage",
+        "subcategory": "levres",
+        "price": 5500,
+        "old_price": null,
+        "badge": "best-seller",
+        "featured": true,
+        "short": "Étui bijou doré, formule confort.",
+        "description": "Rouge Pur Couture sélectionné par Azurine chez Yves Saint Laurent. Étui bijou doré, formule confort. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Yves Saint Laurent",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#dc2626"
+                }
+            ]
+        },
+        "art": {
+            "kind": "lipstick",
+            "color": "#dc2626",
+            "bg": "pink"
+        },
+        "stock": 18,
+        "rating": 4.6,
+        "reviews": 49,
+        "tags": [
+            "yves-saint-laurent",
+            "maquillage"
+        ]
+    },
+    {
+        "id": 38,
+        "slug": "all-hours-foundation",
+        "brand": "Yves Saint Laurent",
+        "name": "All Hours Foundation",
+        "category": "maquillage",
+        "subcategory": "teint",
+        "price": 6900,
+        "old_price": null,
+        "badge": null,
+        "featured": true,
+        "short": "Mat longue tenue, fini flouté.",
+        "description": "All Hours Foundation sélectionné par Azurine chez Yves Saint Laurent. Mat longue tenue, fini flouté. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Yves Saint Laurent",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#c9a27a"
+                }
+            ]
+        },
+        "art": {
+            "kind": "foundation",
+            "color": "#c9a27a",
+            "bg": "pink"
+        },
+        "stock": 18,
+        "rating": 4.6,
+        "reviews": 50,
+        "tags": [
+            "yves-saint-laurent",
+            "maquillage"
+        ]
+    },
+    {
+        "id": 39,
+        "slug": "touche-eclat",
+        "brand": "Yves Saint Laurent",
+        "name": "Touche Éclat",
+        "category": "maquillage",
+        "subcategory": "teint",
+        "price": 4800,
+        "old_price": null,
+        "badge": null,
+        "featured": false,
+        "short": "Correcteur illuminateur culte.",
+        "description": "Touche Éclat sélectionné par Azurine chez Yves Saint Laurent. Correcteur illuminateur culte. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Yves Saint Laurent",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#fde68a"
+                }
+            ]
+        },
+        "art": {
+            "kind": "concealer",
+            "color": "#fde68a",
+            "bg": "pink"
+        },
+        "stock": 18,
+        "rating": 4.6,
+        "reviews": 51,
+        "tags": [
+            "yves-saint-laurent",
+            "maquillage"
+        ]
+    },
+    {
+        "id": 40,
+        "slug": "l-absolu-rouge",
+        "brand": "Lancôme",
+        "name": "L'Absolu Rouge Cream",
+        "category": "maquillage",
+        "subcategory": "levres",
+        "price": 4800,
+        "old_price": null,
+        "badge": "best-seller",
+        "featured": true,
+        "short": "Couleur intense, soin absolu.",
+        "description": "L'Absolu Rouge Cream sélectionné par Azurine chez Lancôme. Couleur intense, soin absolu. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Lancôme",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#be123c"
+                }
+            ]
+        },
+        "art": {
+            "kind": "lipstick",
+            "color": "#be123c",
+            "bg": "pink"
+        },
+        "stock": 18,
+        "rating": 4.6,
+        "reviews": 12,
+        "tags": [
+            "lancôme",
+            "maquillage"
+        ]
+    },
+    {
+        "id": 41,
+        "slug": "teint-idole-ultra",
+        "brand": "Lancôme",
+        "name": "Teint Idole Ultra Wear",
+        "category": "maquillage",
+        "subcategory": "teint",
+        "price": 5900,
+        "old_price": null,
+        "badge": null,
+        "featured": true,
+        "short": "24 h, respirant, large gamme de teintes.",
+        "description": "Teint Idole Ultra Wear sélectionné par Azurine chez Lancôme. 24 h, respirant, large gamme de teintes. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Lancôme",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#d6b89a"
+                }
+            ]
+        },
+        "art": {
+            "kind": "foundation",
+            "color": "#d6b89a",
+            "bg": "pink"
+        },
+        "stock": 18,
+        "rating": 4.6,
+        "reviews": 13,
+        "tags": [
+            "lancôme",
+            "maquillage"
+        ]
+    },
+    {
+        "id": 42,
+        "slug": "hypnose-mascara",
+        "brand": "Lancôme",
+        "name": "Hypnôse Mascara",
+        "category": "maquillage",
+        "subcategory": "yeux",
+        "price": 4600,
+        "old_price": null,
+        "badge": null,
+        "featured": false,
+        "short": "Volume sans paquets.",
+        "description": "Hypnôse Mascara sélectionné par Azurine chez Lancôme. Volume sans paquets. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Lancôme",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#0f172a"
+                }
+            ]
+        },
+        "art": {
+            "kind": "mascara",
+            "color": "#0f172a",
+            "bg": "pink"
+        },
+        "stock": 18,
+        "rating": 4.6,
+        "reviews": 14,
+        "tags": [
+            "lancôme",
+            "maquillage"
+        ]
+    },
+    {
+        "id": 43,
+        "slug": "lip-power",
+        "brand": "Armani Beauty",
+        "name": "Lip Power Satin",
+        "category": "maquillage",
+        "subcategory": "levres",
+        "price": 4900,
+        "old_price": null,
+        "badge": "best-seller",
+        "featured": true,
+        "short": "Couleur longue tenue, fini satin.",
+        "description": "Lip Power Satin sélectionné par Azurine chez Armani Beauty. Couleur longue tenue, fini satin. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Armani Beauty",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#9f1239"
+                }
+            ]
+        },
+        "art": {
+            "kind": "lipstick",
+            "color": "#9f1239",
+            "bg": "pink"
+        },
+        "stock": 18,
+        "rating": 4.6,
+        "reviews": 15,
+        "tags": [
+            "armani-beauty",
+            "maquillage"
+        ]
+    },
+    {
+        "id": 44,
+        "slug": "luminous-silk-foundation",
+        "brand": "Armani Beauty",
+        "name": "Luminous Silk Foundation",
+        "category": "maquillage",
+        "subcategory": "teint",
+        "price": 7500,
+        "old_price": null,
+        "badge": null,
+        "featured": true,
+        "short": "Fini seconde peau, micro-films de pigments.",
+        "description": "Luminous Silk Foundation sélectionné par Azurine chez Armani Beauty. Fini seconde peau, micro-films de pigments. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Armani Beauty",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#e7c8a8"
+                }
+            ]
+        },
+        "art": {
+            "kind": "foundation",
+            "color": "#e7c8a8",
+            "bg": "pink"
+        },
+        "stock": 18,
+        "rating": 4.6,
+        "reviews": 16,
+        "tags": [
+            "armani-beauty",
+            "maquillage"
+        ]
+    },
+    {
+        "id": 45,
+        "slug": "eyes-to-kill-mascara",
+        "brand": "Armani Beauty",
+        "name": "Eyes to Kill Mascara",
+        "category": "maquillage",
+        "subcategory": "yeux",
+        "price": 4700,
+        "old_price": null,
+        "badge": null,
+        "featured": false,
+        "short": "Volume et définition.",
+        "description": "Eyes to Kill Mascara sélectionné par Azurine chez Armani Beauty. Volume et définition. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Armani Beauty",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#111827"
+                }
+            ]
+        },
+        "art": {
+            "kind": "mascara",
+            "color": "#111827",
+            "bg": "pink"
+        },
+        "stock": 18,
+        "rating": 4.6,
+        "reviews": 17,
+        "tags": [
+            "armani-beauty",
+            "maquillage"
+        ]
+    },
+    {
+        "id": 46,
+        "slug": "rouge-hermes-satin",
+        "brand": "Hermès",
+        "name": "Rouge Hermès Satin",
+        "category": "maquillage",
+        "subcategory": "levres",
+        "price": 7800,
+        "old_price": null,
+        "badge": "best-seller",
+        "featured": true,
+        "short": "Packaging métal, formule soin.",
+        "description": "Rouge Hermès Satin sélectionné par Azurine chez Hermès. Packaging métal, formule soin. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Hermès",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#7f1d1d"
+                }
+            ]
+        },
+        "art": {
+            "kind": "lipstick",
+            "color": "#7f1d1d",
+            "bg": "pink"
+        },
+        "stock": 18,
+        "rating": 4.6,
+        "reviews": 18,
+        "tags": [
+            "hermès",
+            "maquillage"
+        ]
+    },
+    {
+        "id": 47,
+        "slug": "plein-air-foundation",
+        "brand": "Hermès",
+        "name": "Plein Air Teint",
+        "category": "maquillage",
+        "subcategory": "teint",
+        "price": 8200,
+        "old_price": null,
+        "badge": null,
+        "featured": true,
+        "short": "Fini naturel, texture aérienne.",
+        "description": "Plein Air Teint sélectionné par Azurine chez Hermès. Fini naturel, texture aérienne. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Hermès",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#d4a574"
+                }
+            ]
+        },
+        "art": {
+            "kind": "foundation",
+            "color": "#d4a574",
+            "bg": "pink"
+        },
+        "stock": 18,
+        "rating": 4.6,
+        "reviews": 19,
+        "tags": [
+            "hermès",
+            "maquillage"
+        ]
+    },
+    {
+        "id": 48,
+        "slug": "rouge-g",
+        "brand": "Guerlain",
+        "name": "Rouge G Satin",
+        "category": "maquillage",
+        "subcategory": "levres",
+        "price": 6200,
+        "old_price": null,
+        "badge": "best-seller",
+        "featured": true,
+        "short": "Boîtier personnalisable, recharge.",
+        "description": "Rouge G Satin sélectionné par Azurine chez Guerlain. Boîtier personnalisable, recharge. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Guerlain",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#b45309"
+                }
+            ]
+        },
+        "art": {
+            "kind": "lipstick",
+            "color": "#b45309",
+            "bg": "pink"
+        },
+        "stock": 18,
+        "rating": 4.6,
+        "reviews": 20,
+        "tags": [
+            "guerlain",
+            "maquillage"
+        ]
+    },
+    {
+        "id": 49,
+        "slug": "parure-gold-foundation",
+        "brand": "Guerlain",
+        "name": "Parure Gold Foundation",
+        "category": "maquillage",
+        "subcategory": "teint",
+        "price": 9800,
+        "old_price": null,
+        "badge": null,
+        "featured": true,
+        "short": "24 carats de pigments, éclat.",
+        "description": "Parure Gold Foundation sélectionné par Azurine chez Guerlain. 24 carats de pigments, éclat. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Guerlain",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#fcd34d"
+                }
+            ]
+        },
+        "art": {
+            "kind": "foundation",
+            "color": "#fcd34d",
+            "bg": "pink"
+        },
+        "stock": 18,
         "rating": 4.6,
         "reviews": 21,
-        "tags": ["voyage"]
+        "tags": [
+            "guerlain",
+            "maquillage"
+        ]
+    },
+    {
+        "id": 50,
+        "slug": "lip-color-satin",
+        "brand": "Tom Ford",
+        "name": "Lip Color Satin",
+        "category": "maquillage",
+        "subcategory": "levres",
+        "price": 5800,
+        "old_price": null,
+        "badge": "best-seller",
+        "featured": true,
+        "short": "Pigments riches, fini satin.",
+        "description": "Lip Color Satin sélectionné par Azurine chez Tom Ford. Pigments riches, fini satin. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Tom Ford",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#881337"
+                }
+            ]
+        },
+        "art": {
+            "kind": "lipstick",
+            "color": "#881337",
+            "bg": "pink"
+        },
+        "stock": 18,
+        "rating": 4.6,
+        "reviews": 22,
+        "tags": [
+            "tom-ford",
+            "maquillage"
+        ]
+    },
+    {
+        "id": 51,
+        "slug": "shade-and-illuminate",
+        "brand": "Tom Ford",
+        "name": "Shade and Illuminate",
+        "category": "maquillage",
+        "subcategory": "teint",
+        "price": 9800,
+        "old_price": null,
+        "badge": null,
+        "featured": true,
+        "short": "Contouring crème, fini film.",
+        "description": "Shade and Illuminate sélectionné par Azurine chez Tom Ford. Contouring crème, fini film. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Tom Ford",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#f5d0a8"
+                }
+            ]
+        },
+        "art": {
+            "kind": "highlighter",
+            "color": "#f5d0a8",
+            "bg": "pink"
+        },
+        "stock": 18,
+        "rating": 4.6,
+        "reviews": 23,
+        "tags": [
+            "tom-ford",
+            "maquillage"
+        ]
+    },
+    {
+        "id": 52,
+        "slug": "matte-revolution",
+        "brand": "Charlotte Tilbury",
+        "name": "Matte Revolution",
+        "category": "maquillage",
+        "subcategory": "levres",
+        "price": 4500,
+        "old_price": null,
+        "badge": "best-seller",
+        "featured": true,
+        "short": "Mat confortable, teintes iconiques.",
+        "description": "Matte Revolution sélectionné par Azurine chez Charlotte Tilbury. Mat confortable, teintes iconiques. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Charlotte Tilbury",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#9d174d"
+                }
+            ]
+        },
+        "art": {
+            "kind": "lipstick",
+            "color": "#9d174d",
+            "bg": "pink"
+        },
+        "stock": 18,
+        "rating": 4.6,
+        "reviews": 24,
+        "tags": [
+            "charlotte-tilbury",
+            "maquillage"
+        ]
+    },
+    {
+        "id": 53,
+        "slug": "flawless-filter",
+        "brand": "Charlotte Tilbury",
+        "name": "Hollywood Flawless Filter",
+        "category": "maquillage",
+        "subcategory": "teint",
+        "price": 5900,
+        "old_price": null,
+        "badge": null,
+        "featured": true,
+        "short": "Glow customizable.",
+        "description": "Hollywood Flawless Filter sélectionné par Azurine chez Charlotte Tilbury. Glow customizable. Prix boutique Azurine en francs suisses, TVA incluse. Azurine est une boutique indépendante : les marques citées sont la propriété de leurs détenteurs.",
+        "details": [
+            "Marque : Charlotte Tilbury",
+            "Prix Azurine en CHF, TVA 8.1 % incluse",
+            "Authenticité contrôlée à réception",
+            "Livraison assurée en Suisse"
+        ],
+        "variants": {
+            "label": "Finition",
+            "options": [
+                {
+                    "id": "standard",
+                    "name": "Standard",
+                    "color": "#fde68a"
+                }
+            ]
+        },
+        "art": {
+            "kind": "highlighter",
+            "color": "#fde68a",
+            "bg": "pink"
+        },
+        "stock": 18,
+        "rating": 4.6,
+        "reviews": 25,
+        "tags": [
+            "charlotte-tilbury",
+            "maquillage"
+        ]
     }
 ]

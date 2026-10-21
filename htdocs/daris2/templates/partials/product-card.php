@@ -30,7 +30,7 @@ $href = $v->url('/produit/' . $product->slug());
         <svg aria-hidden="true"><use href="#i-heart"/></svg>
     </button>
     <div class="card__body">
-        <p class="card__kicker"><?= $v->e($product->isWatch() ? 'Montre' : 'Maquillage') ?><?php if ($product->rating() > 0) : ?> · <span class="stars" aria-label="Note <?= $v->e((string) $product->rating()) ?> sur 5">★ <?= $v->e(number_format($product->rating(), 1)) ?></span><?php endif; ?></p>
+        <p class="card__kicker"><span class="card__brand"><?= $v->e($product->brand()) ?></span><?php if ($product->rating() > 0) : ?> · <span class="stars" aria-label="Note <?= $v->e((string) $product->rating()) ?> sur 5">★ <?= $v->e(number_format($product->rating(), 1)) ?></span><?php endif; ?></p>
         <h3 class="card__title"><a href="<?= $href ?>"><?= $v->e($product->name()) ?></a></h3>
         <?php if (!$compact) : ?>
         <p class="card__short"><?= $v->e($product->short()) ?></p>

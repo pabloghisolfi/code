@@ -148,7 +148,7 @@ $err = static fn (string $k): string => isset($errors[$k]) ? '<p class="field-er
             <ul class="checkout-items">
                 <?php foreach ($items as $item) : ?>
                 <li>
-                    <?= ProductArt::product($item->product(), 'checkout-items__art') ?>
+                    <?= $v->partial('partials/product-media', ['product' => $item->product(), 'class' => 'checkout-items__art']) ?>
                     <div>
                         <strong><?= $v->e($item->label()) ?></strong>
                         <span>× <?= $item->quantity() ?></span>

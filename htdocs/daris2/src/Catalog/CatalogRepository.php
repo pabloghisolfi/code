@@ -19,6 +19,9 @@ final class CatalogRepository
     /** @var list<Category>|null */
     private ?array $categories = null;
 
+    /** @var array<string, array{file: string, author: string, source: string, license: string}>|null */
+    private ?array $productPhotos = null;
+
     public function __construct(private readonly string $dataDir)
     {
     }
@@ -55,8 +58,16 @@ final class CatalogRepository
     public function all(): array
     {
         if ($this->products === null) {
+            $photos = $this->productPhotosCatalog();
             $this->products = array_map(
-                static fn (array $row): Product => Product::fromArray($row),
+                function (array $row) use ($photos): Product {
+                    $slug = (string) ($row['slug'] ?? '');
+                    if ($slug !== '' && isset($photos[$slug])) {
+                        $row['photo'] = $photos[$slug];
+                    }
+
+                    return Product::fromArray($row);
+                },
                 $this->readJson('products.json')
             );
         }
@@ -202,6 +213,35 @@ final class CatalogRepository
         );
 
         return ['min' => $prices === [] ? 0 : min($prices), 'max' => $prices === [] ? 0 : max($prices)];
+    }
+
+    /**
+     * @return array<string, array{file: string, author: string, source: string, license: string}>
+     */
+    private function productPhotosCatalog(): array
+    {
+        if ($this->productPhotos !== null) {
+            return $this->productPhotos;
+        }
+
+        $path = $this->dataDir . '/product-photos.json';
+        if (!is_file($path)) {
+            $this->productPhotos = [];
+
+            return $this->productPhotos;
+        }
+
+        $raw = file_get_contents($path);
+        if ($raw === false) {
+            $this->productPhotos = [];
+
+            return $this->productPhotos;
+        }
+
+        $decoded = json_decode($raw, true);
+        $this->productPhotos = is_array($decoded) ? $decoded : [];
+
+        return $this->productPhotos;
     }
 
     /**

@@ -63,7 +63,7 @@ if ($heroWatch === null || $heroMakeup === null) {
         <div class="maison-hero__showcase" data-reveal>
             <?php if ($heroWatch !== null) : ?>
             <a class="maison-tile maison-tile--watch" href="<?= $v->url('/produit/' . $heroWatch->slug()) ?>">
-                <?= ProductArt::product($heroWatch, 'maison-tile__art') ?>
+                <?= $v->partial('partials/product-media', ['product' => $heroWatch, 'class' => 'maison-tile__art']) ?>
                 <span class="maison-tile__meta">
                     <span class="maison-tile__brand"><?= $v->e($heroWatch->brand()) ?></span>
                     <span class="maison-tile__name"><?= $v->e($heroWatch->name()) ?></span>
@@ -73,7 +73,7 @@ if ($heroWatch === null || $heroMakeup === null) {
             <?php endif; ?>
             <?php if ($heroMakeup !== null) : ?>
             <a class="maison-tile maison-tile--makeup" href="<?= $v->url('/produit/' . $heroMakeup->slug()) ?>">
-                <?= ProductArt::product($heroMakeup, 'maison-tile__art') ?>
+                <?= $v->partial('partials/product-media', ['product' => $heroMakeup, 'class' => 'maison-tile__art']) ?>
                 <span class="maison-tile__meta">
                     <span class="maison-tile__brand"><?= $v->e($heroMakeup->brand()) ?></span>
                     <span class="maison-tile__name"><?= $v->e($heroMakeup->name()) ?></span>

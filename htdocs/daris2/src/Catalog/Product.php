@@ -20,6 +20,7 @@ final class Product
      * @param list<ProductVariant> $variants
      * @param list<string>         $tags
      * @param array{kind: string, color: string, bg: string} $art
+     * @param array{file: string, author: string, source: string, license: string}|null $photo
      */
     public function __construct(
         private readonly int $id,
@@ -41,7 +42,8 @@ final class Product
         private readonly int $stock,
         private readonly float $rating,
         private readonly int $reviews,
-        private readonly array $tags
+        private readonly array $tags,
+        private readonly ?array $photo = null
     ) {
     }
 
@@ -71,6 +73,19 @@ final class Product
             ? $data['badge']
             : null;
 
+        $photo = null;
+        if (is_array($data['photo'] ?? null)) {
+            $file = (string) ($data['photo']['file'] ?? '');
+            $author = (string) ($data['photo']['author'] ?? '');
+            $source = (string) ($data['photo']['source'] ?? '');
+            $license = (string) ($data['photo']['license'] ?? '');
+            if ($file !== '' && $author !== '' && $source !== '' && $license !== ''
+                && str_starts_with($source, 'https://commons.wikimedia.org/')
+                && !str_contains($file, '..')) {
+                $photo = ['file' => $file, 'author' => $author, 'source' => $source, 'license' => $license];
+            }
+        }
+
         return new self(
             (int) ($data['id'] ?? 0),
             (string) ($data['slug'] ?? ''),
@@ -95,7 +110,8 @@ final class Product
             (int) ($data['stock'] ?? 0),
             (float) ($data['rating'] ?? 0),
             (int) ($data['reviews'] ?? 0),
-            array_values(array_map('strval', (array) ($data['tags'] ?? [])))
+            array_values(array_map('strval', (array) ($data['tags'] ?? []))),
+            $photo
         );
     }
 
@@ -254,5 +270,18 @@ final class Product
     public function isWatch(): bool
     {
         return $this->category === 'montres';
+    }
+
+    public function hasPhoto(): bool
+    {
+        return $this->photo !== null;
+    }
+
+    /**
+     * @return array{file: string, author: string, source: string, license: string}|null
+     */
+    public function photo(): ?array
+    {
+        return $this->photo;
     }
 }

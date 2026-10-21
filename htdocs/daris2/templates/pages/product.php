@@ -30,7 +30,7 @@ $subName = $category?->subcategoryName($product->subcategory()) ?? '';
         <div class="product__layout">
             <div class="product__gallery" data-gallery>
                 <div class="product__stage">
-                    <?= ProductArt::product($product, 'product__art') ?>
+                    <?= $v->partial('partials/product-media', ['product' => $product, 'class' => 'product__art']) ?>
                     <?php if ($product->badge() !== null) : ?>
                     <span class="badge badge--<?= $v->e((string) $product->badge()) ?>"><?= $v->e($product->badgeLabel()) ?><?= $product->discountPercent() > 0 ? ' −' . $product->discountPercent() . ' %' : '' ?></span>
                     <?php endif; ?>
@@ -44,6 +44,7 @@ $subName = $category?->subcategoryName($product->subcategory()) ?? '';
                     <?php endforeach; ?>
                     <li><svg aria-hidden="true"><use href="#i-truck"/></svg>Expédié sous 24 h</li>
                 </ul>
+                <?= $v->partial('partials/photo-credit', ['product' => $product]) ?>
             </div>
 
             <div class="product__info">

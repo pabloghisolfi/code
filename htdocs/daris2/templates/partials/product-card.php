@@ -13,7 +13,7 @@ $href = $v->url('/produit/' . $product->slug());
 ?>
 <article class="<?= $v->classes(['card' => true, 'card--compact' => $compact, 'card--watch' => $product->isWatch()]) ?>" data-reveal>
     <a class="card__media" href="<?= $href ?>" tabindex="-1" aria-hidden="true">
-        <?= ProductArt::product($product, 'card__art') ?>
+        <?= $v->partial('partials/product-media', ['product' => $product, 'class' => 'card__art']) ?>
         <?php if ($product->badge() !== null) : ?>
         <span class="badge badge--<?= $v->e((string) $product->badge()) ?>"><?= $v->e($product->badgeLabel()) ?><?= $product->discountPercent() > 0 ? ' −' . $product->discountPercent() . ' %' : '' ?></span>
         <?php endif; ?>

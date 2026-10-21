@@ -39,7 +39,7 @@ $progress = $freeFrom > 0 ? min(100, (int) round(($freeFrom - $remainingForFreeS
                 <ul class="cart__list">
                     <?php foreach ($items as $item) : $product = $item->product(); ?>
                     <li class="cart-line" data-cart-line data-key="<?= $v->e($item->key()) ?>">
-                        <a class="cart-line__media" href="<?= $v->url('/produit/' . $product->slug()) ?>"><?= ProductArt::product($product, 'cart-line__art') ?></a>
+                        <a class="cart-line__media" href="<?= $v->url('/produit/' . $product->slug()) ?>"><?= $v->partial('partials/product-media', ['product' => $product, 'class' => 'cart-line__art']) ?></a>
                         <div class="cart-line__body">
                             <p class="kicker"><?= $product->isWatch() ? 'Montre' : 'Maquillage' ?></p>
                             <h2 class="cart-line__title"><a href="<?= $v->url('/produit/' . $product->slug()) ?>"><?= $v->e($product->name()) ?></a></h2>

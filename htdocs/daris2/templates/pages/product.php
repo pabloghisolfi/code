@@ -134,7 +134,7 @@ $subName = $category?->subcategoryName($product->subcategory()) ?? '';
 <?php if ($looks !== []) : ?>
 <section class="section section--pink">
     <div class="wrap">
-        <?= $v->partial('partials/section-head', ['kicker' => 'Dans quel look ?', 'title' => 'Ce produit en situation', 'linkHref' => $v->url('/inspirations'), 'linkLabel' => 'Toutes les inspirations']) ?>
+        <?= $v->partial('partials/section-head', ['kicker' => 'Dans quel look ?', 'title' => 'Ce produit en situation', 'linkHref' => $v->url('/exemples'), 'linkLabel' => 'Toutes les inspirations']) ?>
         <div class="grid grid--looks">
             <?php foreach ($looks as $look) : ?>
             <?= $v->partial('partials/look-card', ['look' => $look]) ?>

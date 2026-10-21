@@ -7,7 +7,7 @@
  * @var int $giftWrapPrice
  * @var float $vatRate
  * @var list<array{name: string, price: int, note: string}> $services
- * @var list<array{item: string, market: string, daris: int}> $market
+ * @var list<array{item: string, market: string, azurine: int}> $market
  * @var array<string, mixed> $promoCodes
  * @var list<array{topic: string, items: list<array{q: string, a: string}>}> $faq
  */
@@ -71,13 +71,13 @@
         <?= $v->partial('partials/section-head', ['kicker' => 'Marché suisse', 'title' => 'Où se situent nos prix ?', 'text' => 'Fourchettes habituellement observées en boutique et en ligne en Suisse, à titre indicatif.']) ?>
         <div class="table-wrap" tabindex="0">
             <table class="data-table">
-                <thead><tr><th>Produit type</th><th>Marché</th><th>Daris</th></tr></thead>
+                <thead><tr><th>Produit type</th><th>Marché</th><th>Azurine</th></tr></thead>
                 <tbody>
                     <?php foreach ($market as $row) : ?>
                     <tr>
                         <th scope="row"><?= $v->e($row['item']) ?></th>
                         <td><?= $v->e($row['market']) ?></td>
-                        <td class="num"><strong><?= $v->money($row['daris']) ?></strong></td>
+                        <td class="num"><strong><?= $v->money($row['azurine']) ?></strong></td>
                     </tr>
                     <?php endforeach; ?>
                 </tbody>
@@ -101,7 +101,7 @@
             <?php foreach ($faq as $topic) : foreach (array_slice($topic['items'], 0, 2) as $item) : ?>
             <details class="faq__item"><summary><?= $v->e($item['q']) ?></summary><p><?= $v->e($item['a']) ?></p></details>
             <?php endforeach; endforeach; ?>
-            <a class="link" href="<?= $v->url('/conseillere') ?>">Toutes les questions <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="link" href="<?= $v->url('/chat') ?>">Toutes les questions <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
     </div>
 </section>

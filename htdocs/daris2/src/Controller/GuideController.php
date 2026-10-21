@@ -23,9 +23,9 @@ final class GuideController extends AbstractController
             )),
             'starterKit' => $catalog->bySlugs(['mascara-ciel-ouvert', 'blush-creme-joues-roses', 'baume-levres-teinte-rosee', 'correcteur-eclat']),
         ], [
-            'title' => 'Guide & conseils : maquillage, teintes et montres – Daris',
-            'description' => 'Trouver sa teinte, se maquiller en cinq minutes, choisir la taille de sa montre et en prendre soin : le guide pratique de Daris.',
-            'bodyClass' => 'page-guide',
+            'title' => 'Guide & conseils : maquillage, teintes et montres – Azurine',
+            'description' => "Trouver sa teinte, se maquiller en cinq minutes, choisir la taille de sa montre et en prendre soin : le guide pratique d'Azurine.",
+            'bodyClass' => 'page-conseils',
         ]);
     }
 }

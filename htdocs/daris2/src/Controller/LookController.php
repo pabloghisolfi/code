@@ -18,7 +18,7 @@ final class LookController extends AbstractController
         return $this->page('looks', [
             'looks' => $this->services->looks()->all(),
         ], [
-            'title' => 'Inspirations : looks et idées – Daris',
+            'title' => 'Exemples : looks et idées – Azurine',
             'description' => 'Des looks complets, étape par étape, pour tous les jours, les cours, les soirées et les cérémonies, avec les produits et la montre assortis.',
             'bodyClass' => 'page-looks',
         ]);
@@ -40,7 +40,7 @@ final class LookController extends AbstractController
             'total' => $total,
             'others' => $this->services->looks()->except($look->slug(), 3),
         ], [
-            'title' => $look->title() . ' : le look complet – Daris',
+            'title' => $look->title() . ' : le look complet – Azurine',
             'description' => $look->excerpt(),
             'bodyClass' => 'page-look',
         ]);

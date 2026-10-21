@@ -11,7 +11,7 @@
   /* Ribbon rotation */
   const ribbon = qs('[data-ribbon]');
   if (ribbon) {
-    const items = qsa('.ribbon__item', ribbon);
+    const items = qsa('.promo-bar__item, .ribbon__item', ribbon);
     if (items.length > 1) {
       let i = 0;
       setInterval(() => {

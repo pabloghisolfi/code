@@ -107,7 +107,7 @@ if ($category !== null) {
             <div class="empty" data-reveal>
                 <h2>Rien ne correspond à ces critères.</h2>
                 <p>Essayez un autre mot, élargissez le prix, ou laissez la conseillère vous aiguiller.</p>
-                <div class="actions"><a class="btn btn--primary" href="<?= $v->url($basePath) ?>">Voir tout le rayon</a><a class="btn btn--soft" href="<?= $v->url('/conseillere') ?>">Demander à Léa</a></div>
+                <div class="actions"><a class="btn btn--primary" href="<?= $v->url($basePath) ?>">Voir tout le rayon</a><a class="btn btn--soft" href="<?= $v->url('/chat') ?>">Demander à Léa</a></div>
             </div>
             <?php else : ?>
             <div class="grid grid--products grid--catalog">
@@ -136,7 +136,7 @@ if ($category !== null) {
             <p class="kicker">Besoin d'aide pour choisir ?</p>
             <h2 class="h2"><?= $category->slug() === 'montres' ? 'Quelle taille de boîtier pour votre poignet ?' : 'Quelle teinte pour votre carnation ?' ?></h2>
             <p class="lead"><?= $category->slug() === 'montres' ? 'Le guide explique comment mesurer son tour de poignet et propose un petit calculateur. En deux minutes, vous savez quels modèles vous iront.' : 'Rosé ou doré, clair ou profond : le test du sous-ton prend trente secondes. Et si vous vous trompez, l\'échange de teinte est gratuit.' ?></p>
-            <div class="actions"><a class="btn btn--primary" href="<?= $v->url('/guide') ?>#<?= $category->slug() === 'montres' ? 'taille-montre' : 'sous-ton' ?>">Ouvrir le guide</a><a class="btn btn--soft" href="<?= $v->url('/conseillere') ?>">Demander à Léa</a></div>
+            <div class="actions"><a class="btn btn--primary" href="<?= $v->url('/conseils') ?>#<?= $category->slug() === 'montres' ? 'taille-montre' : 'sous-ton' ?>">Ouvrir le guide</a><a class="btn btn--soft" href="<?= $v->url('/chat') ?>">Demander à Léa</a></div>
         </div>
         <ul class="checklist-static" data-reveal>
             <?php if ($category->slug() === 'montres') : ?>

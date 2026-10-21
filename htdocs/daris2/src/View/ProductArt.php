@@ -151,7 +151,7 @@ final class ProductArt
             . '<rect x="130" y="110" width="58" height="210" rx="14" fill="' . $c . '"/>'
             . '<rect x="130" y="110" width="58" height="210" rx="14" fill="url(#' . $id . 'gl)"/>'
             . '<rect x="136" y="76" width="46" height="40" rx="8" fill="url(#' . $id . 'gold)"/>'
-            . '<text x="159" y="240" font-family="Georgia, serif" font-size="12" letter-spacing="3" fill="#ffffff" opacity=".8" text-anchor="middle" transform="rotate(-90 159 240)">DARIS</text>'
+            . '<text x="159" y="240" font-family="Georgia, serif" font-size="12" letter-spacing="3" fill="#ffffff" opacity=".8" text-anchor="middle" transform="rotate(-90 159 240)">AZURINE</text>'
             . '<rect x="233" y="88" width="30" height="58" rx="6" fill="url(#' . $id . 'gold)"/>'
             . '<rect x="244" y="146" width="8" height="150" rx="4" fill="' . self::NAVY . '"/>'
             . $brush
@@ -223,7 +223,7 @@ final class ProductArt
             . '<rect x="190" y="68" width="20" height="34" rx="4" fill="url(#' . $id . 'metal)"/>'
             . '<path d="M210 76 h26 a6 6 0 0 1 0 12 h-26z" fill="url(#' . $id . 'metal)"/>'
             . '<rect x="158" y="214" width="84" height="54" rx="6" fill="#ffffff" opacity=".9"/>'
-            . '<text x="200" y="238" font-family="Georgia, serif" font-size="14" letter-spacing="2" fill="' . self::NAVY . '" text-anchor="middle">DARIS</text>'
+            . '<text x="200" y="238" font-family="Georgia, serif" font-size="14" letter-spacing="2" fill="' . self::NAVY . '" text-anchor="middle">AZURINE</text>'
             . '<text x="200" y="256" font-family="Helvetica, Arial, sans-serif" font-size="8" letter-spacing="1" fill="' . self::NAVY . '" opacity=".7" text-anchor="middle">VOILE DE SOIE · SPF 20</text>'
             . '</g>';
     }
@@ -269,7 +269,7 @@ final class ProductArt
             . '<ellipse cx="200" cy="110" rx="110" ry="40" fill="' . self::NAVY . '" opacity=".95"/>'
             . '<ellipse cx="200" cy="106" rx="110" ry="40" fill="url(#' . $id . 'metal)" opacity=".35"/>'
             . '<path d="M90 110 v10 a110 40 0 0 0 220 0 v-10 a110 40 0 0 1 -220 0z" fill="' . self::NAVY . '"/>'
-            . '<text x="200" y="112" font-family="Georgia, serif" font-size="16" letter-spacing="4" fill="#ffffff" opacity=".85" text-anchor="middle">DARIS</text>'
+            . '<text x="200" y="112" font-family="Georgia, serif" font-size="16" letter-spacing="4" fill="#ffffff" opacity=".85" text-anchor="middle">AZURINE</text>'
             . '<path d="M160 212 l6 -14 6 14 -6 14z M250 240 l4 -9 4 9 -4 9z" fill="#ffffff" opacity=".8"/>'
             . '</g>';
     }
@@ -339,7 +339,7 @@ final class ProductArt
             . '<rect x="96" y="151" width="208" height="3" fill="#ffffff" opacity=".35" stroke-dasharray="3 3"/>'
             . '<rect x="238" y="140" width="28" height="30" rx="5" fill="url(#' . $id . 'gold)"/>'
             . '<path d="M252 170 v26 a8 8 0 0 0 16 0" fill="none" stroke="url(#' . $id . 'gold)" stroke-width="5" stroke-linecap="round"/>'
-            . '<text x="200" y="250" font-family="Georgia, serif" font-size="20" letter-spacing="6" fill="' . self::NAVY . '" opacity=".8" text-anchor="middle">DARIS</text>'
+            . '<text x="200" y="250" font-family="Georgia, serif" font-size="20" letter-spacing="6" fill="' . self::NAVY . '" opacity=".8" text-anchor="middle">AZURINE</text>'
             . '</g>';
     }
 
@@ -359,7 +359,7 @@ final class ProductArt
             . '<path d="M200 138 c10 -30 50 -50 70 -32 c14 14 -10 32 -70 32z" fill="' . self::shade($c, -0.12) . '"/>'
             . '<circle cx="200" cy="136" r="12" fill="' . self::shade($c, -0.2) . '"/>'
             . '<path d="M200 146 l-26 48 M200 146 l26 48" stroke="' . $c . '" stroke-width="10" stroke-linecap="round"/>'
-            . '<text x="150" y="270" font-family="Georgia, serif" font-size="14" letter-spacing="4" fill="' . self::NAVY . '" opacity=".7" text-anchor="middle">DARIS</text>'
+            . '<text x="150" y="270" font-family="Georgia, serif" font-size="14" letter-spacing="4" fill="' . self::NAVY . '" opacity=".7" text-anchor="middle">AZURINE</text>'
             . '</g>';
     }
 
@@ -398,7 +398,7 @@ final class ProductArt
             . '<circle cx="200" cy="200" r="88" fill="url(#' . $id . 'gl)" opacity=".7"/>'
             . $bezel
             . $indices
-            . '<text x="200" y="160" font-family="Georgia, serif" font-size="11" letter-spacing="4" fill="' . $ink . '" opacity=".85" text-anchor="middle">DARIS</text>'
+            . '<text x="200" y="160" font-family="Georgia, serif" font-size="11" letter-spacing="4" fill="' . $ink . '" opacity=".85" text-anchor="middle">AZURINE</text>'
             . '<path d="M200 200 L164 176" stroke="' . $ink . '" stroke-width="5" stroke-linecap="round"/>'
             . '<path d="M200 200 L228 142" stroke="' . $ink . '" stroke-width="4" stroke-linecap="round"/>'
             . '<path d="M200 212 L252 250" stroke="#f2b9cc" stroke-width="2" stroke-linecap="round"/>'
@@ -424,7 +424,7 @@ final class ProductArt
             . '<rect x="120" y="120" width="160" height="160" rx="24" fill="' . $c . '"/>'
             . '<rect x="120" y="120" width="160" height="160" rx="24" fill="url(#' . $id . 'gl)" opacity=".5"/>'
             . $numbers
-            . '<text x="200" y="172" font-family="Georgia, serif" font-size="9" letter-spacing="3" fill="' . self::NAVY . '" opacity=".8" text-anchor="middle">DARIS</text>'
+            . '<text x="200" y="172" font-family="Georgia, serif" font-size="9" letter-spacing="3" fill="' . self::NAVY . '" opacity=".8" text-anchor="middle">AZURINE</text>'
             . '<path d="M200 200 L170 182" stroke="' . self::NAVY . '" stroke-width="4.5" stroke-linecap="round"/>'
             . '<path d="M200 200 L222 150" stroke="' . self::NAVY . '" stroke-width="3.5" stroke-linecap="round"/>'
             . '<path d="M200 208 L236 244" stroke="#f2b9cc" stroke-width="2" stroke-linecap="round"/>'
@@ -467,7 +467,7 @@ final class ProductArt
             . '<circle cx="200" cy="100" r="54" fill="url(#' . $id . 'gold)"/>'
             . '<circle cx="200" cy="100" r="44" fill="' . $c . '"/>'
             . '<circle cx="200" cy="100" r="44" fill="url(#' . $id . 'gl)" opacity=".5"/>'
-            . '<text x="200" y="84" font-family="Georgia, serif" font-size="8" letter-spacing="3" fill="' . self::NAVY . '" opacity=".8" text-anchor="middle">DARIS</text>'
+            . '<text x="200" y="84" font-family="Georgia, serif" font-size="8" letter-spacing="3" fill="' . self::NAVY . '" opacity=".8" text-anchor="middle">AZURINE</text>'
             . '<path d="M200 100 L184 90" stroke="' . self::NAVY . '" stroke-width="3" stroke-linecap="round"/>'
             . '<path d="M200 100 L212 74" stroke="' . self::NAVY . '" stroke-width="2.5" stroke-linecap="round"/>'
             . '<circle cx="200" cy="100" r="2.5" fill="' . self::NAVY . '"/>'
@@ -498,7 +498,7 @@ final class ProductArt
             . '<circle cx="200" cy="200" r="96" fill="' . $c . '"/>'
             . $ticks
             . $sub(200, 236, self::NAVY) . $sub(164, 190, self::NAVY) . $sub(236, 190, self::NAVY)
-            . '<text x="200" y="156" font-family="Georgia, serif" font-size="10" letter-spacing="4" fill="' . self::NAVY . '" opacity=".85" text-anchor="middle">DARIS</text>'
+            . '<text x="200" y="156" font-family="Georgia, serif" font-size="10" letter-spacing="4" fill="' . self::NAVY . '" opacity=".85" text-anchor="middle">AZURINE</text>'
             . '<path d="M200 200 L160 178" stroke="' . self::NAVY . '" stroke-width="5" stroke-linecap="round"/>'
             . '<path d="M200 200 L232 146" stroke="' . self::NAVY . '" stroke-width="4" stroke-linecap="round"/>'
             . '<path d="M200 214 L200 118" stroke="#f08aa6" stroke-width="2" stroke-linecap="round"/>'
@@ -545,7 +545,7 @@ final class ProductArt
             . '<path d="M86 164 l6 -70 a10 10 0 0 1 10 -8 h196 a10 10 0 0 1 10 8 l6 70z" fill="' . self::shade($c, 0.08) . '"/>'
             . '<path d="M86 164 l6 -70 a10 10 0 0 1 10 -8 h196 a10 10 0 0 1 10 8 l6 70z" fill="url(#' . $id . 'gl)"/>'
             . '<rect x="182" y="304" width="36" height="12" rx="4" fill="url(#' . $id . 'gold)"/>'
-            . '<text x="200" y="134" font-family="Georgia, serif" font-size="16" letter-spacing="5" fill="' . self::NAVY . '" opacity=".75" text-anchor="middle">DARIS</text>'
+            . '<text x="200" y="134" font-family="Georgia, serif" font-size="16" letter-spacing="5" fill="' . self::NAVY . '" opacity=".75" text-anchor="middle">AZURINE</text>'
             . '</g>';
     }
 

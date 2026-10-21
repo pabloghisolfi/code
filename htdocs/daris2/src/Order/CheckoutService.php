@@ -83,7 +83,7 @@ final class CheckoutService
 
     private function sendConfirmation(Order $order, string $token): void
     {
-        $subject = sprintf('Votre commande %s est confirmée – Daris', $order->reference());
+        $subject = sprintf('Votre commande %s est confirmée – Azurine', $order->reference());
         $this->mailer->send($order->customer()->email(), $subject, $this->confirmationEmail($order, $token));
     }
 }

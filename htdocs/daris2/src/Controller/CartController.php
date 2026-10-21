@@ -26,8 +26,8 @@ final class CartController extends AbstractController
             'suggestions' => $cart->isEmpty() ? $catalog->featured(4) : $catalog->featured(4, 'maquillage'),
             'maxQuantity' => CartItem::MAX_QUANTITY,
         ], [
-            'title' => 'Votre panier – Daris',
-            'description' => 'Récapitulatif de votre panier Daris.',
+            'title' => 'Votre panier – Azurine',
+            'description' => 'Récapitulatif de votre panier Azurine.',
             'noindex' => true,
             'bodyClass' => 'page-cart',
         ]);

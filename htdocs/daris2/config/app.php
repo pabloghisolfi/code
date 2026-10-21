@@ -16,7 +16,7 @@ Env::load($root . '/.env');
 
 return [
     'app' => [
-        'name' => 'Daris',
+        'name' => 'Azurine',
         'tagline' => 'Maquillage & montres',
         'env' => Env::get('APP_ENV', 'production'),
         'debug' => Env::bool('APP_DEBUG', false),
@@ -24,7 +24,7 @@ return [
         'url' => Env::get('APP_URL', ''),
         'secret' => Env::get('APP_SECRET', ''),
         'locale' => 'fr_CH',
-        'theme_color' => '#dceefb',
+        'theme_color' => '#5a9fd4',
         'credit' => 'Site codé par Daris Jamini',
     ],
     'paths' => [
@@ -35,7 +35,7 @@ return [
         'assets' => $root . '/assets',
     ],
     'shop' => [
-        'email' => Env::get('SHOP_EMAIL', 'bonjour@daris.ch'),
+        'email' => Env::get('SHOP_EMAIL', 'bonjour@azurine.ch'),
         'phone' => Env::get('SHOP_PHONE', '+41 21 000 00 00'),
         'address' => 'Rue du Lac 12, 1003 Lausanne',
         'currency' => 'CHF',
@@ -58,7 +58,7 @@ return [
     ],
     'mail' => [
         'enabled' => Env::bool('MAIL_ENABLED', false),
-        'from' => Env::get('MAIL_FROM', 'Daris <no-reply@daris.ch>'),
+        'from' => Env::get('MAIL_FROM', 'Azurine <no-reply@azurine.ch>'),
     ],
     'database' => [
         'file' => Env::get('DB_FILE', 'daris.sqlite'),

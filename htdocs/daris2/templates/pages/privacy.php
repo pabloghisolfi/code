@@ -6,12 +6,12 @@
  * @var array<string, string|int> $app
  */
 ?>
-<?= $v->partial('partials/page-head', ['kicker' => 'Confidentialité', 'title' => 'Protection des données', 'lead' => 'Ce que la boutique Daris enregistre, pourquoi, et comment exercer vos droits.', 'crumbs' => [['', 'Confidentialité']]]) ?>
+<?= $v->partial('partials/page-head', ['kicker' => 'Confidentialité', 'title' => 'Protection des données', 'lead' => 'Ce que la boutique Azurine enregistre, pourquoi, et comment exercer vos droits.', 'crumbs' => [['', 'Confidentialité']]]) ?>
 
 <section class="section">
     <div class="wrap prose wide legal" data-reveal>
         <h2>Responsable</h2>
-        <p>La boutique Daris, <?= $v->e((string) $app['address']) ?>. Contact : <a href="mailto:<?= $v->e((string) $app['email']) ?>"><?= $v->e((string) $app['email']) ?></a>.</p>
+        <p>La boutique Azurine, <?= $v->e((string) $app['address']) ?>. Contact : <a href="mailto:<?= $v->e((string) $app['email']) ?>"><?= $v->e((string) $app['email']) ?></a>.</p>
 
         <h2>Commandes</h2>
         <p>Lors d'une commande, nous enregistrons nom, adresse, e-mail, téléphone (facultatif), articles commandés et montants. Ces données servent à préparer, livrer et facturer la commande, et à répondre au suivi. Conservation : durée légale de facturation, puis archivage limité.</p>

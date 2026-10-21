@@ -11,7 +11,7 @@
 <section class="section">
     <div class="wrap prose wide legal" data-reveal>
         <h2>1. Objet</h2>
-        <p>Les présentes conditions régissent les ventes de la boutique Daris (maquillage et montres) via le site. Prix en CHF, TVA incluse.</p>
+        <p>Les présentes conditions régissent les ventes de la boutique Azurine (maquillage et montres) via le site. Prix en CHF, TVA incluse.</p>
 
         <h2>2. Commande</h2>
         <p>La commande est confirmée par e-mail avec une référence unique. Les stocks sont indicatifs ; en cas d'indisponibilité, nous vous contactons pour un remboursement ou un échange.</p>

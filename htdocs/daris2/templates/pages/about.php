@@ -5,7 +5,7 @@
  * @var list<\Daris\Catalog\Product> $bestSellers
  */
 ?>
-<?= $v->partial('partials/page-head', ['kicker' => 'À propos', 'title' => 'Daris, une marque pensée pour vous', 'lead' => 'Daris est une boutique en ligne suisse de maquillage doux et de montres élégantes. Pas un projet personnel : une marque à part entière, avec ses produits, ses prix et son service client.', 'crumbs' => [['', 'À propos']]]) ?>
+<?= $v->partial('partials/page-head', ['kicker' => 'À propos', 'title' => 'Azurine, une marque pensée pour vous', 'lead' => 'Azurine est une boutique en ligne suisse de maquillage doux et de montres élégantes. Pas un projet personnel : une marque à part entière, avec ses produits, ses prix et son service client.', 'crumbs' => [['', 'À propos']]]) ?>
 
 <section class="section">
     <div class="wrap prose wide" data-reveal>

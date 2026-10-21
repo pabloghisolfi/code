@@ -36,8 +36,8 @@ final class ContactController extends AbstractController
             'errors' => $session->pullErrors(),
             'sent' => $request->query('envoye', '', 1) === '1',
         ], [
-            'title' => 'Contact – Daris',
-            'description' => 'Une question sur une teinte, une commande ou une montre ? L\'équipe Daris répond sous 24 heures ouvrées.',
+            'title' => 'Contact – Azurine',
+            'description' => 'Une question sur une teinte, une commande ou une montre ? L\'équipe Azurine répond sous 24 heures ouvrées.',
             'bodyClass' => 'page-contact',
         ]);
     }
@@ -87,12 +87,12 @@ final class ContactController extends AbstractController
 
         $mailer->send(
             $shopEmail,
-            '[Daris] ' . $message->subjectLabel() . ' – ' . $message->name(),
+            '[Azurine] ' . $message->subjectLabel() . ' – ' . $message->name(),
             $view->render('emails/contact-notification', ['message' => $message])
         );
         $mailer->send(
             $message->email(),
-            'Nous avons bien reçu votre message – Daris',
+            'Nous avons bien reçu votre message – Azurine',
             $view->render('emails/contact-receipt', ['message' => $message, 'shopEmail' => $shopEmail])
         );
     }

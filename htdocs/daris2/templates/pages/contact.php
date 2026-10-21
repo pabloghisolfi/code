@@ -9,7 +9,7 @@
  */
 $val = static fn (string $k, string $d = ''): string => $v->e($old[$k] ?? $d);
 ?>
-<?= $v->partial('partials/page-head', ['kicker' => 'Contact', 'title' => 'Écrire à l\'équipe Daris', 'lead' => 'Une question sur une commande, une teinte ou une montre ? Nous répondons en général sous 24 heures ouvrées.', 'crumbs' => [['', 'Contact']]]) ?>
+<?= $v->partial('partials/page-head', ['kicker' => 'Contact', 'title' => 'Écrire à l\'équipe Azurine', 'lead' => 'Une question sur une commande, une teinte ou une montre ? Nous répondons en général sous 24 heures ouvrées.', 'crumbs' => [['', 'Contact']]]) ?>
 
 <section class="section">
     <div class="wrap contact-layout">
@@ -68,7 +68,7 @@ $val = static fn (string $k, string $d = ''): string => $v->e($old[$k] ?? $d);
             <div class="contact-card">
                 <h2 class="h3">Réponse immédiate</h2>
                 <p>Teinte, taille de montre, idée cadeau : la conseillère Léa répond tout de suite.</p>
-                <a class="btn btn--soft btn--block" href="<?= $v->url('/conseillere') ?>">Ouvrir la conseillère</a>
+                <a class="btn btn--soft btn--block" href="<?= $v->url('/chat') ?>">Ouvrir la conseillère</a>
             </div>
         </aside>
     </div>

@@ -70,8 +70,8 @@ final class CatalogController extends AbstractController
             'sorts' => ProductFilter::SORTS,
             'priceRanges' => ProductFilter::PRICE_RANGES,
         ], [
-            'title' => ($category !== null ? $category->name() : 'Boutique') . ' – Daris, maquillage & montres',
-            'description' => $category !== null ? $category->intro() : 'Tout le catalogue Daris : maquillage pastel et montres élégantes, prix en CHF, livraison en Suisse.',
+            'title' => ($category !== null ? $category->name() : 'Boutique') . ' – Azurine, maquillage & montres',
+            'description' => $category !== null ? $category->intro() : 'Tout le catalogue Azurine : maquillage pastel et montres élégantes, prix en CHF, livraison en Suisse.',
             'noindex' => $filter->isActive() || $pageNumber > 1,
             'canonical' => $this->services->url()->absolute($basePath),
             'bodyClass' => 'page-catalog',

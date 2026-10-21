@@ -4,7 +4,7 @@
  * @var \Daris\Contact\ContactMessage $message
  */
 ?>
-Nouveau message — Daris
+Nouveau message — Azurine
 
 De : <?= $v->e($message->name()) ?> <<?= $v->e($message->email()) ?>>
 

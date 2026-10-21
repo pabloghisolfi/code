@@ -10,11 +10,11 @@
  */
 if (!isset($app) || !is_array($app)) {
     $app = [
-        'name' => 'Daris',
+        'name' => 'Azurine',
         'tagline' => 'Maquillage & montres',
         'credit' => 'Site codé par Daris Jamini',
         'themeColor' => '#dceefb',
-        'email' => 'bonjour@daris.ch',
+        'email' => 'bonjour@azurine.ch',
         'phone' => '+41 21 000 00 00',
         'address' => 'Rue du Lac 12, 1003 Lausanne',
         'freeShippingFrom' => 8000,

@@ -10,7 +10,7 @@ use Daris\View\ProductArt;
 $palette = $look->palette();
 $main = $palette[0] ?? '#f2b9cc';
 ?>
-<a class="look-card" href="<?= $v->url('/inspirations/' . $look->slug()) ?>" data-reveal>
+<a class="look-card" href="<?= $v->url('/exemples/' . $look->slug()) ?>" data-reveal>
     <div class="look-card__media">
         <?= ProductArt::render($look->art(), $main, count($palette) % 2 === 0 ? 'blue' : 'pink', 'look-card__art') ?>
         <span class="look-card__palette" aria-hidden="true">

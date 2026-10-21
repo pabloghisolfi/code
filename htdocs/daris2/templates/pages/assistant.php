@@ -21,7 +21,7 @@
                 <button type="button" class="chip" data-chat-suggest><?= $v->e($suggestion) ?></button>
                 <?php endforeach; ?>
             </div>
-            <form class="chat__form" data-chat-form action="<?= $v->url('/conseillere/repondre') ?>" method="post">
+            <form class="chat__form" data-chat-form action="<?= $v->url('/chat/repondre') ?>" method="post">
                 <label class="sr-only" for="chat-q">Votre question</label>
                 <input id="chat-q" name="question" type="text" maxlength="300" placeholder="Ex. Quelle teinte de fond de teint ?" required autocomplete="off">
                 <button class="btn btn--primary" type="submit" aria-label="Envoyer"><svg aria-hidden="true"><use href="#i-send"/></svg></button>

@@ -135,9 +135,13 @@ final class Application
 
         $router->get('/tarifs', fn (Request $r): Response => (new PricingController($s))->index());
         $router->get('/guide', fn (Request $r): Response => (new GuideController($s))->index());
+        $router->get('/conseils', fn (Request $r): Response => (new GuideController($s))->index());
         $router->get('/inspirations', fn (Request $r): Response => (new LookController($s))->index());
+        $router->get('/exemples', fn (Request $r): Response => (new LookController($s))->index());
         $router->get('/inspirations/{slug}', fn (Request $r, string $slug): Response => (new LookController($s))->show($slug));
+        $router->get('/exemples/{slug}', fn (Request $r, string $slug): Response => (new LookController($s))->show($slug));
         $router->post('/inspirations/{slug}/panier', fn (Request $r, string $slug): Response => (new LookController($s))->addAll($slug));
+        $router->post('/exemples/{slug}/panier', fn (Request $r, string $slug): Response => (new LookController($s))->addAll($slug));
 
         $router->get('/a-propos', fn (Request $r): Response => (new PageController($s))->about());
         $router->get('/confidentialite', fn (Request $r): Response => (new PageController($s))->privacy());
@@ -146,7 +150,9 @@ final class Application
         $router->get('/contact', fn (Request $r): Response => (new ContactController($s))->form());
         $router->post('/contact', fn (Request $r): Response => (new ContactController($s))->submit());
         $router->get('/conseillere', fn (Request $r): Response => (new AssistantController($s))->index());
+        $router->get('/chat', fn (Request $r): Response => (new AssistantController($s))->index());
         $router->post('/conseillere/repondre', fn (Request $r): Response => (new AssistantController($s))->reply());
+        $router->post('/chat/repondre', fn (Request $r): Response => (new AssistantController($s))->reply());
         $router->post('/newsletter', fn (Request $r): Response => (new NewsletterController($s))->subscribe());
 
         $router->get('/sitemap.xml', fn (Request $r): Response => (new SeoController($s))->sitemap());

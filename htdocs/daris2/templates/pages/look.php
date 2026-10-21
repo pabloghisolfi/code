@@ -14,7 +14,7 @@ $main = $look->palette()[0] ?? '#f2b9cc';
     'kicker' => $look->occasion() . ' · ' . $look->level(),
     'title' => $look->title(),
     'lead' => $look->intro(),
-    'crumbs' => [[$v->url('/inspirations'), 'Inspirations'], ['', $look->title()]],
+    'crumbs' => [[$v->url('/exemples'), 'Inspirations'], ['', $look->title()]],
     'tone' => 'pink',
 ]) ?>
 
@@ -48,7 +48,7 @@ $main = $look->palette()[0] ?? '#f2b9cc';
                 <?= $v->partial('partials/product-card', ['product' => $product]) ?>
                 <?php endforeach; ?>
             </div>
-            <form class="look-add-all" method="post" action="<?= $v->url('/inspirations/' . $look->slug() . '/panier') ?>">
+            <form class="look-add-all" method="post" action="<?= $v->url('/exemples/' . $look->slug() . '/panier') ?>">
                 <?= $v->csrfField() ?>
                 <button class="btn btn--primary btn--lg" type="submit">Tout ajouter au panier (<?= $v->money($total) ?>)</button>
                 <p class="hint">Les teintes par défaut sont sélectionnées ; vous pourrez les ajuster dans le panier.</p>

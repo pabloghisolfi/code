@@ -1,6 +1,6 @@
 {
     "name": "daris/boutique",
-    "description": "Daris – boutique en ligne de maquillage et de montres (PHP 8.1+, sans framework).",
+    "description": "Azurine – boutique en ligne de maquillage et de montres (PHP 8.1+, sans framework).",
     "type": "project",
     "license": "MIT",
     "require": {

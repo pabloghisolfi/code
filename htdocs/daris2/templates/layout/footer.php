@@ -39,7 +39,7 @@ require __DIR__ . '/../partials/app-fallback.php';
                     <li><a href="<?= $v->url('/boutique', ['badge' => 'nouveau']) ?>">Nouveautés</a></li>
                     <li><a href="<?= $v->url('/boutique', ['badge' => 'best-seller']) ?>">Best-sellers</a></li>
                     <li><a href="<?= $v->url('/boutique', ['badge' => 'promo']) ?>">Offres du moment</a></li>
-                    <li><a href="<?= $v->url('/inspirations') ?>">Inspirations</a></li>
+                    <li><a href="<?= $v->url('/exemples') ?>">Exemples & looks</a></li>
                 </ul>
             </nav>
 
@@ -49,14 +49,14 @@ require __DIR__ . '/../partials/app-fallback.php';
                     <li><a href="<?= $v->url('/tarifs') ?>">Prix & livraison</a></li>
                     <li><a href="<?= $v->url('/tarifs') ?>#retours">Retours & garantie</a></li>
                     <li><a href="<?= $v->url('/commande/suivi') ?>">Suivre ma commande</a></li>
-                    <li><a href="<?= $v->url('/conseillere') ?>">Conseillère & FAQ</a></li>
-                    <li><a href="<?= $v->url('/guide') ?>">Guide & conseils</a></li>
+                    <li><a href="<?= $v->url('/chat') ?>">Conseillère & FAQ</a></li>
+                    <li><a href="<?= $v->url('/conseils') ?>">Guide & conseils</a></li>
                     <li><a href="<?= $v->url('/contact') ?>">Contact</a></li>
                 </ul>
             </nav>
 
             <div class="footer__col footer__newsletter" id="newsletter">
-                <h2 class="footer__title">La lettre Daris</h2>
+                <h2 class="footer__title">La lettre Azurine</h2>
                 <p>Nouveautés, conseils de teintes et une attention pour votre anniversaire. Un e-mail par mois, pas plus.</p>
                 <form class="newsletter" action="<?= $v->url('/newsletter') ?>" method="post" data-newsletter>
                     <?= $v->csrfField() ?>

@@ -12,7 +12,7 @@ $c = $order->customer();
 ?>
 Bonjour <?= $v->e($c->firstName()) ?>,
 
-Merci pour votre commande chez Daris.
+Merci pour votre commande chez Azurine.
 
 Référence : <?= $order->reference() ?>
 
@@ -44,4 +44,4 @@ Voir le détail : <?= $orderUrl ?>
 Une question ? <?= $shopEmail ?>
 
 
-— Daris
+— Azurine

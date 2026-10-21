@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Contrôleur frontal de la boutique Daris.
+ * Contrôleur frontal de la boutique Azurine (dossier daris2).
  *
  * Toutes les requêtes dynamiques arrivent ici (réécriture Apache ou router.php
  * en développement). Le dossier est prévu pour être déposé tel quel dans

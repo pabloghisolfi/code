@@ -13,6 +13,6 @@ Nous vous répondons en général sous 24 heures ouvrées à l'adresse <?= $v->e
 
 Pour une réponse immédiate sur les teintes ou les tailles de montres, vous pouvez aussi utiliser la conseillère en ligne sur le site.
 
-— L'équipe Daris
+— L'équipe Azurine
 <?= $shopEmail ?>
 

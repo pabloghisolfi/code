@@ -16,19 +16,19 @@ final class PricingController extends AbstractController
     private const SERVICES = [
         ['name' => 'Changement de pile', 'price' => 2000, 'note' => 'Offert pendant la garantie, test d\'étanchéité inclus.'],
         ['name' => 'Mise à taille d\'un bracelet acier', 'price' => 0, 'note' => 'Gratuit à la commande (indiquez votre tour de poignet) ou en atelier.'],
-        ['name' => 'Changement de bracelet (pose)', 'price' => 1000, 'note' => 'Offert si le bracelet est acheté chez Daris.'],
+        ['name' => 'Changement de bracelet (pose)', 'price' => 1000, 'note' => 'Offert si le bracelet est acheté chez Azurine.'],
         ['name' => 'Gravure au dos du boîtier', 'price' => 2500, 'note' => 'Jusqu\'à 30 caractères, délai +2 jours ouvrés.'],
         ['name' => 'Papier cadeau et carte manuscrite', 'price' => 490, 'note' => 'Boîte bleu ciel, ruban rose, message de votre choix.'],
         ['name' => 'Révision complète (hors garantie)', 'price' => 6500, 'note' => 'Nettoyage, pile, joints, test d\'étanchéité.'],
     ];
 
     private const MARKET = [
-        ['item' => 'Rouge à lèvres satiné', 'market' => 'CHF 25 à 48', 'daris' => 2900],
-        ['item' => 'Mascara volume', 'market' => 'CHF 22 à 42', 'daris' => 2600],
-        ['item' => 'Palette 9 fards', 'market' => 'CHF 45 à 85', 'daris' => 4900],
-        ['item' => 'Fond de teint 30 ml avec SPF', 'market' => 'CHF 39 à 72', 'daris' => 4200],
-        ['item' => 'Montre quartz acier, 32 mm', 'market' => 'CHF 179 à 350', 'daris' => 18900],
-        ['item' => 'Montre Swiss Made, saphir', 'market' => 'CHF 420 à 900', 'daris' => 44900],
+        ['item' => 'Rouge à lèvres satiné', 'market' => 'CHF 25 à 48', 'azurine' => 2900],
+        ['item' => 'Mascara volume', 'market' => 'CHF 22 à 42', 'azurine' => 2600],
+        ['item' => 'Palette 9 fards', 'market' => 'CHF 45 à 85', 'azurine' => 4900],
+        ['item' => 'Fond de teint 30 ml avec SPF', 'market' => 'CHF 39 à 72', 'azurine' => 4200],
+        ['item' => 'Montre quartz acier, 32 mm', 'market' => 'CHF 179 à 350', 'azurine' => 18900],
+        ['item' => 'Montre Swiss Made, saphir', 'market' => 'CHF 420 à 900', 'azurine' => 44900],
     ];
 
     public function index(): Response
@@ -54,8 +54,8 @@ final class PricingController extends AbstractController
             'promoCodes' => $config->array('shop.promo_codes'),
             'faq' => $this->services->faq()->topics(),
         ], [
-            'title' => 'Prix, livraison et services – Daris',
-            'description' => 'Tous les prix Daris en francs suisses, TVA incluse : maquillage dès CHF 14, montres dès CHF 149, livraison offerte dès CHF 80, retours gratuits 30 jours.',
+            'title' => 'Prix, livraison et services – Azurine',
+            'description' => 'Tous les prix Azurine en francs suisses, TVA incluse : maquillage dès CHF 14, montres dès CHF 149, livraison offerte dès CHF 80, retours gratuits 30 jours.',
             'bodyClass' => 'page-pricing',
         ]);
     }

@@ -26,7 +26,7 @@ final class HomeController extends AbstractController
                 'montres' => $catalog->priceBounds('montres'),
             ],
         ], [
-            'title' => 'Daris – Maquillage & montres pour elles, livrés en Suisse',
+            'title' => 'Azurine – Maquillage & montres, livrés en Suisse',
             'description' => 'Boutique en ligne suisse de maquillage doux et de montres élégantes. Teintes pastel, prix en CHF, livraison offerte dès CHF 80, retours gratuits 30 jours.',
             'ogType' => 'website',
             'bodyClass' => 'page-home',

@@ -44,8 +44,8 @@ final class CheckoutController extends AbstractController
             'selectedShipping' => $old['shipping'] ?? $cart->shippingMethod(),
             'giftWrap' => isset($old['gift_wrap']) ? $old['gift_wrap'] === '1' : $cart->giftWrap(),
         ], [
-            'title' => 'Commande – Daris',
-            'description' => 'Finalisez votre commande Daris en toute sécurité.',
+            'title' => 'Commande – Azurine',
+            'description' => 'Finalisez votre commande Azurine en toute sécurité.',
             'noindex' => true,
             'bodyClass' => 'page-checkout',
         ]);
@@ -125,7 +125,7 @@ final class CheckoutController extends AbstractController
             'paymentMethods' => $this->services->config()->array('shop.payment_methods'),
             'justPlaced' => $this->services->request()->header('Referer') !== '' && str_contains($this->services->request()->header('Referer'), '/commande'),
         ], [
-            'title' => 'Commande ' . $order->reference() . ' confirmée – Daris',
+            'title' => 'Commande ' . $order->reference() . ' confirmée – Azurine',
             'description' => 'Merci pour votre commande.',
             'noindex' => true,
             'bodyClass' => 'page-confirmation',
@@ -139,8 +139,8 @@ final class CheckoutController extends AbstractController
             'old' => $this->services->session()->pullOldInput(),
             'errors' => $this->services->session()->pullErrors(),
         ], [
-            'title' => 'Suivre ma commande – Daris',
-            'description' => 'Retrouvez l\'état de votre commande Daris avec votre référence et votre e-mail.',
+            'title' => 'Suivre ma commande – Azurine',
+            'description' => 'Retrouvez l\'état de votre commande Azurine avec votre référence et votre e-mail.',
             'bodyClass' => 'page-tracking',
         ]);
     }
@@ -175,8 +175,8 @@ final class CheckoutController extends AbstractController
             'old' => ['reference' => $reference, 'email' => $email],
             'errors' => $errors,
         ], [
-            'title' => 'Suivre ma commande – Daris',
-            'description' => 'Retrouvez l\'état de votre commande Daris.',
+            'title' => 'Suivre ma commande – Azurine',
+            'description' => 'Retrouvez l\'état de votre commande Azurine.',
             'noindex' => true,
             'bodyClass' => 'page-tracking',
         ], $errors === [] ? 200 : 422);

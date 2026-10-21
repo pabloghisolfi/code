@@ -1,4 +1,4 @@
-# Daris — boutique maquillage & montres (PHP)
+# Azurine — boutique maquillage & montres (PHP)
 
 Site dynamique en français (Suisse), prix en **CHF**, prévu pour être déposé dans `htdocs/daris2/` et servi sous `/daris2/`.
 

@@ -71,7 +71,7 @@
 <?php if ($starterKit !== []) : ?>
 <section class="section section--tint">
     <div class="wrap">
-        <?= $v->partial('partials/section-head', ['kicker' => 'Pour débuter', 'title' => 'Quatre produits suffisent', 'linkHref' => $v->url('/inspirations/matin-frais'), 'linkLabel' => 'Voir le look Matin frais']) ?>
+        <?= $v->partial('partials/section-head', ['kicker' => 'Pour débuter', 'title' => 'Quatre produits suffisent', 'linkHref' => $v->url('/exemples/matin-frais'), 'linkLabel' => 'Voir le look Matin frais']) ?>
         <div class="grid grid--products">
             <?php foreach ($starterKit as $product) : ?>
             <?= $v->partial('partials/product-card', ['product' => $product]) ?>

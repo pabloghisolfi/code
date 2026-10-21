@@ -17,8 +17,8 @@ final class PageController extends AbstractController
             'categories' => $this->services->catalog()->categories(),
             'bestSellers' => $this->services->catalog()->withBadge('best-seller', 4),
         ], [
-            'title' => 'À propos de Daris – maquillage & montres',
-            'description' => 'Daris est une boutique en ligne suisse de maquillage doux et de montres élégantes : formules soignées, mouvements fiables, prix justes en CHF.',
+            'title' => "À propos d'Azurine – maquillage & montres",
+            'description' => 'Azurine est une boutique en ligne suisse de maquillage doux et de montres élégantes : formules soignées, mouvements fiables, prix justes en CHF.',
             'bodyClass' => 'page-about',
         ]);
     }
@@ -29,8 +29,8 @@ final class PageController extends AbstractController
             'sessionName' => $this->services->config()->string('security.session_name'),
             'sessionHours' => intdiv($this->services->config()->int('security.session_lifetime'), 3600),
         ], [
-            'title' => 'Confidentialité – Daris',
-            'description' => 'Quelles données la boutique Daris conserve (commandes, messages, panier), pourquoi, combien de temps, et comment les faire effacer.',
+            'title' => 'Confidentialité – Azurine',
+            'description' => 'Quelles données la boutique Azurine conserve (commandes, messages, panier), pourquoi, combien de temps, et comment les faire effacer.',
             'bodyClass' => 'page-legal',
         ]);
     }
@@ -41,8 +41,8 @@ final class PageController extends AbstractController
             'freeShippingFrom' => $this->services->config()->int('shop.free_shipping_from'),
             'shippingMethods' => $this->services->config()->array('shop.shipping_methods'),
         ], [
-            'title' => 'Conditions générales de vente – Daris',
-            'description' => 'Conditions de vente de la boutique Daris : prix, paiement, livraison, retours sous 30 jours, garantie des montres.',
+            'title' => 'Conditions générales de vente – Azurine',
+            'description' => 'Conditions de vente de la boutique Azurine : prix, paiement, livraison, retours sous 30 jours, garantie des montres.',
             'bodyClass' => 'page-legal',
         ]);
     }

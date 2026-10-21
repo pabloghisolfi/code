@@ -1,5 +1,5 @@
 {
-    "greeting": "Bonjour ! Je suis Léa, la conseillère de Daris. Posez-moi une question sur une teinte, une taille de montre, la livraison ou un cadeau : je réponds tout de suite.",
+    "greeting": "Bonjour ! Je suis Léa, la conseillère d'Azurine. Posez-moi une question sur une teinte, une taille de montre, la livraison ou un cadeau : je réponds tout de suite.",
     "fallback": "Je n'ai pas encore la réponse à cette question. Essayez avec d'autres mots (teinte, taille, livraison, retour, cadeau), ou écrivez-nous depuis la page Contact : une vraie personne vous répond sous 24 heures ouvrées.",
     "suggestions": ["Quelle teinte de fond de teint ?", "Quelle taille de montre pour un poignet fin ?", "Délais de livraison", "Idée cadeau à moins de CHF 100", "Comment retourner un article ?"],
     "intents": [
@@ -31,7 +31,7 @@
         {
             "keywords": ["cadeau", "offrir", "anniversaire", "noel", "coffret", "surprise"],
             "answer": "Nos idées cadeau les plus appréciées : à moins de CHF 50, le rouge Pétale (CHF 29.00) ou le vernis Pastel en trio ; à moins de CHF 100, le coffret Premiers pas (CHF 69.00) ; pour une montre, Lune (CHF 189.00) ou le coffret Étoile avec trois bracelets (CHF 279.00). Toutes les commandes peuvent être emballées avec un message (CHF 4.90).",
-            "links": [{"label": "Coffret Premiers pas", "path": "/produit/coffret-premiers-pas"}, {"label": "Coffret Étoile", "path": "/produit/coffret-etoile"}, {"label": "Nos inspirations cadeau", "path": "/inspirations/cadeau-premiere-montre"}]
+            "links": [{"label": "Coffret Premiers pas", "path": "/produit/coffret-premiers-pas"}, {"label": "Coffret Étoile", "path": "/produit/coffret-etoile"}, {"label": "Nos inspirations cadeau", "path": "/exemples/cadeau-premiere-montre"}]
         },
         {
             "keywords": ["moins de", "budget", "pas cher", "prix", "combien coute", "tarif"],
@@ -60,7 +60,7 @@
         },
         {
             "keywords": ["vegan", "animaux", "cruelty", "ingredients", "naturel", "allergie", "sensible"],
-            "answer": "Aucun produit ni ingrédient Daris n'est testé sur les animaux. La plupart des références sont vegan (c'est indiqué sur la fiche). Les formules sont sans paraben et sans huile minérale ; pour les yeux sensibles, le mascara Ciel ouvert et l'eyeliner Plume sont testés ophtalmologiquement.",
+            "answer": "Aucun produit ni ingrédient Azurine n'est testé sur les animaux. La plupart des références sont vegan (c'est indiqué sur la fiche). Les formules sont sans paraben et sans huile minérale ; pour les yeux sensibles, le mascara Ciel ouvert et l'eyeliner Plume sont testés ophtalmologiquement.",
             "links": [{"label": "Notre démarche", "path": "/a-propos"}]
         },
         {

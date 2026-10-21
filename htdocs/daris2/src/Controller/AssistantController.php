@@ -20,8 +20,8 @@ final class AssistantController extends AbstractController
             'suggestions' => $advisor->suggestions(),
             'faq' => $this->services->faq()->topics(),
         ], [
-            'title' => 'Conseillère de style et questions fréquentes – Daris',
-            'description' => 'Posez vos questions à Léa, la conseillère Daris : teintes, tailles de montres, livraison, cadeaux. Réponse immédiate, sans inscription.',
+            'title' => 'Conseillère de style et questions fréquentes – Azurine',
+            'description' => 'Posez vos questions à Léa, la conseillère Azurine : teintes, tailles de montres, livraison, cadeaux. Réponse immédiate, sans inscription.',
             'bodyClass' => 'page-assistant',
         ]);
     }

@@ -15,11 +15,14 @@ final class SeoController extends AbstractController
         '/' => ['weekly', '1.0'],
         '/boutique' => ['weekly', '0.9'],
         '/tarifs' => ['monthly', '0.8'],
+        '/conseils' => ['monthly', '0.7'],
         '/guide' => ['monthly', '0.7'],
+        '/exemples' => ['monthly', '0.7'],
         '/inspirations' => ['monthly', '0.7'],
+        '/chat' => ['monthly', '0.5'],
+        '/conseillere' => ['monthly', '0.5'],
         '/a-propos' => ['yearly', '0.5'],
         '/contact' => ['yearly', '0.5'],
-        '/conseillere' => ['monthly', '0.5'],
         '/commande/suivi' => ['yearly', '0.3'],
         '/confidentialite' => ['yearly', '0.2'],
         '/cgv' => ['yearly', '0.2'],
@@ -42,7 +45,7 @@ final class SeoController extends AbstractController
             $entries[] = [$url->absolute('/produit/' . $product->slug()), $today, 'weekly', '0.7'];
         }
         foreach ($this->services->looks()->all() as $look) {
-            $entries[] = [$url->absolute('/inspirations/' . $look->slug()), $today, 'monthly', '0.6'];
+            $entries[] = [$url->absolute('/exemples/' . $look->slug()), $today, 'monthly', '0.6'];
         }
 
         $xml = '<?xml version="1.0" encoding="UTF-8"?>' . "\n"
@@ -73,6 +76,7 @@ final class SeoController extends AbstractController
             'Disallow: ' . $base . 'panier',
             'Disallow: ' . $base . 'commande',
             'Disallow: ' . $base . 'conseillere/repondre',
+            'Disallow: ' . $base . 'chat/repondre',
             'Disallow: ' . $base . 'newsletter',
             'Disallow: ' . $base . 'recherche',
             'Disallow: ' . $base . 'boutique?*q=',

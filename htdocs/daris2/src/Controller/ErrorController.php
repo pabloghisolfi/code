@@ -50,7 +50,7 @@ final class ErrorController extends AbstractController
             'debug' => $debug && $status >= 500 ? $exception::class . ': ' . $exception->getMessage() . "\n" . $exception->getTraceAsString() : '',
             'suggestions' => $suggestions,
         ], [
-            'title' => self::TITLES[$status] . ' – Daris',
+            'title' => self::TITLES[$status] . ' – Azurine',
             'description' => self::LEADS[$status],
             'noindex' => true,
             'bodyClass' => 'page-error',

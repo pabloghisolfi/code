@@ -7,6 +7,8 @@
  * @var string $currentPath
  * @var list<\Daris\Catalog\Category> $navCategories
  */
+require __DIR__ . '/../partials/app-fallback.php';
+
 ?>
 <footer class="footer">
     <div class="wrap">

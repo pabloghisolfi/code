@@ -6,6 +6,8 @@
  * @var array<string, string> $app
  * @var string $variant  "header" | "footer" | "compact"
  */
+require __DIR__ . '/app-fallback.php';
+
 $variant = $variant ?? 'header';
 $uid = 'logo-' . $variant;
 ?>

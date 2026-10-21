@@ -36,12 +36,19 @@ final class ErrorController extends AbstractController
             return Response::json(['ok' => false, 'error' => self::TITLES[$status]], $status);
         }
 
+        $suggestions = [];
+        try {
+            $suggestions = $this->services->catalog()->featured(4);
+        } catch (Throwable) {
+            $suggestions = [];
+        }
+
         return $this->page('error', [
             'status' => $status,
             'heading' => self::TITLES[$status],
             'lead' => $exception->getMessage() !== '' && $status !== 500 ? $exception->getMessage() : self::LEADS[$status],
             'debug' => $debug && $status >= 500 ? $exception::class . ': ' . $exception->getMessage() . "\n" . $exception->getTraceAsString() : '',
-            'suggestions' => $this->services->catalog()->featured(4),
+            'suggestions' => $suggestions,
         ], [
             'title' => self::TITLES[$status] . ' – Daris',
             'description' => self::LEADS[$status],

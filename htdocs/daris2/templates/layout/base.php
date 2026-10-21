@@ -11,6 +11,8 @@
  * @var int $cartCount
  * @var array{type: string, message: string}|null $flash
  */
+require __DIR__ . '/../partials/app-fallback.php';
+
 $title = (string) ($meta['title'] ?? $app['name']);
 $description = (string) ($meta['description'] ?? '');
 $canonical = (string) ($meta['canonical'] ?? '');

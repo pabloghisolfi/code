@@ -165,6 +165,7 @@ final class Application
 
         try {
             $services ??= new Services($this->config, $request, $session);
+            $this->shareLayoutData($services);
 
             return (new ErrorController($services))->render($status, $exception, $this->config->bool('app.debug'));
         } catch (Throwable $fallback) {

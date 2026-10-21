@@ -8,6 +8,8 @@
  * @var list<\Daris\Catalog\Category> $navCategories
  * @var int $cartCount
  */
+require __DIR__ . '/../partials/app-fallback.php';
+
 $isActive = static fn (string $prefix): bool => $prefix === '/' ? $currentPath === '/' : str_starts_with($currentPath, $prefix);
 $navItems = [
     ['/boutique/maquillage', 'Maquillage'],

@@ -505,8 +505,22 @@ h1, h2, h3,
   aspect-ratio: 1;
   background: linear-gradient(145deg, var(--blue-50), var(--pink-50));
   display: block;
+  overflow: hidden;
 }
 .card--watch .card__media { background: linear-gradient(145deg, var(--blue-100), var(--blue-50)); }
+.card__media > .card__art,
+.card__media > img.card__art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+}
+.card__media > img.product-photo {
+  object-fit: cover;
+  object-position: center;
+}
 .card__art { width: 100%; height: 100%; }
 .card__fav {
   position: absolute;
@@ -890,12 +904,26 @@ svg use { pointer-events: none; }
   border-bottom: 1px solid var(--line);
 }
 .cart-line__media {
+  position: relative;
   display: block;
   aspect-ratio: 1;
   border-radius: var(--radius-sm);
   overflow: hidden;
   background: var(--blue-50);
   border: 1px solid var(--line);
+}
+.cart-line__media > .cart-line__art,
+.cart-line__media > img.cart-line__art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+}
+.cart-line__media > img.product-photo {
+  object-fit: cover;
+  object-position: center;
 }
 .cart-line__title { font-size: 1.35rem; margin: 0; }
 .cart-line__title a { color: var(--blue-800); text-decoration: none; }
@@ -1344,6 +1372,14 @@ details.promo summary { cursor: pointer; font-weight: 600; color: var(--blue-800
 .maison-tile:hover { transform: translateY(-4px); }
 .maison-tile--watch { grid-row: span 2; }
 .maison-tile__art { aspect-ratio: 1; }
+.maison-tile__art.product-photo {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
 .maison-tile__meta {
   display: flex; flex-direction: column; gap: 0.15rem; padding: 0.85rem 1rem 1rem;
   background: linear-gradient(180deg, transparent, rgba(255,255,255,.95));
@@ -1376,15 +1412,16 @@ details.promo summary { cursor: pointer; font-weight: 600; color: var(--blue-800
 .grid--lux .card { border: 1px solid rgba(30, 77, 120, 0.1); }
 .card__brand { letter-spacing: 0.08em; text-transform: uppercase; font-size: 0.72rem; font-weight: 700; color: var(--pink-500); }
 .product__brand { font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
-.product-photo,
-.card__art.product-photo,
-.maison-tile__art.product-photo,
-.cart-line__art.product-photo,
+.product__art.product-photo,
 .checkout-items__art.product-photo {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
+  background: var(--blue-50);
+}
+.card__media img.product-photo,
+.cart-line__media img.product-photo {
   background: var(--blue-50);
 }
 .photo-credit {

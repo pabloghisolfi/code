@@ -12,7 +12,8 @@ final class PaymentResult
     public function __construct(
         private readonly string $transactionReference,
         private readonly string $statusLabel,
-        private readonly bool $simulated
+        private readonly bool $simulated,
+        private readonly string $redirectUrl = ''
     ) {
     }
 
@@ -29,5 +30,10 @@ final class PaymentResult
     public function isSimulated(): bool
     {
         return $this->simulated;
+    }
+
+    public function redirectUrl(): string
+    {
+        return $this->redirectUrl;
     }
 }

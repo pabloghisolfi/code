@@ -27,6 +27,12 @@ final class ProductController extends AbstractController
         }
 
         $category = $catalog->category($product->category());
+        $session = $this->services->session();
+        $previous = array_values(array_filter($session->getArray('viewed_products'), 'is_string'));
+        $previous = array_values(array_diff($previous, [$product->slug()]));
+        $viewed = array_slice(array_merge([$product->slug()], $previous), 0, 12);
+        $session->set('viewed_products', $viewed);
+
         $url = $this->services->url();
 
         $jsonLd = [
@@ -55,7 +61,7 @@ final class ProductController extends AbstractController
         return $this->page('product', [
             'product' => $product,
             'category' => $category,
-            'related' => $catalog->related($product, 4),
+            'related' => $catalog->relatedFor($product, array_slice($viewed, 1), 4),
             'looks' => $this->services->looks()->usingProduct($product->slug(), 2),
         ], [
             'title' => $product->name() . ' – ' . Money::format($product->price()) . ' – Azurine',

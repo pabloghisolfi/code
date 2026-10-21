@@ -12,6 +12,9 @@ use Daris\Controller\CheckoutController;
 use Daris\Controller\ContactController;
 use Daris\Controller\ErrorController;
 use Daris\Controller\GuideController;
+use Daris\Controller\LocaleController;
+use Daris\Controller\ProductPhotoController;
+use Daris\I18n\Locale;
 use Daris\Controller\HomeController;
 use Daris\Controller\LookController;
 use Daris\Controller\NewsletterController;
@@ -112,6 +115,10 @@ final class Application
         $advisor = $services->advisor();
         $view->share('assistantGreeting', $advisor->greeting());
         $view->share('assistantSuggestions', $advisor->suggestions());
+        $locale = $services->locale();
+        $view->share('htmlLang', $locale === 'zh' ? 'zh-Hans' : ($locale === 'sr' ? 'sr-Latn' : $locale));
+        $view->share('htmlDir', Locale::isRtl($locale) ? 'rtl' : 'ltr');
+        $view->share('localeLabels', Locale::LABELS);
     }
 
     private function routes(Services $s): Router
@@ -123,6 +130,8 @@ final class Application
         $router->get('/boutique/{category}', fn (Request $r, string $category): Response => (new CatalogController($s))->category($category));
         $router->get('/recherche', fn (Request $r): Response => (new CatalogController($s))->search());
         $router->get('/produit/{slug}', fn (Request $r, string $slug): Response => (new ProductController($s))->show($slug));
+        $router->get('/produit/{slug}/photo', fn (Request $r, string $slug): Response => (new ProductPhotoController($s))->show($slug));
+        $router->post('/locale', fn (Request $r): Response => (new LocaleController($s))->set());
 
         $router->get('/panier', fn (Request $r): Response => (new CartController($s))->index());
         $router->post('/panier/ajouter', fn (Request $r): Response => (new CartController($s))->add());

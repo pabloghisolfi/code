@@ -6,6 +6,7 @@ namespace Daris\View;
 
 use Daris\Exception\ConfigurationException;
 use Daris\Http\Csrf;
+use Daris\I18n\Translator;
 use Daris\Support\Money;
 use Daris\Support\Str;
 use Daris\Support\Url;
@@ -102,11 +103,42 @@ final class View
     }
 
     /**
-     * @param array<string, scalar> $query
+     * @param array<string, scalar|list<string>> $query
      */
     public function url(string $path = '/', array $query = []): string
     {
         return Str::e($this->url->to($path, $query));
+    }
+
+    public function t(string $key, string $fallback = ''): string
+    {
+        $translator = $this->shared['translator'] ?? null;
+
+        return $translator instanceof Translator ? $translator->t($key, $fallback) : ($fallback !== '' ? $fallback : $key);
+    }
+
+    /**
+     * Champs cachés pour conserver les paramètres de filtre (y compris marque[]).
+     *
+     * @param array<string, string|list<string>> $query
+     */
+    public function queryHiddenFields(array $query, array $except = []): string
+    {
+        $html = '';
+        foreach ($query as $key => $value) {
+            if (in_array($key, $except, true)) {
+                continue;
+            }
+            if (is_array($value)) {
+                foreach ($value as $item) {
+                    $html .= '<input type="hidden" name="' . Str::e($key) . '[]" value="' . Str::e($item) . '">';
+                }
+            } else {
+                $html .= '<input type="hidden" name="' . Str::e($key) . '" value="' . Str::e((string) $value) . '">';
+            }
+        }
+
+        return $html;
     }
 
     public function absoluteUrl(string $path = '/'): string

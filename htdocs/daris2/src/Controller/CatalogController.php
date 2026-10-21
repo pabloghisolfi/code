@@ -67,8 +67,8 @@ final class CatalogController extends AbstractController
             'pages' => $pages,
             'basePath' => $basePath,
             'title' => $title,
-            'sorts' => ProductFilter::SORTS,
-            'priceRanges' => ProductFilter::PRICE_RANGES,
+            'sortKeys' => ProductFilter::SORT_KEYS,
+            'priceRangeKeys' => ProductFilter::PRICE_RANGES,
             'brands' => $catalog->brands($categorySlug),
         ], [
             'title' => ($category !== null ? $category->name() : 'Boutique') . ' – Azurine, multimarque CHF',

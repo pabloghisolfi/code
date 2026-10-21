@@ -16,7 +16,7 @@ use Daris\View\ProductArt;
 $freeFrom = (int) $app['freeShippingFrom'];
 $progress = $freeFrom > 0 ? min(100, (int) round(($freeFrom - $remainingForFreeShipping) / $freeFrom * 100)) : 100;
 ?>
-<?= $v->partial('partials/page-head', ['kicker' => 'Panier', 'title' => $items === [] ? 'Votre panier est vide' : 'Votre panier', 'lead' => $items === [] ? 'Il n\'attend que vous. Voici quelques idées pour commencer.' : 'Vérifiez les teintes et les quantités, puis passez à la commande. Rien n\'est encore débité.', 'crumbs' => [['', 'Panier']]]) ?>
+<?= $v->partial('partials/page-head', ['kicker' => $v->t('cart.title', 'Panier'), 'title' => $items === [] ? $v->t('cart.empty_title', 'Votre panier est vide') : $v->t('cart.title', 'Votre panier'), 'lead' => $items === [] ? $v->t('cart.empty_lead', 'Il n\'attend que vous.') : $v->t('cart.lead', 'Vérifiez les quantités puis passez à la commande.'), 'crumbs' => [['', $v->t('cart.title', 'Panier')]]]) ?>
 
 <section class="section section--flush">
     <div class="wrap">

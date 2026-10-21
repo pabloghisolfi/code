@@ -21,7 +21,7 @@ $bodyClass = (string) ($meta['bodyClass'] ?? '');
 $noindex = (bool) ($meta['noindex'] ?? false);
 ?>
 <!DOCTYPE html>
-<html lang="fr-CH">
+<html lang="<?= $v->e((string) ($htmlLang ?? 'fr')) ?>" dir="<?= $v->e((string) ($htmlDir ?? 'ltr')) ?>">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -72,7 +72,7 @@ $noindex = (bool) ($meta['noindex'] ?? false);
 ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_HEX_TAG | JSON_HEX_AMP) ?></script>
 </head>
 <body class="<?= $v->e(trim($bodyClass . ' ' . ($cartCount > 0 ? 'has-cart' : ''))) ?>" data-base="<?= $v->url('/') ?>" data-csrf="<?= $v->csrfToken() ?>">
-<a class="skip-link" href="#contenu">Aller au contenu</a>
+<a class="skip-link" href="#contenu"><?= $v->e($v->t('nav.skip', 'Aller au contenu')) ?></a>
 <?= $v->partial('partials/icons') ?>
 <?= $v->partial('layout/header') ?>
 <main id="contenu" tabindex="-1">

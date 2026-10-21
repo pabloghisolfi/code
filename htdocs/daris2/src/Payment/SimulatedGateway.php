@@ -19,7 +19,7 @@ final class SimulatedGateway implements PaymentGatewayInterface
         'card' => 'Paiement par carte simulé',
     ];
 
-    public function authorize(int $amountCents, string $method, string $reference): PaymentResult
+    public function authorize(int $amountCents, string $method, string $reference, string $orderToken = ''): PaymentResult
     {
         if ($amountCents <= 0) {
             throw new PaymentException('Le montant à payer est invalide.');

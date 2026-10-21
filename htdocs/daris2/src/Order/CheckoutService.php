@@ -32,7 +32,7 @@ final class CheckoutService
     /**
      * @param array{customer: Customer, shipping: string, payment: string, gift_wrap: bool, gift_message: string} $data
      *
-     * @return array{order: Order, token: string}
+     * @return array{order: Order, token: string, redirect?: string}
      */
     public function place(array $data): array
     {
@@ -45,7 +45,7 @@ final class CheckoutService
         }
         $token = OrderReference::token();
 
-        $payment = $this->gateway->authorize($totals->total(), $data['payment'], $reference);
+        $payment = $this->gateway->authorize($totals->total(), $data['payment'], $reference, $token);
 
         $items = array_map(static fn (CartItem $item): array => $item->toArray(), $this->cart->items());
         $totalsArray = $totals->toArray();
@@ -62,10 +62,18 @@ final class CheckoutService
             $payment->transactionReference()
         );
 
-        $this->sendConfirmation($order, $token);
+        $redirect = $payment->redirectUrl();
+        if ($redirect === '') {
+            $this->sendConfirmation($order, $token);
+        }
         $this->cart->clear();
 
-        return ['order' => $order, 'token' => $token];
+        $result = ['order' => $order, 'token' => $token];
+        if ($redirect !== '') {
+            $result['redirect'] = $redirect;
+        }
+
+        return $result;
     }
 
     /**

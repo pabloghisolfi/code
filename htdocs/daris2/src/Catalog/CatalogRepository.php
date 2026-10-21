@@ -175,6 +175,46 @@ final class CatalogRepository
     }
 
     /**
+     * Suggestions : vus récemment, même maison, même rayon, puis catalogue.
+     *
+     * @param list<string> $recentSlugs slugs récents (le plus récent en premier)
+     * @return list<Product>
+     */
+    public function relatedFor(Product $product, array $recentSlugs, int $limit = 4): array
+    {
+        $picked = [];
+        $seen = [$product->id() => true];
+
+        foreach ($recentSlugs as $slug) {
+            if (count($picked) >= $limit) {
+                break;
+            }
+            $candidate = $this->bySlug($slug);
+            if ($candidate === null || isset($seen[$candidate->id()])) {
+                continue;
+            }
+            if ($candidate->category() !== $product->category()) {
+                continue;
+            }
+            $picked[] = $candidate;
+            $seen[$candidate->id()] = true;
+        }
+
+        foreach ($this->related($product, $limit * 2) as $candidate) {
+            if (count($picked) >= $limit) {
+                break;
+            }
+            if (isset($seen[$candidate->id()])) {
+                continue;
+            }
+            $picked[] = $candidate;
+            $seen[$candidate->id()] = true;
+        }
+
+        return array_slice($picked, 0, $limit);
+    }
+
+    /**
      * @return list<string>
      */
     public function brands(?string $category = null): array

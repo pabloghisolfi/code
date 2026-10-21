@@ -43,4 +43,6 @@ Copier le dossier `daris2` dans `htdocs`. Le fichier `.htaccess` réécrit les U
 
 ```bash
 find htdocs/daris2 -name '*.php' -print0 | xargs -0 -n1 php -l
+# Serveur de dev (voir ci-dessus), puis :
+./htdocs/daris2/scripts/verify-routes.sh
 ```

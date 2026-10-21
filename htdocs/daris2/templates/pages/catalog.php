@@ -12,11 +12,12 @@
  * @var int $pages
  * @var string $basePath
  * @var string $title
- * @var array<string, string> $sorts
- * @var array<string, string> $priceRanges
+ * @var array<string, string> $sortKeys
+ * @var array<string, string> $priceRangeKeys
  * @var list<string> $brands
  */
 $query = $filter->toQuery();
+$activeBrands = $filter->brands();
 $crumbs = [[$category !== null ? $v->url('/boutique') : '', 'Boutique']];
 if ($category !== null) {
     $crumbs[] = ['', $category->name()];
@@ -32,7 +33,7 @@ if ($category !== null) {
 
 <section class="section section--flush">
     <div class="wrap catalog">
-        <button class="btn btn--soft catalog__toggle" type="button" data-filters-toggle aria-expanded="false" aria-controls="filtres"><svg aria-hidden="true"><use href="#i-filter"/></svg> Filtres</button>
+        <button class="btn btn--soft catalog__toggle" type="button" data-filters-toggle aria-expanded="false" aria-controls="filtres"><svg aria-hidden="true"><use href="#i-filter"/></svg> <?= $v->e($v->t('filter.title', 'Filtres')) ?></button>
 
         <aside class="filters" id="filtres" data-filters>
             <form method="get" action="<?= $v->url($basePath) ?>" data-filter-form>
@@ -45,9 +46,9 @@ if ($category !== null) {
                 <?php endif; ?>
 
                 <div class="filters__group">
-                    <p class="filters__title">Univers</p>
+                    <p class="filters__title"><?= $v->e($v->t('filter.universe', 'Univers')) ?></p>
                     <ul class="filters__links">
-                        <li><a class="<?= $v->classes(['is-active' => $category === null]) ?>" href="<?= $v->url('/boutique', $query) ?>">Tout</a></li>
+                        <li><a class="<?= $v->classes(['is-active' => $category === null]) ?>" href="<?= $v->url('/boutique', $query) ?>"><?= $v->e($v->t('filter.all', 'Tout')) ?></a></li>
                         <?php foreach ($categories as $cat) : ?>
                         <li><a class="<?= $v->classes(['is-active' => $category?->slug() === $cat->slug()]) ?>" href="<?= $v->url('/boutique/' . $cat->slug(), array_diff_key($query, ['sous' => 1])) ?>"><?= $v->e($cat->name()) ?></a></li>
                         <?php endforeach; ?>
@@ -56,8 +57,8 @@ if ($category !== null) {
 
                 <?php if ($category !== null) : ?>
                 <fieldset class="filters__group">
-                    <legend class="filters__title">Rayon</legend>
-                    <label class="radio"><input type="radio" name="sous" value="" <?= $filter->subcategory() === null ? 'checked' : '' ?>><span>Tous les rayons</span></label>
+                    <legend class="filters__title"><?= $v->e($v->t('filter.rayon', 'Rayon')) ?></legend>
+                    <label class="radio"><input type="radio" name="sous" value="" <?= $filter->subcategory() === null ? 'checked' : '' ?>><span><?= $v->e($v->t('filter.rayon_all', 'Tous les rayons')) ?></span></label>
                     <?php foreach ($category->subcategories() as $sub) : ?>
                     <label class="radio"><input type="radio" name="sous" value="<?= $v->e($sub['slug']) ?>" <?= $filter->subcategory() === $sub['slug'] ? 'checked' : '' ?>><span><?= $v->e($sub['name']) ?></span></label>
                     <?php endforeach; ?>
@@ -65,25 +66,34 @@ if ($category !== null) {
                 <?php endif; ?>
 
                 <?php if ($brands !== []) : ?>
-                <fieldset class="filters__group">
-                    <legend class="filters__title">Maison</legend>
-                    <label class="radio"><input type="radio" name="marque" value="" <?= $filter->brand() === null ? 'checked' : '' ?>><span>Toutes les maisons</span></label>
+                <fieldset class="filters__group filters__group--brands">
+                    <legend class="filters__title"><?= $v->e($v->t('filter.brand', 'Maison')) ?></legend>
+                    <p class="filters__hint"><?= $v->e($v->t('filter.brands_hint', 'Plusieurs maisons possibles')) ?></p>
+                    <div class="filters__checks">
                     <?php foreach ($brands as $brand) : ?>
-                    <label class="radio"><input type="radio" name="marque" value="<?= $v->e($brand) ?>" <?= $filter->brand() === $brand ? 'checked' : '' ?>><span><?= $v->e($brand) ?></span></label>
+                    <label class="check"><input type="checkbox" name="marque[]" value="<?= $v->e($brand) ?>" <?= in_array($brand, $activeBrands, true) ? 'checked' : '' ?>><span><?= $v->e($brand) ?></span></label>
                     <?php endforeach; ?>
+                    </div>
                 </fieldset>
                 <?php endif; ?>
 
                 <fieldset class="filters__group">
-                    <legend class="filters__title">Prix</legend>
-                    <?php foreach ($priceRanges as $value => $label) : ?>
-                    <label class="radio"><input type="radio" name="prix" value="<?= $v->e($value) ?>" <?= $filter->priceRange() === $value ? 'checked' : '' ?>><span><?= $v->e($label) ?></span></label>
+                    <legend class="filters__title"><?= $v->e($v->t('filter.price', 'Prix')) ?></legend>
+                    <?php foreach ($priceRangeKeys as $value => $labelKey) : ?>
+                    <label class="radio"><input type="radio" name="prix" value="<?= $v->e($value) ?>" <?= $filter->priceRange() === $value ? 'checked' : '' ?>><span><?= $v->e($v->t($labelKey, $value)) ?></span></label>
                     <?php endforeach; ?>
+                    <div class="filters__budget">
+                        <p class="filters__subtitle"><?= $v->e($v->t('filter.budget', 'Budget (CHF)')) ?></p>
+                        <div class="filters__budget-row">
+                            <label><span><?= $v->e($v->t('filter.budget_min', 'Min.')) ?></span><input type="number" name="prix_min" min="0" max="500000" step="1" inputmode="numeric" placeholder="100" value="<?= $filter->budgetMinChf() !== null ? (int) $filter->budgetMinChf() : '' ?>"></label>
+                            <label><span><?= $v->e($v->t('filter.budget_max', 'Max.')) ?></span><input type="number" name="prix_max" min="0" max="500000" step="1" inputmode="numeric" placeholder="300" value="<?= $filter->budgetMaxChf() !== null ? (int) $filter->budgetMaxChf() : '' ?>"></label>
+                        </div>
+                    </div>
                 </fieldset>
 
                 <fieldset class="filters__group">
-                    <legend class="filters__title">Sélection</legend>
-                    <label class="radio"><input type="radio" name="badge" value="" <?= $filter->badge() === null ? 'checked' : '' ?>><span>Tout</span></label>
+                    <legend class="filters__title"><?= $v->e($v->t('filter.selection', 'Sélection')) ?></legend>
+                    <label class="radio"><input type="radio" name="badge" value="" <?= $filter->badge() === null ? 'checked' : '' ?>><span><?= $v->e($v->t('filter.all', 'Tout')) ?></span></label>
                     <?php foreach (\Daris\Catalog\Product::BADGE_LABELS as $value => $label) : ?>
                     <label class="radio"><input type="radio" name="badge" value="<?= $v->e($value) ?>" <?= $filter->badge() === $value ? 'checked' : '' ?>><span><?= $v->e($label) ?></span></label>
                     <?php endforeach; ?>
@@ -91,23 +101,21 @@ if ($category !== null) {
 
                 <input type="hidden" name="tri" value="<?= $v->e($filter->sort()) ?>">
                 <div class="filters__actions">
-                    <button class="btn btn--primary btn--block" type="submit">Appliquer</button>
-                    <?php if ($filter->isActive()) : ?><a class="link" href="<?= $v->url($basePath) ?>">Tout effacer</a><?php endif; ?>
+                    <button class="btn btn--primary btn--block" type="submit"><?= $v->e($v->t('filter.apply', 'Appliquer')) ?></button>
+                    <?php if ($filter->isActive()) : ?><a class="link" href="<?= $v->url($basePath) ?>"><?= $v->e($v->t('filter.clear', 'Tout effacer')) ?></a><?php endif; ?>
                 </div>
             </form>
         </aside>
 
         <div class="catalog__main">
             <div class="catalog__bar">
-                <p class="catalog__count" aria-live="polite"><strong><?= $total ?></strong> <?= $total > 1 ? 'produits' : 'produit' ?></p>
+                <p class="catalog__count" aria-live="polite"><strong><?= $total ?></strong> <?= $v->e($total > 1 ? $v->t('catalog.products', 'produits') : $v->t('catalog.product', 'produit')) ?></p>
                 <form class="sort" method="get" action="<?= $v->url($basePath) ?>" data-sort-form>
-                    <?php foreach (array_diff_key($query, ['tri' => 1]) as $key => $value) : ?>
-                    <input type="hidden" name="<?= $v->e($key) ?>" value="<?= $v->e($value) ?>">
-                    <?php endforeach; ?>
-                    <label for="tri">Trier par</label>
+                    <?= $v->queryHiddenFields($query, ['tri']) ?>
+                    <label for="tri"><?= $v->e($v->t('sort.label', 'Trier par')) ?></label>
                     <select id="tri" name="tri">
-                        <?php foreach ($sorts as $value => $label) : ?>
-                        <option value="<?= $v->e($value) ?>" <?= $filter->sort() === $value ? 'selected' : '' ?>><?= $v->e($label) ?></option>
+                        <?php foreach ($sortKeys as $value => $labelKey) : ?>
+                        <option value="<?= $v->e($value) ?>" <?= $filter->sort() === $value ? 'selected' : '' ?>><?= $v->e($v->t($labelKey, $value)) ?></option>
                         <?php endforeach; ?>
                     </select>
                     <noscript><button class="btn btn--ghost btn--sm" type="submit">OK</button></noscript>
@@ -116,7 +124,7 @@ if ($category !== null) {
 
             <?php if ($products === []) : ?>
             <div class="empty" data-reveal>
-                <h2>Rien ne correspond à ces critères.</h2>
+                <h2><?= $v->e($v->t('catalog.empty_title', 'Rien ne correspond à ces critères.')) ?></h2>
                 <p>Essayez un autre mot, élargissez le prix, ou laissez la conseillère vous aiguiller.</p>
                 <div class="actions"><a class="btn btn--primary" href="<?= $v->url($basePath) ?>">Voir tout le rayon</a><a class="btn btn--soft" href="<?= $v->url('/chat') ?>">Demander à Léa</a></div>
             </div>

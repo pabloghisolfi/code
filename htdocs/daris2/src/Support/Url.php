@@ -24,7 +24,7 @@ final class Url
     /**
      * Chemin absolu (côté serveur) vers une route : to('/produit/lune') → /daris2/produit/lune
      *
-     * @param array<string, scalar> $query
+     * @param array<string, scalar|list<string>> $query
      */
     public function to(string $path = '/', array $query = []): string
     {

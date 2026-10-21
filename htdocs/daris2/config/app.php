@@ -65,6 +65,8 @@ return [
     ],
     'payment' => [
         'provider' => Env::get('PAYMENT_PROVIDER', 'none'),
+        'stripe_secret' => Env::get('STRIPE_SECRET_KEY', ''),
+        'stripe_publishable' => Env::get('STRIPE_PUBLISHABLE_KEY', ''),
     ],
     'security' => [
         'session_name' => 'daris_session',

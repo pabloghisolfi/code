@@ -19,6 +19,8 @@ use Daris\Http\Session;
 use Daris\Mail\Mailer;
 use Daris\Order\CheckoutService;
 use Daris\Order\OrderRepository;
+use Daris\I18n\Locale;
+use Daris\I18n\Translator;
 use Daris\Payment\GatewayFactory;
 use Daris\Support\Url;
 use Daris\View\View;
@@ -71,9 +73,30 @@ final class Services
         });
     }
 
+    public function locale(): string
+    {
+        $stored = $this->session->get('locale');
+        if (is_string($stored) && Locale::isSupported($stored)) {
+            return $stored;
+        }
+
+        return Locale::DEFAULT;
+    }
+
+    public function translator(): Translator
+    {
+        return $this->once(Translator::class, fn (): Translator => new Translator($this->locale()));
+    }
+
     public function view(): View
     {
-        return $this->once(View::class, fn (): View => new View($this->config->string('paths.templates'), $this->url(), $this->csrf()));
+        return $this->once(View::class, function (): View {
+            $view = new View($this->config->string('paths.templates'), $this->url(), $this->csrf());
+            $view->share('translator', $this->translator());
+            $view->share('locale', $this->locale());
+
+            return $view;
+        });
     }
 
     public function catalog(): CatalogRepository
@@ -141,7 +164,7 @@ final class Services
         return $this->once(CheckoutService::class, fn (): CheckoutService => new CheckoutService(
             $this->cart(),
             $this->orders(),
-            GatewayFactory::make($this->config->string('payment.provider', 'none')),
+            GatewayFactory::make($this->config, $this->url()),
             $this->mailer(),
             $this->view(),
             $this->url(),

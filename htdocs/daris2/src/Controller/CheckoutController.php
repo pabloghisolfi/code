@@ -21,19 +21,37 @@ final class CheckoutController extends AbstractController
     public function form(): Response
     {
         $cart = $this->services->cart();
-        if ($cart->isEmpty()) {
-            $this->flash('info', 'Votre panier est vide : choisissez d\'abord un produit.');
+        $session = $this->services->session();
 
-            return $this->redirect('/boutique');
+        if ($cart->isEmpty()) {
+            return $this->page('checkout', [
+                'items' => [],
+                'totals' => $cart->totals(),
+                'old' => [],
+                'errors' => [],
+                'cantons' => Customer::CANTONS,
+                'shippingMethods' => $this->services->config()->array('shop.shipping_methods'),
+                'paymentMethods' => $this->services->config()->array('shop.payment_methods'),
+                'giftWrapPrice' => $this->services->config()->int('shop.gift_wrap_price'),
+                'freeShippingFrom' => $this->services->config()->int('shop.free_shipping_from'),
+                'selectedShipping' => 'economy',
+                'giftWrap' => false,
+                'emptyCart' => true,
+            ], [
+                'title' => 'Commande – Azurine',
+                'description' => 'Finalisez votre commande Azurine en toute sécurité.',
+                'noindex' => true,
+                'bodyClass' => 'page-checkout page-checkout--empty',
+            ]);
         }
 
-        $session = $this->services->session();
         $old = $session->pullOldInput();
         $old += $this->previousCustomer();
 
         return $this->page('checkout', [
             'items' => $cart->items(),
             'totals' => $cart->totals(),
+            'emptyCart' => false,
             'old' => $old,
             'errors' => $session->pullErrors(),
             'cantons' => Customer::CANTONS,
@@ -86,6 +104,9 @@ final class CheckoutController extends AbstractController
 
         try {
             $result = $this->services->checkout()->place($data);
+            if (isset($result['redirect']) && $result['redirect'] !== '') {
+                return Response::redirect($result['redirect']);
+            }
         } catch (PaymentException $exception) {
             $this->services->session()->rememberInput($remembered);
             $this->flash('error', 'Le paiement n\'a pas abouti : ' . $exception->getMessage());

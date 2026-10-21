@@ -12,16 +12,28 @@
  * @var int $freeShippingFrom
  * @var string $selectedShipping
  * @var bool $giftWrap
+ * @var bool $emptyCart
  */
 use Daris\View\ProductArt;
 
+$emptyCart = !empty($emptyCart);
 $val = static fn (string $k, string $d = ''): string => $v->e($old[$k] ?? $d);
 $err = static fn (string $k): string => isset($errors[$k]) ? '<p class="field-error" id="err-' . $k . '">' . $v->e($errors[$k]) . '</p>' : '';
 ?>
-<?= $v->partial('partials/page-head', ['kicker' => 'Commande', 'title' => 'Finaliser votre commande', 'lead' => 'Renseignez l\'adresse de livraison et choisissez comment payer. Vous recevrez un e-mail de confirmation avec le récapitulatif.', 'crumbs' => [[$v->url('/panier'), 'Panier'], ['', 'Commande']]]) ?>
+<?= $v->partial('partials/page-head', ['kicker' => $v->t('checkout.kicker', 'Commande'), 'title' => $v->t('checkout.title', 'Finaliser votre commande'), 'lead' => $v->t('checkout.lead', 'Adresse de livraison et mode de paiement.'), 'crumbs' => [[$v->url('/panier'), $v->t('cart.title', 'Panier')], ['', $v->t('checkout.kicker', 'Commande')]]]) ?>
 
 <section class="section section--flush" id="formulaire">
     <div class="wrap checkout">
+        <?php if ($emptyCart) : ?>
+        <div class="empty" data-reveal>
+            <h2><?= $v->e($v->t('checkout.empty_title', 'Votre panier est vide')) ?></h2>
+            <p><?= $v->e($v->t('checkout.empty_lead', 'Ajoutez un produit avant de finaliser la commande.')) ?></p>
+            <div class="actions">
+                <a class="btn btn--primary" href="<?= $v->url('/boutique') ?>"><?= $v->e($v->t('nav.shop', 'Boutique')) ?></a>
+                <a class="btn btn--soft" href="<?= $v->url('/panier') ?>"><?= $v->e($v->t('cart.title', 'Panier')) ?></a>
+            </div>
+        </div>
+        <?php else : ?>
         <form class="checkout__form" method="post" action="<?= $v->url('/commande') ?>" novalidate>
             <?= $v->csrfField() ?>
             <input type="hidden" name="_time" value="<?= time() ?>">
@@ -164,5 +176,6 @@ $err = static fn (string $k): string => isset($errors[$k]) ? '<p class="field-er
             </dl>
             <p class="hint">Les frais de port définitifs sont calculés selon le mode choisi.</p>
         </aside>
+        <?php endif; ?>
     </div>
 </section>

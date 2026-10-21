@@ -16,7 +16,7 @@ $totals = $order->totals();
         <div class="order-confirm" data-reveal>
             <div class="order-confirm__banner">
                 <svg aria-hidden="true"><use href="#i-check"/></svg>
-                <p><?= $justPlaced ? 'Votre commande est enregistrée.' : 'Récapitulatif de commande.' ?></p>
+                <p><?= $justPlaced ? $v->e($v->t('confirm.saved', 'Votre commande est enregistrée.')) : $v->e($v->t('confirm.summary', 'Récapitulatif de commande.')) ?></p>
             </div>
 
             <div class="order-grid">
@@ -52,6 +52,9 @@ $totals = $order->totals();
                     <h2 class="h3">Paiement</h2>
                     <p><?= $v->e($payLabel) ?><?php if ($order->paymentReference() !== null) : ?><br><span class="hint">Réf. <?= $v->e($order->paymentReference()) ?></span><?php endif; ?></p>
                     <p class="hint"><?= $v->e((string) ($totals['payment_label'] ?? '')) ?></p>
+                    <?php if (str_starts_with((string) ($order->paymentReference() ?? ''), 'PENDING-CARD')) : ?>
+                    <p class="flash flash--info"><?= $v->e($v->t('payment.not_configured', 'Paiement carte non configuré — commande enregistrée.')) ?></p>
+                    <?php endif; ?>
                 </div>
             </div>
 

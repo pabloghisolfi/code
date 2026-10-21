@@ -400,12 +400,30 @@
     lightboxLastFocus = null;
   }
 
+  const lightboxProductLink = qs('[data-photo-lightbox-product]', lightboxRoot || document);
+  const lightboxShopLink = qs('[data-photo-lightbox-shop]', lightboxRoot || document);
+  const lightboxDialog = qs('[data-photo-lightbox-dialog]', lightboxRoot || document);
+
   function openPhotoLightbox(trigger) {
     if (!lightboxRoot) return;
     const src = trigger.dataset.photoSrc || '';
     const alt = trigger.dataset.photoAlt || '';
     const svgKey = trigger.dataset.photoSvg || '';
+    const productUrl = trigger.dataset.photoProductUrl || '';
+    const pageUrl = trigger.dataset.photoPageUrl || productUrl;
     lightboxLastFocus = trigger;
+
+    if (lightboxProductLink) {
+      if (productUrl) {
+        lightboxProductLink.href = productUrl;
+        lightboxProductLink.hidden = false;
+      } else {
+        lightboxProductLink.hidden = true;
+      }
+    }
+    if (lightboxShopLink && !lightboxShopLink.getAttribute('href')) {
+      lightboxShopLink.href = (body.dataset.base || '/') + 'boutique';
+    }
 
     if (src) {
       if (lightboxSvg) {
@@ -436,7 +454,8 @@
 
     lightboxRoot.hidden = false;
     document.documentElement.classList.add('lightbox-open');
-    qs('[data-photo-lightbox-close]', lightboxRoot)?.focus();
+    const closeBtn = qs('.lightbox__close', lightboxRoot);
+    if (closeBtn) closeBtn.focus();
   }
 
   qsa('[data-photo-lightbox]').forEach((el) => {
@@ -456,9 +475,20 @@
     }
   });
 
-  qsa('[data-photo-lightbox-close]', lightboxRoot || document).forEach((el) => {
-    el.addEventListener('click', () => closePhotoLightbox());
+  lightboxDialog?.addEventListener('click', (e) => e.stopPropagation());
+  lightboxRoot?.addEventListener('click', (e) => {
+    if (e.target === lightboxRoot || e.target?.matches?.('.lightbox__backdrop')) {
+      closePhotoLightbox();
+    }
   });
+  qsa('[data-photo-lightbox-close]', lightboxRoot || document).forEach((el) => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      closePhotoLightbox();
+    });
+  });
+  lightboxImg?.addEventListener('click', (e) => e.stopPropagation());
+  lightboxImg?.addEventListener('dragstart', (e) => e.preventDefault());
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && lightboxRoot && !lightboxRoot.hidden) {
       closePhotoLightbox();

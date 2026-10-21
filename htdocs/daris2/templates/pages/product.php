@@ -16,6 +16,8 @@ $first = $variants[0] ?? null;
 $subName = $category?->subcategoryName($product->subcategory()) ?? '';
 $photoAlt = $product->brand() . ' — ' . $product->name();
 $photoSrc = $product->hasPhoto() ? $v->asset((string) $product->photo()['file']) : '';
+$photoPageUrl = $v->url('/produit/' . $product->slug() . '/photo');
+$productUrl = $v->url('/produit/' . $product->slug());
 ?>
 <section class="product">
     <div class="wrap">
@@ -35,6 +37,8 @@ $photoSrc = $product->hasPhoto() ? $v->asset((string) $product->photo()['file'])
                     class="product__stage product__stage--zoom"
                     data-photo-lightbox
                     data-photo-alt="<?= $v->e($photoAlt) ?>"
+                    data-photo-product-url="<?= $productUrl ?>"
+                    data-photo-page-url="<?= $photoPageUrl ?>"
                     <?php if ($photoSrc !== '') : ?>data-photo-src="<?= $photoSrc ?>"<?php else : ?>data-photo-svg="product-stage"<?php endif; ?>
                     role="button"
                     tabindex="0"
@@ -54,11 +58,14 @@ $photoSrc = $product->hasPhoto() ? $v->asset((string) $product->photo()['file'])
                         class="btn btn--soft btn--sm product__view-photo"
                         data-photo-lightbox
                         data-photo-alt="<?= $v->e($photoAlt) ?>"
+                        data-photo-product-url="<?= $productUrl ?>"
+                        data-photo-page-url="<?= $photoPageUrl ?>"
                         <?php if ($photoSrc !== '') : ?>data-photo-src="<?= $photoSrc ?>"<?php else : ?>data-photo-svg="product-stage"<?php endif; ?>
                     >
                         <svg aria-hidden="true"><use href="#i-zoom"/></svg>
-                        Voir la photo
+                        <?= $v->e($v->t('photo.view_btn', 'Voir la photo')) ?>
                     </button>
+                    <a class="link link--sm product__photo-page" href="<?= $photoPageUrl ?>"><?= $v->e($v->t('photo.page_link', 'Page photo avec navigation')) ?></a>
                 </p>
                 <ul class="product__highlights">
                     <?php foreach (array_slice($product->tags(), 0, 3) as $tag) : ?>

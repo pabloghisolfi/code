@@ -12,23 +12,28 @@ use Daris\Support\Str;
  */
 final class ProductFilter
 {
-    public const SORTS = [
-        'pertinence' => 'Pertinence',
-        'prix-asc' => 'Prix croissant',
-        'prix-desc' => 'Prix décroissant',
-        'nouveautes' => 'Nouveautés',
-        'notes' => 'Mieux notés',
+    /** @var array<string, string> clé tri => clé i18n */
+    public const SORT_KEYS = [
+        'pertinence' => 'sort.pertinence',
+        'prix-asc' => 'sort.prix_asc',
+        'prix-desc' => 'sort.prix_desc',
+        'nouveautes' => 'sort.nouveautes',
+        'notes' => 'sort.notes',
     ];
 
     public const PRICE_RANGES = [
-        '' => 'Tous les prix',
-        '0-10000' => 'Moins de CHF 100',
-        '10000-50000' => 'CHF 100 à 500',
-        '50000-500000' => 'CHF 500 à 5 000',
-        '500000-2000000' => 'CHF 5 000 à 20 000',
-        '2000000-' => 'Plus de CHF 20 000',
+        '' => 'price.all',
+        '0-10000' => 'price.under_100',
+        '10000-30000' => 'price.100_300',
+        '10000-50000' => 'price.100_500',
+        '50000-500000' => 'price.500_5000',
+        '500000-2000000' => 'price.5000_20000',
+        '2000000-' => 'price.over_20000',
     ];
 
+    /**
+     * @param list<string> $brands
+     */
     public function __construct(
         private readonly ?string $category = null,
         private readonly ?string $subcategory = null,
@@ -37,7 +42,9 @@ final class ProductFilter
         private readonly ?int $maxPrice = null,
         private readonly string $sort = 'pertinence',
         private readonly ?string $badge = null,
-        private readonly ?string $brand = null
+        private readonly array $brands = [],
+        private readonly ?int $budgetMinChf = null,
+        private readonly ?int $budgetMaxChf = null
     ) {
     }
 
@@ -48,7 +55,19 @@ final class ProductFilter
         [$min, $max] = self::parseRange($range);
         $sort = $request->query('tri', 'pertinence', 20);
         $badge = $request->query('badge', '', 20);
-        $brand = trim($request->query('marque', '', 60));
+        $brands = $request->queryList('marque', 24, 60);
+
+        $budgetMin = $request->queryInt('prix_min', -1, -1, 500_000);
+        $budgetMax = $request->queryInt('prix_max', -1, -1, 500_000);
+        $budgetMinChf = $budgetMin >= 0 ? $budgetMin : null;
+        $budgetMaxChf = $budgetMax >= 0 ? $budgetMax : null;
+
+        if ($budgetMinChf !== null) {
+            $min = $budgetMinChf * 100;
+        }
+        if ($budgetMaxChf !== null) {
+            $max = $budgetMaxChf * 100;
+        }
 
         return new self(
             $category !== null && Str::isSlug($category) ? $category : null,
@@ -56,9 +75,11 @@ final class ProductFilter
             $request->query('q', '', 80),
             $min,
             $max,
-            isset(self::SORTS[$sort]) ? $sort : 'pertinence',
+            isset(self::SORT_KEYS[$sort]) ? $sort : 'pertinence',
             isset(Product::BADGE_LABELS[$badge]) ? $badge : null,
-            $brand !== '' ? $brand : null
+            $brands,
+            $budgetMinChf,
+            $budgetMaxChf
         );
     }
 
@@ -71,7 +92,6 @@ final class ProductFilter
         $needle = Str::searchable($this->query);
         $terms = $needle === '' ? [] : explode(' ', $needle);
         $scores = [];
-
         $result = array_values(array_filter($products, function (Product $product) use ($terms, &$scores): bool {
             if ($this->category !== null && $product->category() !== $this->category) {
                 return false;
@@ -88,8 +108,17 @@ final class ProductFilter
             if ($this->badge !== null && $product->badge() !== $this->badge) {
                 return false;
             }
-            if ($this->brand !== null && strcasecmp($product->brand(), $this->brand) !== 0) {
-                return false;
+            if ($this->brands !== []) {
+                $ok = false;
+                foreach ($this->brands as $b) {
+                    if (strcasecmp($product->brand(), $b) === 0) {
+                        $ok = true;
+                        break;
+                    }
+                }
+                if (!$ok) {
+                    return false;
+                }
             }
             if ($terms === []) {
                 return true;
@@ -141,8 +170,30 @@ final class ProductFilter
         return $this->badge;
     }
 
+    /**
+     * @return list<string>
+     */
+    public function brands(): array
+    {
+        return $this->brands;
+    }
+
+    public function budgetMinChf(): ?int
+    {
+        return $this->budgetMinChf;
+    }
+
+    public function budgetMaxChf(): ?int
+    {
+        return $this->budgetMaxChf;
+    }
+
     public function priceRange(): string
     {
+        if ($this->budgetMinChf !== null || $this->budgetMaxChf !== null) {
+            return '';
+        }
+
         foreach (array_keys(self::PRICE_RANGES) as $key) {
             if ($key === '') {
                 continue;
@@ -159,18 +210,13 @@ final class ProductFilter
     public function isActive(): bool
     {
         return $this->subcategory !== null || $this->query !== '' || $this->minPrice !== null
-            || $this->maxPrice !== null || $this->badge !== null || $this->brand !== null || $this->sort !== 'pertinence';
-    }
-
-    public function brand(): ?string
-    {
-        return $this->brand;
+            || $this->maxPrice !== null || $this->badge !== null || $this->brands !== []
+            || $this->budgetMinChf !== null || $this->budgetMaxChf !== null
+            || $this->sort !== 'pertinence';
     }
 
     /**
-     * Paramètres de requête à conserver dans les liens (changement de tri, etc.).
-     *
-     * @return array<string, string>
+     * @return array<string, string|list<string>>
      */
     public function toQuery(): array
     {
@@ -184,14 +230,20 @@ final class ProductFilter
         if ($this->priceRange() !== '') {
             $query['prix'] = $this->priceRange();
         }
+        if ($this->budgetMinChf !== null) {
+            $query['prix_min'] = (string) $this->budgetMinChf;
+        }
+        if ($this->budgetMaxChf !== null) {
+            $query['prix_max'] = (string) $this->budgetMaxChf;
+        }
         if ($this->sort !== 'pertinence') {
             $query['tri'] = $this->sort;
         }
         if ($this->badge !== null) {
             $query['badge'] = $this->badge;
         }
-        if ($this->brand !== null) {
-            $query['marque'] = $this->brand;
+        if ($this->brands !== []) {
+            $query['marque'] = $this->brands;
         }
 
         return $query;
@@ -228,7 +280,7 @@ final class ProductFilter
      */
     private static function parseRange(string $range): array
     {
-        if (preg_match('/^(\d{1,6})-(\d{0,6})$/', $range, $m) !== 1) {
+        if (preg_match('/^(\d{1,9})-(\d{0,9})$/', $range, $m) !== 1) {
             return [null, null];
         }
 

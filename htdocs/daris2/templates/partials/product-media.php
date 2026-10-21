@@ -13,7 +13,7 @@ $alt = $product->brand() . ' — ' . $product->name();
 if ($product->hasPhoto()) {
     $photo = $product->photo();
     ?>
-<img class="<?= $v->e($class) ?> product-photo" src="<?= $v->asset((string) $photo['file']) ?>" alt="<?= $v->e($alt) ?>" loading="lazy" decoding="async" width="800" height="800">
+<img class="<?= $v->e($class) ?> product-photo" src="<?= $v->asset((string) $photo['file']) ?>" alt="<?= $v->e($alt) ?>" loading="lazy" decoding="async" width="800" height="800" draggable="false">
     <?php
 } else {
     echo ProductArt::product($product, $class);

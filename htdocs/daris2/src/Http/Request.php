@@ -92,6 +92,35 @@ final class Request
     }
 
     /**
+     * Liste de valeurs GET (ex. marque[] pour filtres multi-sélection).
+     *
+     * @return list<string>
+     */
+    public function queryList(string $key, int $maxItems = 30, int $maxLength = 80): array
+    {
+        $raw = $this->query[$key] ?? null;
+        $items = [];
+        if (is_array($raw)) {
+            $items = $raw;
+        } elseif (is_string($raw) && $raw !== '') {
+            $items = [$raw];
+        }
+
+        $out = [];
+        foreach (array_slice($items, 0, $maxItems) as $item) {
+            if (!is_scalar($item)) {
+                continue;
+            }
+            $value = $this->clean((string) $item, '', $maxLength);
+            if ($value !== '') {
+                $out[] = $value;
+            }
+        }
+
+        return array_values(array_unique($out));
+    }
+
+    /**
      * @return array<string, mixed>
      */
     public function allQuery(): array

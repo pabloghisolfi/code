@@ -22,5 +22,5 @@ interface PaymentGatewayInterface
      *
      * @throws PaymentException si le paiement est refusé ou indisponible
      */
-    public function authorize(int $amountCents, string $method, string $reference): PaymentResult;
+    public function authorize(int $amountCents, string $method, string $reference, string $orderToken = ''): PaymentResult;
 }

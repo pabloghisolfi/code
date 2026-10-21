@@ -4,10 +4,11 @@ declare(strict_types=1);
 
 namespace Daris\Payment;
 
-use Daris\Exception\ConfigurationException;
+use Daris\Config\Config;
+use Daris\Support\Url;
 
 /**
- * Choisit la passerelle de paiement selon PAYMENT_PROVIDER.
+ * Passerelle boutique (Stripe optionnel via .env, sans simulation de carte).
  */
 final class GatewayFactory
 {
@@ -15,11 +16,8 @@ final class GatewayFactory
     {
     }
 
-    public static function make(string $provider): PaymentGatewayInterface
+    public static function make(Config $config, Url $url): PaymentGatewayInterface
     {
-        return match ($provider) {
-            'none', '', 'simulated' => new SimulatedGateway(),
-            default => throw new ConfigurationException(sprintf('Prestataire de paiement non pris en charge : %s', $provider)),
-        };
+        return new ShopGateway($config, $url);
     }
 }

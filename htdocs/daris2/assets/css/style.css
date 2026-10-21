@@ -463,6 +463,54 @@ svg use { pointer-events: none; }
 .pricing-ship { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
 .price-card { padding: 1.25rem; background: var(--surface); border-radius: var(--radius); border: 1px solid var(--line); }
 .service-card { padding: 1.25rem; background: var(--surface); border-radius: var(--radius); border: 1px solid var(--line); }
+
+/* Lisibilité : tarifs & suggestions panier (fonds clairs) */
+.page-pricing [data-reveal],
+.page-cart .section--tint [data-reveal] { opacity: 1; }
+
+.page-pricing #livraison .price-card {
+  background: #fff;
+  border: 1px solid rgba(31, 58, 104, 0.18);
+  box-shadow: var(--shadow-sm);
+}
+.page-pricing #livraison .price-card .h3 { color: var(--blue-800); margin-bottom: 0.5rem; }
+.page-pricing #livraison .price-card .price--lg { margin: 0.5rem 0 0.75rem; }
+.page-pricing #livraison .price-card .price__now {
+  color: var(--blue-800);
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.page-pricing #livraison .price-card > p { color: var(--ink); margin: 0.35rem 0; font-size: 0.95rem; }
+.page-pricing #livraison .badge-inline {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  background: var(--blue-100);
+  color: var(--blue-800);
+  font-weight: 600;
+}
+
+.page-pricing .section--pink .section-head .h2,
+.page-pricing .section:not(.section--tint) .section-head .h2 { color: var(--blue-800); }
+.page-pricing .section--pink .section-head .lead,
+.page-pricing .section-head .lead { color: var(--ink); }
+.page-pricing .section-head .kicker { color: var(--blue-600); }
+
+.page-cart .section--tint {
+  background: linear-gradient(180deg, rgba(234, 244, 253, 0.92), rgba(251, 227, 236, 0.45));
+  border-top: 1px solid var(--line);
+}
+.page-cart .section--tint .section-head .h2 { color: var(--blue-800); }
+.page-cart .section--tint .section-head .lead { color: var(--ink); max-width: 36rem; }
+.page-cart .section--tint .section-head .kicker { color: var(--blue-600); }
+.page-cart .section--tint .section-head .link { color: var(--blue-800); font-weight: 600; }
+.page-cart .section--tint .card__title a { color: var(--blue-800); }
+.page-cart .section--tint .card__kicker,
+.page-cart .section--tint .card__short { color: #3a4a62; }
+.page-cart .section--tint .price__now { color: var(--blue-800); font-weight: 700; }
+.page-cart .section--tint .stars { color: #a67c00; }
 .table-wrap { overflow-x: auto; margin: 1rem 0; }
 .data-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
 .data-table th, .data-table td { padding: 0.65rem 0.75rem; border-bottom: 1px solid var(--line); text-align: left; }
